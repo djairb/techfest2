@@ -120,23 +120,23 @@
     0% {
         opacity: 0;
         filter: blur(5px) grayscale(100%);
-        transform: scale(0.9) rotate(0.5deg);
+        transform: scale(0.9) rotate(0.6deg);
     }
     50% {
         opacity: 1;
         filter: blur(0) grayscale(0%);
-        transform: scale(1) rotate(-0.5deg);
+        transform: scale(1) rotate(-2deg);
     }
     100% {
         opacity: 0;
         filter: blur(5px) grayscale(100%);
-        transform: scale(0.9) rotate(0.5deg);
+        transform: scale(0.9) rotate(0.6deg);
     }
 }
 
 /* Aplicando a animação à logo */
 .logoGrande {
-    animation: loadEffectLoop 5s ease-in-out infinite; /* Duração, suavização e loop */
+    animation: loadEffectLoop 4s ease-in-out infinite; /* Duração, suavização e loop */
     display: inline-block;
 }
 
