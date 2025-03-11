@@ -1,6 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@font-face {
+  font-family: 'Upheaval';
+  src: url('./fonts/upheavtt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VHSGothic';
+  src: url('./fonts/vhsgothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
-  font-family: "Share Tech", sans-serif;
+
+  font-family: 'VHSGothic';
+  
   
   padding: 0px;
   margin: 0px;

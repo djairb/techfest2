@@ -45,7 +45,7 @@ function TelaPrincipal() {
 
         <MainHome />
 
-        <PalestraSection
+        {/* <PalestraSection
 
           title="Palestras"
         
@@ -80,16 +80,7 @@ function TelaPrincipal() {
 
           title="Shows"
         
-        />
-{/* 
-        <LazerSection
-
-          title="Atividades de esporte, lazer e 
-          cidadania"
-        
-        
-        
-        />       */}
+        /> */}
 
 
         <CardLocation

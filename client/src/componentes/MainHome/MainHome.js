@@ -13,7 +13,7 @@ import { useEffect, useState } from 'react';
 function MainHome() {
 
 
-    const dataEvento = new Date(2024, 3, 23, 8, 0, 0); // Ano, Mês (0-11), Dia, Hora, Minuto, Segundo -- O mês de março é o número 2 no JavaScript, pois os meses são indexados a partir de 0.
+    const dataEvento = new Date(2025, 4, 7, 8, 0, 0); // Ano, Mês (0-11), Dia, Hora, Minuto, Segundo -- O mês de março é o número 2 no JavaScript, pois os meses são indexados a partir de 0.
 
     // Estado para armazenar a contagem regressiva
     const [contagem, setContagem] = useState({
@@ -80,7 +80,7 @@ function MainHome() {
                     <div className='icon-date-calendar'>
 
                         <img src={calendario}></img>
-                        <h2><a>23, 24 e 25</a> de Abril de 2024</h2>
+                        <h2><a>07, 08 e 09</a> de Maio</h2>
 
                     </div>
 
