@@ -22,13 +22,30 @@
   
 }
 
-:root{
+html,
+body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  background-color: #000000;
+}
 
-  --verdeClaro: #72c000;
-  --verdeEscuro: #467700;
-  --bgDark: #121212;
-  --bgDarkLess: #202123;
-  --fontWhite: #EEEEEE;
+
+section {
+
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  transition: background-image 1s ease-in-out; /* Transição suave */
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+  
+  
+  
 
 
 }

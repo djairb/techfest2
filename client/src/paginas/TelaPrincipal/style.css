@@ -1,23 +1,4 @@
-html,
-body {
-  margin: 0;
-  height: 100%;
-  padding: 0;
-  background-color: #121212;
-}
 
-
-section {
-
-  color: var(--fontWhite);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  
-
-
-}
 
 .sectionMain{
 
@@ -32,14 +13,14 @@ section {
 
 
 
-main {
+/* main {
 
   background-image: url('../../img/bg.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
 
-}
+} */
 
 .degrade {
 
