@@ -49,7 +49,7 @@
     color: white;
 }
 
-.logoGrande {
+/* .logoGrande {
     animation: scale 1s infinite alternate;
   }
   
@@ -60,7 +60,7 @@
     to {
       transform: scale(1.1);
     }
-  }
+  } */
 
 
 .containerTexto a{
