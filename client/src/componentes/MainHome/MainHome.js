@@ -104,7 +104,7 @@ function MainHome() {
 
             </div>
 
-            <div className="degrade"></div>
+            <div className="degradeNovo"></div>
 
         </section>
 

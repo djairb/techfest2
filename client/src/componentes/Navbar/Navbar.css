@@ -8,7 +8,7 @@
 }
 
 header {
-
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,12 +16,32 @@ header {
     padding: 0 2rem;
     background-color: var(--bgDark);
 
-    border-bottom: 2px solid var(--verdeClaro); /* largura e estilo da linha */
-    
-
-    
-
+    background-image: url('../../img/nav-back.jpg');
+    background-size: fill; /* Faz a imagem cobrir todo o espaço */
+    background-position: center;
 }
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, 
+    #e52320, #ee7316, #f1e30d, #79b929, #32778c, #234999, #452879, #e52320);
+    background-size: 400% 400%;
+    animation: hueShift 5s linear infinite;
+}
+
+  
+  @keyframes hueShift {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+
+
+
 
 nav a {
 

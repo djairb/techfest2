@@ -66,3 +66,17 @@ section {
       transform: translateY(0)
   }
 }
+
+.degradeNovo {
+  background: linear-gradient(90deg, 
+  #e52320, #ee7316, #f1e30d, #79b929, #32778c, #234999, #452879, #e52320);
+  background-size: 400% 400%;
+  height: 4px;
+  width: 50vw;
+  animation: hueShift 5s linear infinite;
+}
+
+@keyframes hueShift {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
