@@ -50,23 +50,26 @@
   } */
 
 
-  .containerTexto a {
+  @keyframes gradientLoop {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.containerTexto a {
     background: linear-gradient(90deg, 
         #e52320, #ee7316, #f1e30d, 
         #79b929, #32778c, #234999, 
         #452879, #e52320);
-    background-size: 180% auto; /* Faz o degradê cobrir mais espaço, suavizando a transição */
+    background-size: 300% 300%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     display: inline-block;
-    transition: background-position 0.5s ease-in-out;
+    animation: gradientLoop 5s linear infinite;
 }
 
-.containerTexto a:hover {
-    background-position: 100% 0; /* Movimento sutil ao passar o mouse */
-}
 
 
 .containerTexto h2{
