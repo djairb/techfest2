@@ -22,9 +22,14 @@ function MainHome() {
     const [bgIndex, setBgIndex] = useState(0);
 
     useEffect(() => {
+        const indiceAleatorio = Math.floor(Math.random() * 4) + 1; // Gera um número entre 1 e 4
+        setBgIndex(indiceAleatorio);
+      }, []);
+
+    useEffect(() => {
         const interval = setInterval(() => {
         setBgIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000);
+        }, 7000);
 
         return () => clearInterval(interval);
     }, []);
