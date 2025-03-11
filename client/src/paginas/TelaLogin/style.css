@@ -1,0 +1,70 @@
+.app-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+  
+  
+  }
+  
+.register--container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 250px;
+    height: 280px;
+    color: white;
+
+    border: 3px solid var(--verdeClaro);
+    border-radius: 30px;
+    background-color: var(--bgDarkLess);
+
+
+
+}
+
+.login-name{
+
+    color: var(--verdeClaro);
+
+
+
+}
+
+.botaoLogin{
+
+    font-size: 17px;
+    margin: 0px;
+
+
+
+
+}
+
+
+  
+  .bg-verde, .bg-vermelho{
+  
+    font-size: 12px;
+  
+  
+  
+  }
+  
+  .bg-verde{
+  
+    color: green;
+  }
+  
+  .bg-vermelho{
+    color: red;
+  }

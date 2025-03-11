@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+* {
+  font-family: "Share Tech", sans-serif;
+  
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  
+}
+
+:root{
+
+  --verdeClaro: #72c000;
+  --verdeEscuro: #467700;
+  --bgDark: #121212;
+  --bgDarkLess: #202123;
+  --fontWhite: #EEEEEE;
+
+
+}
+
+header,
+main,
+footer,
+section {
+
+  width: 100%;
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+ 
+
+
+
+
+
+}
+
+section {
+  animation: fromBottom .9s backwards;
+}
+
+
+@keyframes fromBottom {
+  from {
+      opacity: 0;
+      transform: translateY(100px)
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0)
+  }
+}

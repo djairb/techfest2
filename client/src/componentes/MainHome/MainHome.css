@@ -1,0 +1,155 @@
+@keyframes typing {
+    0% { width: 0 }
+    63% { width: 100% }
+    100% { width: 100% }
+}
+  
+@keyframes blink-caret {
+50% { border-color: transparent; }
+}
+
+.containerTexto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    margin-left: 6px;   
+    
+}
+
+.containerLogo{
+
+    width: 50%;
+}
+  
+.textoWelcome {
+
+    
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid var(--verdeClaro);
+    animation:
+        typing 11s steps(40, end) infinite,
+        blink-caret .75s step-end infinite;
+    
+    font-size: 70px;
+    
+}
+
+.containerTexto h1{
+
+    font-size: 70px;
+
+
+    
+}
+
+.icon-date-calendar h2 a{
+    color: white;
+}
+
+.logoGrande {
+    animation: scale 1s infinite alternate;
+  }
+  
+  @keyframes scale {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+
+.containerTexto a{
+    color: var(--verdeClaro);
+    font-weight: bold;
+}
+
+.containerTexto h2{
+    font-size: 25px;
+}
+
+.textoWelcome a{
+
+    color: var(--verdeClaro);
+}
+
+.mainHome{
+
+    display: flex;
+    flex-direction: wrap;    
+    
+    
+}
+
+.calendario{
+
+    width: 50px;
+}
+
+.logoGrande{
+    width: 90%
+}
+
+
+/* doidica */
+
+.icon-date-calendar img{
+    width: 20px;
+}
+
+.icon-date-calendar h2{
+    color: var(--verdeClaro);
+}
+
+.icon-date-calendar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+
+
+}
+
+  
+
+@media only screen and (max-width: 1024px) {
+
+    
+    .mainHome{
+        display: flex;
+        flex-direction: column;
+        
+        min-height: 700px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .containerLogo, .containerTexto{
+        width: 100%;
+    }
+
+    .containerTexto{
+        width: 95%;
+    }
+
+    
+
+    .containerTexto h1{
+        font-size: 48px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logoGrande{
+        width: 95%;
+    }
+
+
+
+}
