@@ -9,11 +9,25 @@ import logoGrande from "../../img/logoGrande.png";
 import Typed from 'typed.js';
 import { useEffect, useState } from 'react';
 
+import { images } from '../../data/img';
+
+
+
 
 function MainHome() {
 
 
     const dataEvento = new Date(2025, 4, 7, 8, 0, 0); // Ano, Mês (0-11), Dia, Hora, Minuto, Segundo -- O mês de março é o número 2 no JavaScript, pois os meses são indexados a partir de 0.
+
+    const [bgIndex, setBgIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+        setBgIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     // Estado para armazenar a contagem regressiva
     const [contagem, setContagem] = useState({
@@ -70,7 +84,7 @@ function MainHome() {
 
     return (
 
-        <section className='sectionMain'>
+        <section className='sectionMain' style={{ backgroundImage: `url(${images[bgIndex]})` }}>
 
             <div className='mainHome'>
 
