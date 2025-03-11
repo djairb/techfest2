@@ -59,10 +59,10 @@ function MainHome() {
 
     useEffect(() => {
         const typed = new Typed('#my-h1', {
-            strings: ['Vem aí o maior Festival de Tecnologia e Inovação da Mata Norte!'],
+            strings: ['.'],
             typeSpeed: 40,
             backSpeed: 12,
-            loop: true,
+            loop: false,
         });
 
         return () => typed.destroy();
@@ -87,7 +87,7 @@ function MainHome() {
                     <div className='icon-date-calendar'>
 
                         <img src={location}></img>
-                        <h2><a>Lagoa de Itaenga,</a> Pernambuco, Brasil.</h2>
+                        <h2>Lagoa de Itaenga, <a>Pernambuco, Brasil.</a></h2>
 
                     </div>
                     <h2>Faltam <a>{contagemFormatada}</a>!</h2>
