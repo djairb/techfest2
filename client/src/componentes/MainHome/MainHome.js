@@ -80,14 +80,14 @@ function MainHome() {
                     <div className='icon-date-calendar'>
 
                         <img src={calendario}></img>
-                        <h2><a>07, 08 e 09</a> de Maio</h2>
+                        <h2><a>07</a>, <a>08</a> e <a>09</a> de Maio</h2>
 
                     </div>
 
                     <div className='icon-date-calendar'>
 
                         <img src={location}></img>
-                        <h2>Lagoa de Itaenga, <a>Pernambuco, Brasil.</a></h2>
+                        <h2><a>Lagoa de Itaenga</a>, Pernambuco, Brasil.</h2>
 
                     </div>
                     <h2>Faltam <a>{contagemFormatada}</a>!</h2>
