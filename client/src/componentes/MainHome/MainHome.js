@@ -73,9 +73,6 @@ function MainHome() {
     // Formatar a contagem regressiva
     const contagemFormatada = `${contagem.dias} dias, ${contagem.horas} horas, ${contagem.minutos} minutos e ${contagem.segundos} segundos`;
 
-
-
-
     useEffect(() => {
         const typed = new Typed('#my-h1', {
             strings: ['O Maior Evento de Tecnologia da Mata Norte está de volta!'],

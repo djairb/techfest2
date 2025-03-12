@@ -32,7 +32,7 @@ body {
 
 
 section {
-  position: relative; /* Garante que o ::before fique sobre o background */
+  
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -40,27 +40,28 @@ section {
   transition: background-image 1s ease-in-out;
   background-size: cover;
   background-position: center;
-  min-height: 1080px;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   overflow: hidden; /* Evita problemas de layout */
 }
 
-/* Criando um overlay escuro sobre o background */
-section::before {
+
+/* section::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Ajuste o último valor para mais ou menos escuro */
+  background: rgba(0, 0, 0, 0.7); 
   z-index: 1;
 }
 
-/* Garante que o conteúdo continue visível acima do overlay */
+
 section > * {
   position: relative;
   z-index: 2;
-}
+} */
 
 header,
 main,
