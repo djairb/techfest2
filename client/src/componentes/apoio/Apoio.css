@@ -12,9 +12,7 @@
     height: 270px;
     border-radius: 10px;
     margin: 15px 0;
-    background-color: white;
-
-
+   
 
 
 
@@ -22,7 +20,7 @@
 
 .imagem-apoio {
 
-    width: 90px;
+    width: 100px;
     transition: transform 0.3s ease-in-out;
     margin: 0px;
 }
