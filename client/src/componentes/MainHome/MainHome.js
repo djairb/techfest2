@@ -14,10 +14,7 @@ import { images } from '../../data/img';
 
 
 
-function MainHome() {
-
-
-    const dataEvento = new Date(2025, 4, 7, 8, 0, 0); // Ano, Mês (0-11), Dia, Hora, Minuto, Segundo -- O mês de março é o número 2 no JavaScript, pois os meses são indexados a partir de 0.
+function MainHome() {    
 
     const [bgIndex, setBgIndex] = useState(0);
 
@@ -34,6 +31,16 @@ function MainHome() {
         return () => clearInterval(interval);
     }, []);
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    // DAQUI PRA CIMA É EFEITO DO BG
+
     // Estado para armazenar a contagem regressiva
     const [contagem, setContagem] = useState({
         dias: 0,
@@ -41,6 +48,10 @@ function MainHome() {
         minutos: 0,
         segundos: 0,
     });
+
+    
+
+    const dataEvento = new Date(2025, 4, 7, 8, 0, 0); // Ano, Mês (0-11), Dia, Hora, Minuto, Segundo -- O mês de março é o número 2 no JavaScript, pois os meses são indexados a partir de 0.
 
     // Efeito para atualizar a contagem regressiva a cada segundo
     useEffect(() => {
@@ -84,17 +95,11 @@ function MainHome() {
         return () => typed.destroy();
     }, []);
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-    useEffect(() => {
-        const handleResize = () => setIsMobile(window.innerWidth <= 768);
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    
 
     return (
 
-        <section className='sectionMain' style={{ backgroundImage: isMobile ? 'none' : `url(${images[bgIndex]})` }}>
+        <section style={{ backgroundImage: isMobile ? 'none' : `url(${images[bgIndex]})`}}>
 
             <div className='mainHome'>
 

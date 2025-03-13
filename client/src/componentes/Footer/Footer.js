@@ -13,7 +13,11 @@ function Footer() {
 
         <>
 
+        
+
         <footer>
+
+            <div className="degradeNovo maior" style={{ marginBottom: '15px'}}></div>
 
 
             <div id="sociais" className="container-sociais">

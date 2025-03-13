@@ -18,14 +18,15 @@
 
 footer {
     /* Altura do elemento. */
-    height: 80px;
-    background-color: var(--verdeEscuro);
+    height: 90px;
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    color: var(--bgDark);
+    
     font-weight: bold;
+    
 
     
 
@@ -36,13 +37,14 @@ footer {
 
 .pFooter {
     font-size: 18px;
-    color: var(--bgDark);
+    
     font-weight: bolder;
     align-items: center;
     justify-content: center;
     padding: 0px;
 
     text-align: center;
+    margin-bottom: 10px;
 
 
 

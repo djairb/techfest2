@@ -1,11 +1,34 @@
-import './cardLocation.css'
+import './cardLocation.css';
+
+import { useEffect, useState } from 'react';
+
+import { imagesLeft } from '../../data/img';
 
 
 function CardLocation(props) {
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    const [bgIndex, setBgIndex] = useState(0);
+
+    useEffect(() => {
+            const interval = setInterval(() => {
+            setBgIndex((prevIndex) => (prevIndex + 1) % imagesLeft.length);
+            }, 7000);
+    
+            return () => clearInterval(interval);
+        }, []);
+
+    
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    
     return (
 
-        <section>
+        <section style={{ backgroundImage: isMobile ? 'none' : `url(${imagesLeft[bgIndex]})` }}>
 
             <h1 className="titulo">{props.title}</h1>
 
@@ -15,7 +38,7 @@ function CardLocation(props) {
 
                     
 
-            <div className="degrade"></div>
+            <div className="degradeNovo"></div>
         </section>
     );
 }

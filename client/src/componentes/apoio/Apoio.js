@@ -1,13 +1,42 @@
 import "./Apoio.css";
 
+import { useEffect, useState } from 'react';
+
+
+import { imagesRight } from '../../data/img';
+
 function Apoio(){
-        
+
+
+    const [bgIndex, setBgIndex] = useState(0);
+    
+    useEffect(() => {
+        const indiceAleatorio = Math.floor(Math.random() * 4) + 1; // Gera um número entre 1 e 4
+        setBgIndex(indiceAleatorio);
+        }, []);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+        setBgIndex((prevIndex) => (prevIndex + 1) % imagesRight.length);
+        }, 7000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    
    
 
     return (
               
 
-        <section>
+        <section  style={{ backgroundImage: isMobile ? 'none' : `url(${imagesRight[bgIndex]})`}}>
 
             <h1 className="titulo">Apoio</h1>
 
@@ -54,6 +83,8 @@ function Apoio(){
                     <img className="imagem-apoio" src="https://onedrive.live.com/embed?resid=3282EDF418D3DB36%21157&authkey=%21AI3VsfN35ihYRGU"/>
                 </a>
             </div>
+
+            
 
 
 

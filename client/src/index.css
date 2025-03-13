@@ -42,8 +42,12 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  
   overflow: hidden; /* Evita problemas de layout */
 }
+
+
+
 
 
 /* section::before {
@@ -99,11 +103,15 @@ section {
 
 .degradeNovo {
   background: linear-gradient(90deg, 
-  #e52320, #ee7316, #f1e30d, #79b929, #32778c, #234999, #452879, #e52320);
+  #e52320, #ee7316, #f1e30d, #79b929, #32778c, #234999, #452879, #e52320, #ee7316);
   background-size: 400% 400%;
   height: 4px;
-  width: 50vw;
+  width: 70vw;
   animation: hueShift 5s linear infinite;
+}
+
+.maior {
+  width: 90vw;
 }
 
 @keyframes hueShift {
@@ -117,8 +125,7 @@ section {
   font-size: 30px;
   color: red;
   
-  padding-bottom: 10px;
-  margin-top: 10px;
+ 
 
 
 }
@@ -129,12 +136,12 @@ section {
   100% { background-position: 0% 50%; }
 }
 
-.titulo{
+.titulo, footer{
   background: linear-gradient(90deg, 
       #e52320, #ee7316, #f1e30d, 
       #79b929, #32778c, #234999, 
-      #452879, #e52320);
-  background-size: 300% 300%;
+      #452879, #e52320, #ee7316);
+  background-size: 400% 400%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
