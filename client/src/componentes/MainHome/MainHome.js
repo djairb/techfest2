@@ -84,9 +84,17 @@ function MainHome() {
         return () => typed.destroy();
     }, []);
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
 
-        <section className='sectionMain' style={{ backgroundImage: `url(${images[bgIndex]})` }}>
+        <section className='sectionMain' style={{ backgroundImage: isMobile ? 'none' : `url(${images[bgIndex]})` }}>
 
             <div className='mainHome'>
 
