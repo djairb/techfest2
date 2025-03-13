@@ -4,7 +4,7 @@
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     position: relative;
 }
 
@@ -16,10 +16,10 @@
 
 /* Estilos para as imagens */
 .container-apoio-imagens-inner img {
-    width: 150px; /* Ajuste o tamanho conforme necessário */
+    width: 130px; /* Ajuste o tamanho conforme necessário */
     height: auto;
     margin-right: 20px; /* Espaçamento entre as imagens */
-    filter: grayscale(100%); /* Imagens em preto e branco */
+    filter: grayscale(0%); /* Imagens em preto e branco */
     transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave */
 }
 
