@@ -1,63 +1,40 @@
+/* Container principal */
 .container-apoio-imagens {
-
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-
-
-
-    width: 65%;
-    height: 270px;
-    border-radius: 10px;
-    margin: 15px 0;
-   
-
-
-
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
 }
 
-.imagem-apoio {
-
-    width: 100px;
-    transition: transform 0.3s ease-in-out;
-    margin: 0px;
+/* Container interno para as imagens */
+.container-apoio-imagens-inner {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Animação de rolagem */
 }
 
-.imagem-apoio:hover {
-
-    transform: scale(1.3);
-
-
-
-
+/* Estilos para as imagens */
+.container-apoio-imagens-inner img {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 20px; /* Espaçamento entre as imagens */
+    filter: grayscale(100%); /* Imagens em preto e branco */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave */
 }
 
+/* Efeito de hover */
+.container-apoio-imagens-inner img:hover {
+    transform: scale(1.1); /* Aumenta levemente o tamanho */
+    filter: grayscale(0%); /* Volta a ter cor */
+}
 
-@media only screen and (max-width: 1024px) {
-
-    .container-apoio-imagens {
-
-
-        width: 90%;
-        height: 400px;
-
-        justify-content: space-evenly;
-        column-gap: 20px;
-        row-gap: 2px;
-
-
-
+/* Animação de rolagem horizontal */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
     }
-
-    .imagem-apoio {
-
-        width: 80px;
-
+    100% {
+        transform: translateX(-50%); /* Move o conteúdo para a esquerda */
     }
-
-
-
-
 }
