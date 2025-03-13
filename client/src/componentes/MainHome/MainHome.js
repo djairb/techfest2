@@ -16,12 +16,7 @@ import { images } from '../../data/img';
 
 function MainHome() {    
 
-    const [bgIndex, setBgIndex] = useState(0);
-
-    useEffect(() => {
-        const indiceAleatorio = Math.floor(Math.random() * 4) + 1; // Gera um número entre 1 e 4
-        setBgIndex(indiceAleatorio);
-      }, []);
+    const [bgIndex, setBgIndex] = useState(4);
 
     useEffect(() => {
         const interval = setInterval(() => {

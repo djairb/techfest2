@@ -8,17 +8,13 @@ import { imagesRight } from '../../data/img';
 function Apoio(){
 
 
-    const [bgIndex, setBgIndex] = useState(0);
+    const [bgIndex, setBgIndex] = useState(2);
     
-    useEffect(() => {
-        const indiceAleatorio = Math.floor(Math.random() * 4) + 1; // Gera um número entre 1 e 4
-        setBgIndex(indiceAleatorio);
-        }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {
         setBgIndex((prevIndex) => (prevIndex + 1) % imagesRight.length);
-        }, 7000);
+        }, 4000);
 
         return () => clearInterval(interval);
     }, []);

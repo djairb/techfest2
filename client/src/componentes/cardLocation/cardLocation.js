@@ -9,12 +9,12 @@ function CardLocation(props) {
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-    const [bgIndex, setBgIndex] = useState(0);
+    const [bgIndex, setBgIndex] = useState(3);
 
     useEffect(() => {
             const interval = setInterval(() => {
             setBgIndex((prevIndex) => (prevIndex + 1) % imagesLeft.length);
-            }, 7000);
+            }, 4000);
     
             return () => clearInterval(interval);
         }, []);
