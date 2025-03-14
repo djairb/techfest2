@@ -23,6 +23,7 @@ import PalestraSection from "../../componentes/PalestraSection/PalestraSection";
 import OficinaSection from "../../componentes/OficinaSection/OficinaSection";
 import GameSection from "../../componentes/GameSection/GameSection";
 import LazerSection from "../../componentes/LazerSection/LazerSection";
+import MainVideo from "../../componentes/video";
 
 
 function TelaPrincipal() {
@@ -44,6 +45,8 @@ function TelaPrincipal() {
         <Navbar/>
 
         <MainHome />
+
+        <MainVideo/>
 
         {/* <PalestraSection
 
