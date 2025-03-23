@@ -120,13 +120,6 @@ function MainHome() {
 
                 </div>
 
-                <div className='containerLogo'>
-
-                    
-
-
-                </div>
-
 
             </div>
 
