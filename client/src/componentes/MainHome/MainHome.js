@@ -100,6 +100,8 @@ function MainHome() {
 
                 <div className='containerTexto'>
 
+                    <img className="logoGrande" src={logoGrande} alt="logo-techFest" />
+
                     <h1 id="my-h1"></h1>
                     <div className='icon-date-calendar'>
 
@@ -120,7 +122,7 @@ function MainHome() {
 
                 <div className='containerLogo'>
 
-                    <img className="logoGrande" src={logoGrande} alt="logo-techFest" />
+                    
 
 
                 </div>
