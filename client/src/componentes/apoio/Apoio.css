@@ -1,11 +1,30 @@
 /* Container principal */
 .container-apoio-imagens {
     display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    padding: 10px 0;
-    position: relative;
+    
+    flex-wrap: wrap;
+    width: 30%;
+
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+
+    filter: grayscale(0%); /* Imagens em preto e branco */
+    
+
+    
+}
+
+.container-apoio-imagens img{
+    width: 120px; 
+    transition: transform 0.3s ease, filter 0.3s ease;
+    
+    
+    
+}
+
+.container-apoio-imagens img:hover{
+    transform: scale(1.1);
 }
 
 /* Container interno para as imagens */

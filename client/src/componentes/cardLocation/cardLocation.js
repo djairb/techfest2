@@ -2,7 +2,7 @@ import './cardLocation.css';
 
 import { useEffect, useState } from 'react';
 
-import { imagesLeft } from '../../data/img';
+import { imagesRight } from '../../data/img';
 
 
 function CardLocation(props) {
@@ -13,7 +13,7 @@ function CardLocation(props) {
 
     useEffect(() => {
             const interval = setInterval(() => {
-            setBgIndex((prevIndex) => (prevIndex + 1) % imagesLeft.length);
+            setBgIndex((prevIndex) => (prevIndex + 1) % imagesRight.length);
             }, 4000);
     
             return () => clearInterval(interval);
@@ -28,7 +28,7 @@ function CardLocation(props) {
     
     return (
 
-        <section style={{ backgroundImage: isMobile ? 'none' : `url(${imagesLeft[bgIndex]})` }}>
+        <section style={{ backgroundImage: isMobile ? 'none' : `url(${imagesRight[bgIndex]})` }}>
 
             <h1 className="titulo">{props.title}</h1>
 

@@ -42,13 +42,13 @@ function Apoio() {
             <h1 className="titulo">Apoio</h1>
 
             <div className="container-apoio-imagens">
-                <div className="container-apoio-imagens-inner">
-                    {duplicatedLogos.map((image, index) => (
-                        <a href={quemEstaLink[index % logosApoio.length]} target="_blank" rel="noopener noreferrer" key={index}>
-                            <img src={image} alt={`Imagem ${index}`} />
-                        </a>
-                    ))}
-                </div>
+                {logosApoio.map((image, index) => (
+                    <a href={quemEstaLink[index % logosApoio.length]} target="_blank" rel="noopener noreferrer" key={index}>
+                        <img src={image} alt={`Imagem ${index}`} />
+                    </a>
+
+                ))}
+
             </div>
         </section>
     );
