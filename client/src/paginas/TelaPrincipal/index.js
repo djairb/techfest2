@@ -48,6 +48,12 @@ function TelaPrincipal() {
 
         <MainVideo/>
 
+        <StandSection
+
+          title="Exposições em Stands"        
+        
+        />
+
         {/* <PalestraSection
 
           title="Palestras"

@@ -14,7 +14,7 @@ import 'swiper/css/scrollbar';
 
 import { EffectCoverflow } from 'swiper/modules';
 
-import {gameList, showList} from "../../data/dados";
+import {gameList, showList} from "../../data/dadosBackup";
 
 
 import { useNavigate } from 'react-router-dom';
