@@ -1,5 +1,5 @@
 import './cardStand.css'
-import { Link } from 'react-router-dom';
+
 
 import { useNavigate } from 'react-router-dom';
 
@@ -31,7 +31,7 @@ function CardStand(props){
            
                 <h1>{props.titulo}</h1>
 
-                <p>{props.subtitulo}</p>
+                <p>{props.responsavel}</p>
 
                 <p>Stand {props.stand}, {props.local} • {props.data}, às {props.horario} </p>
 

@@ -14,7 +14,7 @@ import 'swiper/css/scrollbar';
 
 import { EffectCoverflow } from 'swiper/modules';
 
-import {standList} from "../../data/dadosBackup";
+import { standInternos } from "../../data/dados25";
 
 
 import { useNavigate } from 'react-router-dom';
@@ -74,7 +74,7 @@ function StandSection(props) {
                 navigation
                 className="swiperMaster"             
             >
-                {standList.map((item) => (
+                {standInternos.map((item) => (
 
                     <SwiperSlide key={item.id}>                                          
 
@@ -83,7 +83,7 @@ function StandSection(props) {
                             id={item.id}
                             imgSrc={item.imgSrc}
                             titulo={item.titulo}
-                            subtitulo={item.subtitulo}
+                            responsavel={item.responsavel}
                             local={item.local}
                             data={item.data}
                             horario={item.horario}
