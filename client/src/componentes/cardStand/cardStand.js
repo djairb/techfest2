@@ -36,7 +36,7 @@ function CardStand(props){
             
             
 
-            <button onClick={navegarPagina} className="botaoEvento">Ver detalhes</button>        
+            <button onClick={navegarPagina} className="botaoEvento">Detalhes</button>        
             
             
         </div>

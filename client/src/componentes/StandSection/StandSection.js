@@ -46,8 +46,8 @@ function StandSection(props) {
 
                 style={{
 
-                    "--swiper-pagination-color": "#72c000",
-                    "--swiper-navigation-color": "#72c000",
+                    "--swiper-pagination-color": "#e52320",
+                    "--swiper-navigation-color": "#e52320",
 
                 }}
 
