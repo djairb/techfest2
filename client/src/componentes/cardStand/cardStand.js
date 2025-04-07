@@ -1,6 +1,3 @@
-import './cardStand.css'
-
-
 import { useNavigate } from 'react-router-dom';
 
 function CardStand(props){

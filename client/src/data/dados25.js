@@ -54,7 +54,7 @@ export const standInternos = [
   {
     id: 5,
     imgSrc: logosProjetos[0],
-    titulo: "TERMÔMETRO DA PAIXÃO",
+    titulo: "Termômetro da Paixão",
     responsavel: "PROFESSOR DANIEL NETO",
     descricao: "Uma demonstração interativa de como o 'Termômetro da Paixão' detecta mudanças simbólicas de temperatura por meio de um sensor (como ao segurar o dispositivo). O projeto utiliza LEDs que mudam de cor gradualmente conforme a temperatura aumenta, simulando diferentes níveis de 'paixão'. Além disso, será explicado como o sensor utilizado pode ter aplicações práticas em dispositivos médicos e de monitoramento térmico.",
     local: "SALA DO CTACS?",
@@ -65,9 +65,9 @@ export const standInternos = [
   {
     id: 6,
     imgSrc: logosProjetos[0],
-    titulo: "MÃO ROBÓTICA",
+    titulo: "Velozes e Furiosos: Desafio em Lagoa de Itaenga",
     responsavel: "PROFESSOR DANIEL NETO",
-    descricao: "Um protótipo funcional de uma mão robótica que simula movimentos básicos, como abrir e fechar os dedos, controlados por potenciômetros ou joysticks. A demonstração destacará a aplicação prática do Arduino e dos servomotores, explicando como tecnologias semelhantes são utilizadas em próteses robóticas e no aprendizado em robótica.",
+    descricao: "O projeto consiste no desenvolvimento de carros controlados por Arduino, equipados com conectividade Bluetooth para operação remota. A proposta é proporcionar uma experiência interativa onde os participantes poderão comandar os veículos por meio de dispositivos móveis, enfrentando um percurso com obstáculos variados.",
     local: "SALA DO CTACS?",
     data:"A DEFINIR",
     horario:"A DEFINIR",
@@ -128,11 +128,18 @@ export const standInternos = [
     data:"A DEFINIR",
     horario:"A DEFINIR",
     stand: "11"   
+  },
+  {
+    id: 11,
+    imgSrc: logosProjetos[0],
+    titulo: "Empreendedoras Conectadas: Ferramentas e Estratégias para o Sucesso",
+    responsavel: "PROFESSORES KLEYTTON DIOGENES E DANIEL NETO",
+    descricao: "Espaço de impulso a troca de conhecimento e experiências entre mulheres empreendedoras. O público visitante deste ecossistema vivenciará oportunidades inovadoras e compartilhamento de trajetórias, desafios e conquistas no mundo dos negócios. Além disso, serão apresentadas ferramentas digitais e estratégicas que auxiliam no crescimento e gestão do empreendimento, abordando temas como marketing digital, finanças, automação de processos e atendimento ao cliente.",
+    local: "SALA DO CTACS?",
+    data:"A DEFINIR",
+    horario:"A DEFINIR",
+    stand: "11"   
   }
-  
-  
-    
-
   
 ];
 
