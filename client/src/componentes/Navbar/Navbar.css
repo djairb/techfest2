@@ -46,27 +46,32 @@ header::after {
 nav a {
 
     margin: 0 2rem;
-    color: var(--verdeClaro);
+    color: white;
     text-decoration: none;
     font-size: 1.3rem;
     
 
 }
 
+@keyframes moveGradient {
+    0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+  }
+
 
 nav a:hover {
-
-
-    color: var(--bgDark);
-
-    font-weight: bold;
-
+    background-image: linear-gradient(90deg, 
+      #e52320, #ee7316, #f1e30d, 
+      #79b929, #32778c, #234999, 
+      #452879, #e52320);
+  
+    background-size: 300% 100%;
+    animation: moveGradient  5s linear infinite;
+    color: white;
+    border-color: transparent;
     padding: 12px;
     border-radius: 8px;
-
-    background-color: var(--verdeClaro);
-    cursor: pointer;
-}
+  }
 
 header img {
 

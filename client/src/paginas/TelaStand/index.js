@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Navbar from "../../componentes/Navbar/Navbar";
 import { standInternos } from "../../data/dados25";
 import Footer from "../../componentes/Footer/Footer";
@@ -7,6 +7,14 @@ import Footer from "../../componentes/Footer/Footer";
 function TelaStand() {
   const { id } = useParams();
   const objetoStand = standInternos.find(item => item.id === Number(id));
+
+  const navigate = useNavigate();
+
+  const abrirPaginaTodos = () =>{
+        
+    navigate('/all-stands');
+
+}
   
 
   return (
@@ -25,7 +33,11 @@ function TelaStand() {
 
         <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
 
+        <button onClick={abrirPaginaTodos} className="botaoVerTodos">Todos</button>
+
       </div>
+
+      
       <Footer />
     </main>
   );
