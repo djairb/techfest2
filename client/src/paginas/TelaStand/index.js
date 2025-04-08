@@ -1,23 +1,17 @@
 import React from "react";
 
-import './style.css';
-
-import { useLocation, useNavigate } from 'react-router-dom';
-
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
 import Navbar from "../../componentes/Navbar/Navbar";
 
-
-import { standList } from "../../data/dados";
+import { standInternos } from "../../data/dados25";
 import Footer from "../../componentes/Footer/Footer";
 
 function TelaStand() {
 
-  const realizarInscrição = () => {
+  const { id } = useParams();
 
-
-  }
-
+  
   const location = useLocation();
 
   const navigate = useNavigate();
@@ -27,16 +21,7 @@ function TelaStand() {
 
 
 
-  let objetoStand;
-
-  standList.forEach((objeto) => {
-    // Comparação do ID dentro do loop
-    if (objeto.id === dado.id) {
-      objetoStand = objeto;
-      // Interrompe a iteração após encontrar o ID 4
-      return;
-    }
-  });
+  const objetoStand = standInternos.find(item => item.id === Number(id));
 
 
   return (
@@ -48,7 +33,9 @@ function TelaStand() {
 
       <main className="mainTelaStand">
 
-        <img src={objetoStand.imgSrc} />
+        {console.log(objetoStand)}
+
+        {/* <img src={objetoStand.imgSrc} />
 
         <div className="standTexto">
 
@@ -64,7 +51,7 @@ function TelaStand() {
 
           
 
-        </div>       
+              
 
         {/* <button onClick={realizarInscrição} className="botaoInscrever">Se Inscrever</button> */}
 

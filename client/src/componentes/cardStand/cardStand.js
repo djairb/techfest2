@@ -3,21 +3,16 @@ import { useNavigate } from 'react-router-dom';
 function CardStand(props){
 
     
-    const navigate = useNavigate();
-
-    const eventoDados = {
-
-        id: props.id
-    //sei onde buscar em tela evento o evento em dados.js pra carregar na pagina
-    }
-
-    
+    const navigate = useNavigate();    
 
 
     const navegarPagina = () =>{
 
-        navigate('/tela-stand', { state: eventoDados });
+       
+        navigate(`/stand/${props.id}`);
     }
+
+    
 
     return (
         <div className="cardStand">
