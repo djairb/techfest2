@@ -22,11 +22,11 @@ function TelaTodosCardsStand() {
 
   return (
 
-    <>      
+    <main className="main-container">      
 
       <Navbar />
 
-      <main className="mainTelaStandTodos">
+      
 
         <h1 className="titulo titleApresent">Stands</h1>
 
@@ -51,15 +51,14 @@ function TelaTodosCardsStand() {
 
         </div>
 
-      </main>      
-
 
       <Footer/>
 
     
-    
 
-    </>
+    </main>
+
+    
 
   );
 

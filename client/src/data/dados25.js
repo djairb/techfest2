@@ -2,6 +2,35 @@ const importAll = (r) => r.keys().map(r);
 
 const logosProjetos = importAll(require.context("../img/capas", false, /\.(png|jpe?g|svg)$/));
 
+export const standInternoss = [
+
+  {
+    id: 1,
+    imgSrc: logosProjetos[0],
+    titulo: "Desafio Labirinto: Aventura 3D e Tecnologia",
+    responsavel: "PROFESSOR APARÍCIO LUIS",
+    descricao: "O projeto 'Labirinto 3D com Arduino e Impressão 3D' é uma interação entre tecnologia e design, onde o labirinto é impresso em 3D e controlado por um sistema Arduino. Os participantes podem mover uma esfera ou objeto por meio de comandos, tentando encontrar a saída do labirinto. O Arduino é responsável por acionar sensores e luzes, tornando a experiência mais dinâmica e desafiadora. Esse projeto une aprendizado em programação, eletrônica e design 3D, oferecendo uma solução criativa e interativa para um festival de tecnologia.",
+    local: "SALA DO CTACS?",
+    data:"A DEFINIR",
+    horario:"A DEFINIR",
+    stand: "1"   
+
+  },
+  {
+    id: 2,
+    imgSrc: logosProjetos[0],
+    titulo: "LuminaMente: O Desafio da Memória",
+    responsavel: "PROFESSOR APARÍCIO LUIS",
+    descricao: "O projeto 'Jogo da Memória com Arduino' é uma versão eletrônica do clássico jogo, onde os participantes devem combinar pares de cartas iluminadas por LEDs. Utilizando a placa Arduino, o sistema aciona os LEDs para exibir as cartas, e o jogador precisa memorizar e acertar os pares. O Arduino controla o tempo de exibição das cartas, os acertos e erros, além de fornecer feedback visual e sonoro. Este projeto combina aprendizado em programação, eletrônica e interação, oferecendo uma maneira divertida e educativa de explorar a tecnologia em um festival.",
+    local: "SALA DO CTACS?",
+    data:"A DEFINIR",
+    horario:"A DEFINIR",
+    stand: "2"   
+
+  }
+  
+  
+];
 
 export const standInternos = [
 
