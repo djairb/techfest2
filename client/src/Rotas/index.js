@@ -3,7 +3,7 @@ import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import TelaPrincipalCrud from "../paginas/TelaPrincipal - crud";
 import TelaPrincipal from "../paginas/TelaPrincipal";
-import TelaEvento from "../paginas/TelaEvento";
+
 import TelaUsuario from "../paginas/TelaUser";
 import TelaLogin from "../paginas/TelaLogin";
 import TelaTodosCardsStand from "../paginas/TelaTodosCardsStand";
@@ -25,7 +25,7 @@ const Rotas = () => (
     <Routes>
       <Route exact path='/' element={<TelaPrincipal />} />
       <Route exact path='/pagina-crud' element={<TelaPrincipalCrud />} />
-      <Route exact path='/tela-evento' element={<TelaEvento />} />
+      
       <Route exact path='/tela-usuario' element={<TelaUsuario />} />
       <Route exact path='/tela-login' element={<TelaLogin />} />
       <Route exact path='/all-stands' element={<TelaTodosCardsStand />} />
