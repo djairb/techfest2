@@ -159,7 +159,7 @@ export const standInternos = [
     stand: "11"   
   },
   {
-    id: 11,
+    id: 12,
     imgSrc: logosProjetos[0],
     titulo: "Empreendedoras Conectadas: Ferramentas e Estratégias para o Sucesso",
     responsavel: "PROFESSORES KLEYTTON DIOGENES E DANIEL NETO",

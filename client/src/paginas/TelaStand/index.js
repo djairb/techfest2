@@ -33,6 +33,8 @@ function TelaStand() {
 
       <main className="mainTelaStand">
 
+        <h1>{objetoStand.titulo}</h1>
+
         {console.log(objetoStand)}
 
         {/* <img src={objetoStand.imgSrc} />
