@@ -6,7 +6,7 @@ import './style.css';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 
-import {standList} from "../../data/dados";
+import { standInternos } from "../../data/dados25";
 
 import Navbar from "../../componentes/Navbar/Navbar";
 import Footer from "../../componentes/Footer/Footer";
@@ -32,22 +32,22 @@ function TelaTodosCardsStand() {
 
         <div className="containerTelaTodosCards">
 
-              {standList.map((item) => (
-                
-                <CardStand
+          {standInternos.map((item) => (
+
+                  <CardStand
 
                     id={item.id}
                     imgSrc={item.imgSrc}
                     titulo={item.titulo}
-                    subtitulo={item.subtitulo}
+                    responsavel={item.responsavel}
                     local={item.local}
                     data={item.data}
                     horario={item.horario}
-                    stand={item.stand}                              
-                />               
+                    stand={item.stand}
+                  />
 
-              
-              ))}
+
+                ))}
 
         </div>
 

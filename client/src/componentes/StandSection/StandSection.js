@@ -29,7 +29,7 @@ function StandSection(props) {
 
     const abrirPaginaTodos = () =>{
         
-        navigate('/tela-todos-stands');
+        navigate('/all-stands');
 
     }
 
@@ -67,7 +67,7 @@ function StandSection(props) {
                     }
                 }
                 autoplay={{
-                    delay: 2000
+                    delay: 3000
                 }}
                 modules={[EffectCoverflow]}
                 pagination={{ clickable: true }}
@@ -94,7 +94,7 @@ function StandSection(props) {
                 ))}
             </Swiper>
 
-            <button onClick={abrirPaginaTodos} className="botaoVerTodos">Ver Todos</button>
+            <button onClick={abrirPaginaTodos} className="botaoVerTodos">Todos</button>
 
             <div className="degrade"></div>
         </section>      

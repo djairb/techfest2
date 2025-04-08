@@ -1,0 +1,56 @@
+.iframeLocalizacao, .iframeInscricao{
+
+
+    width:65%;
+    height:320px;
+    border-radius: 10px;
+    
+
+
+
+}
+
+.iframeLocalizacao{
+
+
+   
+    margin: 15px 0;
+
+
+
+}
+
+
+.iframeInscricao{
+    
+    height: 600px;
+    margin-bottom: 15px;
+    
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    .iframeLocalizacao{
+
+
+        width:90%;
+        height:400px;
+        
+    
+    
+    
+    }
+
+    .iframeInscricao{
+
+        width: 95%;
+        height: 500px;
+    }
+
+    
+    
+
+
+}

@@ -106,6 +106,7 @@ section {
   background: linear-gradient(90deg, #e52320, #f1e30d);
   background-size: 200%;
   background-position: 0%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -175,7 +176,7 @@ section {
   }
 }
 
-.botaoEvento {
+.botaoEvento, .botaoVerTodos {
   color: #ffffff;
   font-weight: bold;
   margin: 10px 0 30px 0;
@@ -195,7 +196,7 @@ section {
   transition: color 0.5s ease, border-color 0.5s ease;
 }
 
-.botaoEvento:hover {
+.botaoEvento:hover, .botaoVerTodos:hover {
   background-image: linear-gradient(90deg, 
     #e52320, #ee7316, #f1e30d, 
     #79b929, #32778c, #234999, 
@@ -207,6 +208,26 @@ section {
   border-color: transparent;
 }
 
+.containerTelaTodosCards{
+
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+
+}
+
+.titleApresent{
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+  
+}
+
 
 
 :root {
@@ -216,6 +237,63 @@ section {
   --bgDark: #121212;
   --bgDarkLess: #202123;
   --fontWhite: #EEEEEE;
+
+
+}
+
+
+.imgSlider {
+
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+
+}
+
+.ajustar {
+  display: grid;
+  place-items: center;
+}
+
+.swiperMaster {
+  margin-top: 10px;
+  width: 80vw;
+  z-index: 1;
+  min-width: 320px;
+  max-width: 1920px;
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  .swiperMaster {
+
+      width: 90vw;
+
+
+
+  }
+
+
+  .degrade {
+
+
+      width: 90vw;
+
+
+
+
+  }
+
+  .degradeHome{
+      width: 90vw;
+      
+      
+  }
+
 
 
 }
@@ -340,5 +418,188 @@ section {
   animation: gradientLoop 10s linear infinite;
 }
 
+
+
+
+
+
+.mainTelaStand img {
+    max-width: 1100px;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: fill;
+
+    border-bottom: 1px solid var(--verdeClaro);
+
+
+
+
+
+}
+
+.standTexto {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    text-align: justify;
+
+    gap: 40px;
+
+
+
+}
+
+.standTexto h1 {
+    margin-top: 10px;
+    color: var(--verdeClaro);
+    font-size: 50px;
+    text-align: center;
+}
+
+.standTexto h2{
+    text-align: center;
+}
+
+.standTexto p {
+    width: 90%;
+    text-align: justify;
+    text-align-last: center;
+
+    word-wrap: break-word;
+    font-size: 25px;
+}
+
+
+.containerEvento {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+    width: 1100px;
+    min-width: 320px;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    border: 1px solid var(--verdeClaro);
+    border-radius: 0px;
+    min-height: 100vh;
+
+
+}
+
+.containerEvento img {
+
+    max-width: 1100px;
+    width: 1099px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 0px 20px 0px 20px;
+    object-position: top;
+
+
+
+}
+
+.containerEvento h1 {
+    overflow-wrap: break-word;
+    color: var(--verdeClaro);
+    text-align: center;
+    word-break: break-all;
+    margin-top: 20px;
+    font-size: 35px;
+
+
+
+
+}
+
+
+.pExpo {
+
+    color: rgb(255, 255, 255);
+
+
+
+    width: 96%;
+    text-align: center;
+    line-height: 40px;
+
+
+
+    font-size: 20px;
+
+    margin: 15px 0;
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+
+
+    .mainTelaStand img {
+
+        height: auto;
+    }
+
+    .mainTelaStand{
+        height: auto;
+    }
+
+    .standTexto {
+        height: 80vh;
+    }
+
+    
+
+
+    .containerEvento {
+
+        justify-content: flex-start;
+
+
+
+    }
+
+    .containerEvento img {
+
+
+        width: 95vw;
+        object-fit: contain;
+        height: 250px;
+
+    }
+
+    .containerEvento {
+
+        width: 100%;
+
+
+
+    }
+
+    .containerEvento h1 {
+
+        width: 95%;
+
+
+    }
+
+
+}
 
 

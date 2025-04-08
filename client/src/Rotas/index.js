@@ -28,7 +28,7 @@ const Rotas = () => (
       <Route exact path='/tela-evento' element={<TelaEvento />} />
       <Route exact path='/tela-usuario' element={<TelaUsuario />} />
       <Route exact path='/tela-login' element={<TelaLogin />} />
-      <Route exact path='/tela-todos-stands' element={<TelaTodosCardsStand />} />
+      <Route exact path='/all-stands' element={<TelaTodosCardsStand />} />
       <Route exact path='/tela-stand' element={<TelaStand />} />
       <Route exact path='/tela-todos-apresentacao' element={<TelaTodosCardsApresentacao />} />
       <Route exact path='/tela-todos-show' element={<TelaTodosCardsShow />} />
