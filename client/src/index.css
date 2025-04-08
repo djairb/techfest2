@@ -227,6 +227,11 @@ section {
   
 }
 
+.containerConteudoSolo{
+  flex: 1;
+
+}
+
 .titleApresent{
   margin: 30px 0;
   width: 100%;

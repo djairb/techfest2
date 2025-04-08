@@ -26,17 +26,25 @@ function TelaStand() {
 
   return (
 
-    <>
+    <main className="main-container">
 
       <Navbar />
 
 
-      <main className="mainTelaStand">
+      <div className="containerConteudoSolo">
 
         <h1>{objetoStand.titulo}</h1>
 
-        {console.log(objetoStand)}
 
+
+
+      </div>
+
+
+      
+
+        
+       
         {/* <img src={objetoStand.imgSrc} />
 
         <div className="standTexto">
@@ -58,12 +66,12 @@ function TelaStand() {
         {/* <button onClick={realizarInscrição} className="botaoInscrever">Se Inscrever</button> */}
 
 
-      </main>
+      
 
 
       <Footer />
 
-    </>
+      </main>
 
 
 
