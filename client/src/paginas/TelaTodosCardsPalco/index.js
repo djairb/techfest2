@@ -5,13 +5,14 @@ import React from "react";
 import { useLocation, useNavigate } from 'react-router-dom';
 
 
-import { standInternos } from "../../data/dados25";
+import { palcoList } from "../../data/dados25";
 
 import Navbar from "../../componentes/Navbar/Navbar";
 import Footer from "../../componentes/Footer/Footer";
 import CardStand from "../../componentes/cardStand/cardStand";
+import CardPalco from "../../componentes/cardPalco/cardPalco";
 
-function TelaTodosCardsStand() {
+function TelaTodosCardsPalco() {
 
   
   const location = useLocation();
@@ -27,13 +28,13 @@ function TelaTodosCardsStand() {
 
       
 
-        <h1 className="titulo titleApresent">Stands</h1>
+        <h1 className="titulo titleApresent">Palco, Música e Cultura</h1>
 
         <div className="containerTelaTodosCards">
 
-          {standInternos.map((item) => (
+          {palcoList.map((item) => (
 
-                  <CardStand
+                  <CardPalco
 
                     id={item.id}
                     imgSrc={item.imgSrc}
@@ -63,4 +64,4 @@ function TelaTodosCardsStand() {
 
 };
 
-export default TelaTodosCardsStand;
+export default TelaTodosCardsPalco;

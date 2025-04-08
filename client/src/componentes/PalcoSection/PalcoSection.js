@@ -1,3 +1,4 @@
+
 import { register } from 'swiper/element/bundle';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,22 +13,23 @@ import 'swiper/css/scrollbar';
 
 import { EffectCoverflow } from 'swiper/modules';
 
-import { standInternos } from "../../data/dados25";
+import { palcoList } from "../../data/dados25";
 
 
 import { useNavigate } from 'react-router-dom';
 import CardStand from "../cardStand/cardStand";
+import CardPalco from "../cardPalco/cardPalco";
 
 
 register();
 
-function StandSection(props) {
+function PalcoSection(props) {
 
     const navigate = useNavigate();
 
     const abrirPaginaTodos = () =>{
         
-        navigate('/all-stands');
+        navigate('/palco-all');
 
     }
 
@@ -72,11 +74,11 @@ function StandSection(props) {
                 navigation
                 className="swiperMaster"             
             >
-                {standInternos.map((item) => (
+                {palcoList.map((item) => (
 
                     <SwiperSlide key={item.id}>                                          
 
-                        <CardStand
+                        <CardPalco
 
                             id={item.id}
                             imgSrc={item.imgSrc}
@@ -101,4 +103,4 @@ function StandSection(props) {
     );
 }
 
-export default StandSection;
+export default PalcoSection;

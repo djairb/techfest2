@@ -265,6 +265,121 @@ export const standInternos = [
   
 ];
 
+export const palcoList = [
+
+  {
+    id: 1,
+    imgSrc: logosProjetos[1],
+    titulo: "Furmiga Dub",
+    responsavel: "Fabiano Formiga",
+    descricao: "FurmigaDub é o projeto de Fabiano Formiga, multi-instrumentista paraibano formado pela (UFPB), que tocou nas Orquestras Sinfônicas do Estado, bandas de reggae, heavy metal, brega, sambarock, etcoco de roda, e que desde 2011 se dedica à produção de faixas autorais, misturando música de cultura popular paraibana com estéticas de música eletrônica. Suas canções vêm conquistando o público das principais festas de música brasileira e eletrônica do Brasil, onde ele é presença constante tanto em DJ sets quanto em apresentações ao vivo. Além de compor suas próprias músicas, FurmigaDub é responsável por resgatar e gravar canções de mestres da cultura popular nunca gravados, ajudando a preservar e difundir esses trabalhos tão únicos da cultura brasileira.",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
+    horario:"às 08h00",
+    stand: "1"   
+
+  },
+  {
+    id: 2,
+    imgSrc: logosProjetos[1],
+    titulo: "Grupo de Maracatu de Baque Virado",
+    responsavel: "Centro Cultural Raio de Luz",
+    descricao: "O Centro Cultural Raio de Luz, é uma organização não governamental de Lagoa de Itaenga, fundada há 21 anos, vem mantendo viva a cultura popular com a tradição do Maracatu de Baque Virado, com o Grupo Geração Encantada. Formado por 20 adolescentes de 11 a 14 anos são das comunidades Açude de Pedra e Arrombado, com vínculo as escolas municipais Denise Maria, Maria Anunciada e Colégio João Vieira Bezerra. O grupo tem como missão fortalecer a cultura popular e preservar as raízes do Maracatu de baque virado. trás para a avenida toques e danças da cultura enraizada pelo sorriso e brilhos nos olhos de quem faz com a cidadania na prática de convivência social. ",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
+    horario:"às 08h00",
+    stand: "2"   
+
+  },
+  {
+    id: 3,
+    imgSrc: logosProjetos[1],
+    titulo: "Grupo de Capoeira – União da Bahia",
+    responsavel: "Prof. Vermelho",
+    descricao: "O Centro Cultural Esportivo e Educacional União da Bahia Capoeira, que na época se chamava (grupo União da Bahia Capoeira), foi fundado no final de 1996, na cidade de São Paulo no bairro do Itaim Paulista zona leste, tendo como seus fundadores Mestre João (Presidente) e seus dois formados mais velho Mestre Sombra e Mestre Aventura (in memória), juntos a vários professores formados por sua academia de capoeira da Bahia. Atualmente o grupo de capoeira tem trabalhos na grande São Paulo zona leste, norte e sul.  E em cidades como, Mogi das Cruzes, Biritiba mirim e Guarulhos. E em outros estados, em Pernambuco, nas cidades de Lagoa de Itaenga, Vicência, Tracunhaém e Igarassu) e Rio Grande do Sul. E em países como Uruguai, Argentina e Índia.",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
+    horario:"às 08h00",
+    stand: "3"   
+
+  },
+  {
+    id: 4,
+    imgSrc: logosProjetos[1],
+    titulo: "Espetáculo Musical “Um diálogo para o futuro",
+    responsavel: "Centro de Desenvolvimento Local Integrado (CDLI) - Denise Coelho",
+    descricao: "O Centro de Desenvolvimento Integral em Lagoa de Itaenga (CEDILI), é uma Organização Não Governamental atuantes em comunidades do município de Lagoa de Itaenga. De forma intergeracional apresenta o espetáculo musical “Um diálogo para o Futuro”, desenvolvido com os participantes dos Projetos Minha Primeira Opção-Educação e o Projeto Meu lugar-Envelhecer bem. A iniciativa traz ao público as canções dos respectivos compositores, Dudu Falcão com ¨Além do “arco íris” e Luiz Gonzaga com “Asa Branca”. Canções que fazem parte do repertório brasileiro, valorizando a nossa regionalidade.",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
+    horario:"às 08h00",
+    stand: "4"   
+
+  },
+  {
+    id: 5,
+    imgSrc: logosProjetos[1],
+    titulo: "Grupo Cultural Caboclo",
+    responsavel: "Josuel Caboclo",
+    descricao: "A Ciranda Caboclo é um grupo de cultura popular da zona da mata de Pernambuco, uma iniciativa do Poeta Josivaldo Caboclo, filho do Poeta Bio Caboclo, referência na arte do coco de roda na zona da mata. O grupo surgiu em abril 2017 período em que o Mestre Josivaldo Caboclo gravou seu primeiro CD ciranda, o álbum autoral recebeu o título de “Ciranda Caboclo – Um novo jeito de fazer ciranda”.  A ciranda Caboclo traz uma mistura dos estilos da ciranda carnavalesca com a ciranda da mata norte, moldada pela regra poética dos cantadores de viola e com influência do Poeta Bio Caboclo, violeiro, mestre de maracatu e de coco de roda. Nas letras autoral, o Mestre Cirandeiro faz uma abordagem sobre o fortalecimento das relações entre as pessoas e dos valores éticos, além se utilizar de temas voltadas ao romantismo.  A Família Caboclo há mais de 30 anos vem promovendo e difundindo a arte do coco-de-roda, maracatu, viola e ciranda na zona da mata de Pernambuco para o Brasil e o mundo. ",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
+    horario:"às 08h00",
+    stand: "5"   
+
+  },
+  {
+    id: 6,
+    imgSrc: logosProjetos[1],
+    titulo: "Grupos de Cultura Raízes de Lagoa de Itaenga (Repentista, Violeiros e cirandeiros e coco de roda)",
+    responsavel: "Artista Zé Dias - Secretário de Cultura: Fábio Júnior",
+    descricao: "A cultura se faz presente nas diversas formas de manifestações, valores e crenças da sociedade. Lagoa de Itaenga é berço deste patrimônio imaterial, que as gerações afincam suas raízes na arte de fazer a cultura do chão do trabalho e da vida cotidiana de muitos artistas, que anunciam a crítica e o conhecimento da realidade do território por meio da voz e do improviso. Repentista: Tapogi e Patori, Biu Canário e Alvorada. Violeiros: Moaci e Damião Carlos, Ino Aguiar e Zinho, Biu Tomáz e Reginaldo José. Coco de Roda: Família Caboclo. Ciranda:Zé Dias",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
+    horario:"às 08h00",
+    stand: "6"   
+
+  },
+
+  {
+    id: 7,
+    imgSrc: logosProjetos[1],
+    titulo: "Nildo do Coco 'Tome Xote'",
+    responsavel: "Ana Beatriz",
+    descricao: "Nildo do Coco é um artista local que há mais de 25 anos se dedica à música, enaltecendo as raízes do pé de serra, brega e forró. Morador da cidade de Lagoa de Itaenga, Nildo se dedica à música como um hobby apaixonado, e já teve a oportunidade de cantar em alguns bares da cidade, onde é conhecido por sua voz grave. Com uma presença carismática no palco, Nildo nos faz reviver grandes clássicos do pé de serra, forró e brega, transportando o público para um universo de tradição e autenticidade. Através da música Nildo valoriza às raízes culturais da região, e sua paixão e dedicação à arte são evidentes em cada apresentação. Embora a música seja um hobby para Nildo, sua contribuição à cena musical local é inestimável.",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
+    horario:"às 08h00",
+    stand: "7"   
+
+  },
+  {
+    id: 8,
+    imgSrc: logosProjetos[1],
+    titulo: "MaracaFesng",
+    responsavel: "Ana Lívia",
+    descricao: "Maracatu de tambores",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
+    horario:"às 08h00",
+    stand: "8"   
+
+  },
+  {
+    id: 8,
+    imgSrc: logosProjetos[1],
+    titulo: "Aulão de Dança",
+    responsavel: "Deborah e Irlane",
+    descricao: "Uma atmosfera destinada ao público das diversas idades com o intuito de recepcioná-los com a uma energia e animação sem limites. Uma excelente oportunidade proporcionada por meio da dança com atividades de impulso a diversão e cuidado com a saúde. Neste momento os participantes terão oportunidade de vivenciar diversos estilos de dança em um ambiente descontraído de interação.",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
+    horario:"às 08h00",
+    stand: "8"   
+
+  },
+  
+  
+];
+
 // export const apresentacaoList = [
 
 //   {

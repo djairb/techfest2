@@ -24,6 +24,7 @@ import OficinaSection from "../../componentes/OficinaSection/OficinaSection";
 import GameSection from "../../componentes/GameSection/GameSection";
 import LazerSection from "../../componentes/LazerSection/LazerSection";
 import MainVideo from "../../componentes/video";
+import PalcoSection from "../../componentes/PalcoSection/PalcoSection";
 
 
 function TelaPrincipal() {
@@ -50,7 +51,13 @@ function TelaPrincipal() {
 
         <StandSection
 
-          title="Exposições em Stands"        
+          title="Exposições - Stands"        
+        
+        />
+
+        <PalcoSection
+
+          title="Palco, Música e Cultura"        
         
         />
 

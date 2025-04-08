@@ -9,7 +9,7 @@ import TelaLogin from "../paginas/TelaLogin";
 import TelaTodosCardsStand from "../paginas/TelaTodosCardsStand";
 import TelaStand from "../paginas/TelaStand";
 import TelaTodosCardsApresentacao from "../paginas/TelaTodosCardsApresentacao";
-import TelaTodosCardsShow from "../paginas/TelaTodosCardsShow";
+
 import TelaPalestra from "../paginas/TelaPalestra";
 import TelaTodosCardsPalestra from "../paginas/TelaTodosCardsPalestra";
 import TelaOficina from "../paginas/TelaOficina";
@@ -19,6 +19,8 @@ import TelaTodosCardsGame from "../paginas/TelaTodosCardsGame";
 import TelaTodosCardsLazer from "../paginas/TelaTodosCardsLazer";
 import TelaApresentacao from "../paginas/TelaApresentacao";
 import TelaShow from "../paginas/TelaShow";
+import TelaPalco from "../paginas/TelaPalco";
+import TelaTodosCardsPalco from "../paginas/TelaTodosCardsPalco";
 
 const Rotas = () => (
   <HashRouter>
@@ -29,9 +31,12 @@ const Rotas = () => (
       <Route exact path='/tela-usuario' element={<TelaUsuario />} />
       <Route exact path='/tela-login' element={<TelaLogin />} />
       <Route exact path='/all-stands' element={<TelaTodosCardsStand />} />
+
+      <Route exact path='/palco-all' element={<TelaTodosCardsPalco />} />
       <Route exact path='/stand/:id' element={<TelaStand />} />
+      <Route exact path='/palco/:id' element={<TelaPalco />} />
       <Route exact path='/tela-todos-apresentacao' element={<TelaTodosCardsApresentacao />} />
-      <Route exact path='/tela-todos-show' element={<TelaTodosCardsShow />} />
+      
       <Route exact path='/tela-palestra' element={<TelaPalestra />} />
       <Route exact path='/tela-todos-palestra' element={<TelaTodosCardsPalestra />} />
       <Route exact path='/tela-oficina' element={<TelaOficina />} />
