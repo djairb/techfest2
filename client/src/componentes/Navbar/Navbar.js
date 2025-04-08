@@ -35,6 +35,8 @@ function Navbar(){
 
              <Link to="/all-stands">Stands</Link>
 
+             <Link to="/palco-all">Apresentações Culturais</Link>
+
                 {/* <Link to="/tela-todos-palestra">Palestras</Link>
 
                 <Link to="/tela-todos-oficina">Oficinas</Link>

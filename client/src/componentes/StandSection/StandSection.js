@@ -10,6 +10,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 
 
+import { imagesRight } from '../../data/img';
+import { useEffect, useState } from 'react';
+
+
 import { EffectCoverflow } from 'swiper/modules';
 
 import { standInternos } from "../../data/dados25";
@@ -19,9 +23,29 @@ import { useNavigate } from 'react-router-dom';
 import CardStand from "../cardStand/cardStand";
 
 
+
 register();
 
 function StandSection(props) {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    const [bgIndex, setBgIndex] = useState(3);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setBgIndex((prevIndex) => (prevIndex + 1) % imagesRight.length);
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const navigate = useNavigate();
 
@@ -33,7 +57,7 @@ function StandSection(props) {
 
     return (
 
-        <section>
+        <section style={{ backgroundImage: isMobile ? 'none' : `url(${imagesRight[bgIndex]})` }}>
 
             <h1 className="titulo">{props.title}</h1>
             

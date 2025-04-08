@@ -14,7 +14,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: right;
-    margin-left: 15px;   
+    margin-left: 15px;
+    gap: 50px;   
     
 }
 
@@ -26,7 +27,7 @@
 
 .containerTexto h1{
     /* font-family: 'Upheaval'; */
-    font-size: 65px;
+    font-size: 50px;
 
 
     
@@ -123,18 +124,18 @@
     50% {
         opacity: 1;
         filter: blur(0) grayscale(0%);
-        transform: scale(1.2) rotate(-1.5deg);
+        transform: scale(1.1) rotate(-1.5deg);
     }
     60% {
         opacity: 1;
         filter: blur(0) grayscale(0%);
-        transform: scale(1.2) rotate(-1.5deg);
+        transform: scale(1.1) rotate(-1.5deg);
     }
 
     70% {
         opacity: 1;
         filter: blur(0) grayscale(0%);
-        transform: scale(1.2) rotate(-1.5deg);
+        transform: scale(1.1) rotate(-1.5deg);
     }
     100% {
         opacity: 0.3;
