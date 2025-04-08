@@ -1,59 +1,36 @@
 import React from "react";
-
 import { useParams } from 'react-router-dom';
-
 import Navbar from "../../componentes/Navbar/Navbar";
-
 import { standInternos } from "../../data/dados25";
 import Footer from "../../componentes/Footer/Footer";
 
 function TelaStand() {
-
   const { id } = useParams();
-
-
   const objetoStand = standInternos.find(item => item.id === Number(id));
-  console.log(objetoStand)
-
   
 
-
   return (
-
     <main className="main-container">
-
       <Navbar />
 
+      {console.log(objetoStand)}
+      <p>{objetoStand.descricao}</p>
+      {console.log(objetoStand.descricao)}
 
-      <div className="containerConteudoSolo">
-
-        <img src={objetoStand.imgSrc} />
-
-        <h1>{objetoStand.titulo}</h1>
-
-        <h2>Apresentado por: {objetoStand.responsavel}</h2>
-
-        <p>{objetoStand.descricao}</p>
-
-        <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
-
-      </div>
-      
-
-
+      {/* <div className="containerConteudoSolo">
+        {objetoStand ? (
+          <p>{objetoStand.descricao}</p>
+        ) : (
+          <p>Carregando detalhes do stand...</p>
+          // Ou renderizar null: null
+        )}
+        {objetoStand && (
+          <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
+        )}
+      </div> */}
       <Footer />
-
-      </main>
-
-
-
-
-
+    </main>
   );
-
-
-
-
-};
+}
 
 export default TelaStand;
