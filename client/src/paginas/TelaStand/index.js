@@ -13,21 +13,19 @@ function TelaStand() {
     <main className="main-container">
       <Navbar />
 
-      {console.log(objetoStand)}
-      <p>{objetoStand.descricao}</p>
-      {console.log(objetoStand.descricao)}
+      <div className="containerConteudoSolo">
 
-      {/* <div className="containerConteudoSolo">
-        {objetoStand ? (
-          <p>{objetoStand.descricao}</p>
-        ) : (
-          <p>Carregando detalhes do stand...</p>
-          // Ou renderizar null: null
-        )}
-        {objetoStand && (
-          <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
-        )}
-      </div> */}
+        <img src={objetoStand.imgSrc} />
+
+        <h1>{objetoStand.titulo}</h1>
+
+        <h2>Apresentado por: {objetoStand.responsavel}</h2>
+
+        <p>{objetoStand.descricao}</p>
+
+        <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
+
+      </div>
       <Footer />
     </main>
   );
