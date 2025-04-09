@@ -1,122 +1,46 @@
-import React, { useState } from "react";
-
-import './style.css';
-
-import { useLocation, useNavigate } from 'react-router-dom';
-
-
+import React from "react";
+import { useNavigate, useParams } from 'react-router-dom';
 import Navbar from "../../componentes/Navbar/Navbar";
-
-
-import { oficinaList, palestraList } from "../../data/dados";
+import { oficinaList } from "../../data/dados25";
 import Footer from "../../componentes/Footer/Footer";
 
-import jose from "../../img/oficinas/jose.png";
-
-import mateus from "../../img/oficinas/mateus.png";
-
-
 function TelaOficina() {
-
-
-  const location = useLocation();
+  const { id } = useParams();
+  const objetoStand = oficinaList.find(item => item.id === Number(id));
 
   const navigate = useNavigate();
 
-  // Obtém o dado do state
-  const dado = location.state;
+  const abrirPaginaTodos = () =>{
+        
+    navigate('/oficina-all');
 
-  const realizarInscrição = () =>{
-
-  }
-
-  let palestrante = "Palestrante:";
-  let palestrantes = "Palestrantes:";
-
-  let objetoStand;
-
-  oficinaList.forEach((objeto) => {
-    // Comparação do ID dentro do loop
-    if (objeto.id === dado.id) {
-      objetoStand = objeto;
-      // Interrompe a iteração após encontrar o ID 4
-      return;
-    }
-  });
-
+}
+  
 
   return (
-
-    <>
-
+    <main className="main-container">
       <Navbar />
 
-      <main className="mainTelaOficina">
+      <div className="containerConteudoSolo">
 
-        <img className="imagemMain" src={objetoStand.imgSrc} />
+        <img src={objetoStand.imgSrc} />
 
-        <div className="standTextoPalestra">
+        <h1>{objetoStand.titulo}</h1>
 
-          <h1>{objetoStand.titulo}</h1>
+        <h2>Apresentado por: {objetoStand.responsavel}</h2>
 
-          <p>{objetoStand.descricao}</p>
+        <p>{objetoStand.descricao}</p>
 
-          <div className="palestranteDados">
+        <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
 
-              <p>{objetoStand.numeroPalestrante > 1 ? palestrantes : palestrante}</p>
+        <button onClick={abrirPaginaTodos} className="botaoVerTodos">Todos</button>
 
-              <div className="divPalestrante">
+      </div>
 
-              <img
-                       
-                  src={
-
-                      objetoStand.palestranteImgSrc === 'mateus' ? mateus : objetoStand.palestranteImgSrc === 'jose' ? jose: ""
-                  }
-     
-     
-              />
-
-              </div>
-
-              
-
-              <h2>{objetoStand.palestranteNome}</h2>
-
-              <p>{objetoStand.palestranteFormacao}</p>
-
-            </div>      
-
-        
-          <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
-
-          <iframe
-            className="iframeInscricao"
-
-            src="https://docs.google.com/forms/d/e/1FAIpQLSe6XPugdGbRBwGl4tWtDkMo5xqsuGoZ6rVXQKK9ix6mb5gWiA/viewform?embedded=true"
-
-            
-
-            frameborder="0">
-              
-              Carregando…
-            
-            
-          </iframe>
-
-        </div>       
-
-        {/* <button onClick={realizarInscrição} className="botaoInscrever">Se Inscrever</button> */}
-
-      </main>
-
-
+      
       <Footer />
-
-    </>
-
+    </main>
   );
-
-};
+}
 
 export default TelaOficina;

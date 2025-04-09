@@ -1,30 +1,18 @@
-import './CardOficina.css'
-import { Link } from 'react-router-dom';
-
 import { useNavigate } from 'react-router-dom';
-
-
-import jose from "../../img/oficinas/jose.png";
-
-import mateus from "../../img/oficinas/mateus.png";
-
 
 function CardOficina(props){
 
     
-    const navigate = useNavigate();
-
-    const eventoDados = {
-
-        id: props.id
-    //sei onde buscar em tela evento o evento em dados.js pra carregar na pagina
-    }   
+    const navigate = useNavigate();    
 
 
     const navegarPagina = () =>{
 
-        navigate('/tela-oficina', { state: eventoDados });
+       
+        navigate(`/oficina/${props.id}`);
     }
+
+    
 
     return (
         <div className="cardStand">
@@ -35,27 +23,15 @@ function CardOficina(props){
            
                 <h1>{props.titulo}</h1>
 
-                <img
-                       
-                    src={
+                <p>{props.responsavel}</p>
 
-                        props.palestranteImgSrc === 'mateus'
-                            ? mateus
-                            : props.palestranteImgSrc === 'jose'
-                            ? jose
-                            : ""
-                    }
-                />
-
-                <h2>{props.palestranteNome}</h2>
-
-                <p>{props.local} • {props.data}, {props.horario} </p>
+                <p>{props.local} • {props.data}, às {props.horario} </p>
 
             </div>
             
             
 
-            <button onClick={navegarPagina} className="botaoEvento">Ver detalhes</button>
+            <button onClick={navegarPagina} className="botaoEvento">Detalhes</button>        
             
             
         </div>

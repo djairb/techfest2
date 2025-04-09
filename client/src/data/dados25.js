@@ -380,6 +380,73 @@ export const palcoList = [
   
 ];
 
+export const oficinaList = [
+
+  {
+    id: 1,
+    imgSrc: logosProjetos[2],
+    titulo: "Crie seu primeiro site",
+    responsavel: "Cleiton Melo, Desenvolvedor de software Senior no Ministério da Cidadania do Governo Federal",
+    descricao: "'Crie seu primeiro site' é uma oficina prática e interativa que visa ensinar os fundamentos do desenvolvimento de sites. Nessa oficina, você aprenderá a criar um site do zero utilizando as tecnologias mais populares do mercado, incluindo HTML, CSS, JavaScript e Bootstrap. Com orientação passo a passo, você descobrirá como estruturar o conteúdo do seu site, estilizá-lo com CSS, adicionar interatividade com JavaScript e utilizar o framework Bootstrap para criar um design responsivo e moderno. Ao final da oficina, você terá criado seu próprio site e estará preparado para continuar explorando o mundo do desenvolvimento web.",
+    local: "Prédio do CTACS",
+    data:"07 de Maio",
+    horario:"às 08h00",
+    stand: "1"   
+
+  },
+  {
+    id: 2,
+    imgSrc: logosProjetos[2],
+    titulo: "Musicalização com FurmigaDub",
+    responsavel: "Fabiano Formiga",
+    descricao: "Como cada um se relaciona com a música? - Exercícios de improvisação - Noções básicas de harmonia e teoria musical - Facilitador Fabiano Formiga multi-instrumentista paraibano formado pela (UFPB).",
+    local: "Prédio do CTACS",
+    data:"07 de Maio",
+    horario:"às 08h00",
+    stand: "2"   
+
+  },
+  {
+    id: 3,
+    imgSrc: logosProjetos[2],
+    titulo: "Barbearia em Ação: Cortes Grátis e Técnicas Profissionais",
+    responsavel: "Empreendedor Daniel",
+    descricao: "Neste espeço será ofertado ao público em geral conhecimentos sobre cortes de cabelo na prática. Além do corte os participantes terão a oportunidade de conhecer técnicas, utensílios e equipamentos necessários a atividade profissional.",
+    local: "Prédio do CTACS",
+    data:"07 de Maio",
+    horario:"às 08h00",
+    stand: "3"   
+
+  },
+  {
+    id: 4,
+    imgSrc: logosProjetos[2],
+    titulo: "Eletrônica e Programação com Arduino",
+    responsavel: "Prof. Manoel",
+    descricao: "Nesta oficina será abordado de forma teórica e prática conhecimentos sobre eletrônica básica, mundos analógico e digital, CPU, conversão A/D, sensores e atuadores; dar uma noção geral e depois sugerir duas práticas com Arduino: Mostrar como o Arduino pode acionar cargas grandes (driver, acoplamento ótico, etc), com aplicação; Desenvolver exemplos de acoplamento de sensores no Arduino (temperatura ou temperatura /umidade, com atuação de solenoides (atuadores) em irrigação. A expectativa da aprendizagem com os participantes terá o objetivo maior de traduzir em linguagem simples a prática a programação com o uso do Arduino em sistemas e sedimentarem em projetos cotidianos.",
+    local: "Prédio do CTACS",
+    data:"07 de Maio",
+    horario:"às 08h00",
+    stand: "4"   
+
+  },
+  {
+    id: 5,
+    imgSrc: logosProjetos[2],
+    titulo: "Beleza e Empreendedorismo",
+    responsavel: "Jaciara, Paula, Laiz",
+    descricao: "O projeto Empreendedoras Conectadas trará uma série de oficinas práticas voltadas para mulheres que atuam ou desejam ingressar no setor da beleza. As atividades incluirão três áreas fundamentais: manicure, estética e design de sobrancelhas, conduzidas por profissionais experientes que compartilharão suas trajetórias, desafios e aprendizados no empreendedorismo e com práticas.",
+    local: "Prédio do CTACS",
+    data:"07 de Maio",
+    horario:"às 08h00",
+    stand: "5"   
+
+  },
+  
+  
+  
+];
+
 // export const apresentacaoList = [
 
 //   {

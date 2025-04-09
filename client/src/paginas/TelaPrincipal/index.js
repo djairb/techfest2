@@ -49,6 +49,12 @@ function TelaPrincipal() {
 
         <MainVideo/>
 
+        <OficinaSection
+
+          title="Oficinas"
+        
+        />
+
         <StandSection
 
           title="Exposições - Stands"        

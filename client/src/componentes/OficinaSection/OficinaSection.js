@@ -1,4 +1,3 @@
-import "./OficinaSection.css";
 
 import { register } from 'swiper/element/bundle';
 
@@ -14,36 +13,55 @@ import 'swiper/css/scrollbar';
 
 import { EffectCoverflow } from 'swiper/modules';
 
-import {apresentacaoList, oficinaList, palestraList} from "../../data/dadosBackup";
+import { oficinaList } from "../../data/dados25";
 
 
 import { useNavigate } from 'react-router-dom';
+import CardStand from "../cardStand/cardStand";
+import CardPalco from "../cardPalco/cardPalco";
 
-import CardOficina from "../CardOficina/CardOficina";
+import { imagesRight } from '../../data/img';
+import { useEffect, useState } from 'react';
+import CardOficina from '../cardOficina/cardOficina';
 
 
 register();
 
 function OficinaSection(props) {
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    const [bgIndex, setBgIndex] = useState(3);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setBgIndex((prevIndex) => (prevIndex + 1) % imagesRight.length);
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const navigate = useNavigate();
-
-    const eventoDados = {
-
-        tipo: "apresentacao"
-    }
 
     const abrirPaginaTodos = () =>{
         
-        navigate('/tela-todos-oficina', { state: eventoDados });
+        navigate('/oficina-all');
 
     }
 
     return (
 
-        <section>
+        <section style={{ backgroundImage: isMobile ? 'none' : `url(${imagesRight[bgIndex]})` }}>
 
-            <h1 className="titulo">{props.title}</h1>            
+            <h1 className="titulo">{props.title}</h1>
+            
 
             <Swiper
 
@@ -51,8 +69,8 @@ function OficinaSection(props) {
 
                 style={{
 
-                    "--swiper-pagination-color": "#72c000",
-                    "--swiper-navigation-color": "#72c000",
+                    "--swiper-pagination-color": "#e52320",
+                    "--swiper-navigation-color": "#e52320",
 
                 }}
 
@@ -72,7 +90,7 @@ function OficinaSection(props) {
                     }
                 }
                 autoplay={{
-                    delay: 2000
+                    delay: 3000
                 }}
                 modules={[EffectCoverflow]}
                 pagination={{ clickable: true }}
@@ -81,27 +99,25 @@ function OficinaSection(props) {
             >
                 {oficinaList.map((item) => (
 
-                    <SwiperSlide key={item.id}>                        
-                                                                  
+                    <SwiperSlide key={item.id}>                                          
+
                         <CardOficina
 
                             id={item.id}
                             imgSrc={item.imgSrc}
                             titulo={item.titulo}
-                            palestranteNome={item.palestranteNome}
+                            responsavel={item.responsavel}
                             local={item.local}
                             data={item.data}
                             horario={item.horario}
-                            palestranteImgSrc={item.palestranteImgSrc}                 
-                        
-                        
+                            stand={item.stand}                              
                         />
-                       
+
                     </SwiperSlide>
                 ))}
             </Swiper>
 
-            <button onClick={abrirPaginaTodos} className="botaoVerTodos">Ver Todos</button>
+            <button onClick={abrirPaginaTodos} className="botaoVerTodos">Todos</button>
 
             <div className="degrade"></div>
         </section>      
