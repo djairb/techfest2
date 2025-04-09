@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { imagesRight, logosApoio } from '../../data/img';
 
 function Apoio() {
-    const [bgIndex, setBgIndex] = useState(2);
+    const [bgIndex, setBgIndex] = useState(1);
 
     useEffect(() => {
         const interval = setInterval(() => {

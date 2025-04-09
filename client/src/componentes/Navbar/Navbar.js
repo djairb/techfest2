@@ -33,6 +33,8 @@ function Navbar(){
             <Link to="/"><img  src={logo} alt="logo-techFest" /></Link>
              <nav ref={navRef}>
 
+             <Link to="/oficina-all">Oficinas</Link>
+
              <Link to="/all-stands">Stands</Link>
 
              <Link to="/palco-all">Apresentações Culturais</Link>

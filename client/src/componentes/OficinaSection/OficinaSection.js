@@ -31,7 +31,7 @@ function OficinaSection(props) {
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-    const [bgIndex, setBgIndex] = useState(3);
+    const [bgIndex, setBgIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
