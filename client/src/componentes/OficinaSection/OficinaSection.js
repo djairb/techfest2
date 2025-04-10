@@ -31,12 +31,12 @@ function OficinaSection(props) {
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-    const [bgIndex, setBgIndex] = useState(0);
+    const [bgIndex, setBgIndex] = useState(Number(props.wallpaper));
 
     useEffect(() => {
         const interval = setInterval(() => {
             setBgIndex((prevIndex) => (prevIndex + 1) % imagesRight.length);
-        }, 4000);
+        }, 5000);
 
         return () => clearInterval(interval);
     }, []);
@@ -119,7 +119,7 @@ function OficinaSection(props) {
 
             <button onClick={abrirPaginaTodos} className="botaoVerTodos">Todos</button>
 
-            <div className="degrade"></div>
+            <div className="degradeNovo"></div>
         </section>      
 
 

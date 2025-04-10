@@ -52,19 +52,35 @@ function TelaPrincipal() {
         <OficinaSection
 
           title="Oficinas"
+          wallpaper="0"
         
         />
 
         <StandSection
 
-          title="Exposições - Stands"        
+          title="Exposições - Stands"
+          wallpaper="1"        
         
         />
 
         <PalcoSection
 
-          title="Palco, Música e Cultura"        
+          title="Palco, Música e Cultura"
+          wallpaper="2"         
         
+        />
+
+        <CardLocation
+
+        title="Localização"
+        wallpaper="1" 
+
+        />
+
+        <Apoio
+
+        wallpaper="0"
+
         />
 
         {/* <PalestraSection
@@ -105,13 +121,7 @@ function TelaPrincipal() {
         /> */}
 
 
-        <CardLocation
-
-          title="Localização"
-
-        />
-
-        <Apoio />
+       
 
 
       </main>

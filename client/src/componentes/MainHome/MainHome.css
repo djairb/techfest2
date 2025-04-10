@@ -15,8 +15,13 @@
     justify-content: center;
     align-items: right;
     margin-left: 15px;
-    gap: 50px;   
+    gap: 30px;
+    margin-bottom: 10px;   
     
+}
+
+.containerFrase{
+    height: 150px;
 }
 
 .containerLogo{
@@ -75,6 +80,7 @@
 
 .containerTexto h2{
     font-size: 25px;
+    color: white;
 }
 
 

@@ -2,13 +2,13 @@ import "./Apoio.css";
 import { useEffect, useState } from 'react';
 import { imagesRight, logosApoio } from '../../data/img';
 
-function Apoio() {
-    const [bgIndex, setBgIndex] = useState(1);
+function Apoio(props) {
+    const [bgIndex, setBgIndex] = useState(Number(props.wallpaper));
 
     useEffect(() => {
         const interval = setInterval(() => {
             setBgIndex((prevIndex) => (prevIndex + 1) % imagesRight.length);
-        }, 4000);
+        }, 5000);
 
         return () => clearInterval(interval);
     }, []);
@@ -35,7 +35,7 @@ function Apoio() {
     ];
 
     // Duplicando as imagens para criar o efeito de loop infinito
-    const duplicatedLogos = [...logosApoio, ...logosApoio];
+   
 
     return (
         <section style={{ backgroundImage: isMobile ? 'none' : `url(${imagesRight[bgIndex]})` }}>

@@ -13,14 +13,6 @@
     place-items: center;
 }
 
-.swiperMaster{
-    margin-top: 10px;
-    width: 65vw;
-    z-index: 1;
-    min-width: 320px;
-    max-width: 1920px; 
-
-}
 
 
 .degrade{
@@ -36,13 +28,7 @@
 
 @media only screen and (max-width: 1024px) {
 
-    .swiperMaster{
-
-        width: 90vw;
-    
-    
-    
-    }
+   
 
     
 .degrade{

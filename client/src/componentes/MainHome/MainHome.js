@@ -101,8 +101,10 @@ function MainHome() {
                 <div className='containerTexto'>
 
                     <img className="logoGrande" src={logoGrande} alt="logo-techFest" />
-
-                    <h1 id="my-h1"></h1>
+                    <div className='containerFrase'>
+                        <h1 id="my-h1"></h1>
+                    </div>
+                    
                     <div className='icon-date-calendar'>
 
                         <img src={calendario}></img>
@@ -116,7 +118,7 @@ function MainHome() {
                         <h2><a>Lagoa de Itaenga</a>, Pernambuco, Brasil.</h2>
 
                     </div>
-                    <h2>Faltam <a>{contagemFormatada}</a>!</h2>
+                    <h2>Faltam <a>{contagemFormatada}</a></h2>
 
                 </div>
 

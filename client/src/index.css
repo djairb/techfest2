@@ -458,8 +458,9 @@ section {
   #e52320, #ee7316, #f1e30d, #79b929, #32778c, #234999, #452879, #e52320, #ee7316);
   background-size: 400% 400%;
   height: 4px;
-  width: 70vw;
+  width: 75vw;
   animation: hueShift 5s linear infinite;
+  margin-bottom: 10px;
 }
 
 .maior {
