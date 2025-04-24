@@ -1,182 +1,182 @@
-import React from "react";
+// import React from "react";
 
-import './style.css';
+// import './style.css';
 
-import { useLocation, useNavigate } from 'react-router-dom';
-
-
-import Navbar from "../../componentes/Navbar/Navbar";
+// import { useLocation, useNavigate } from 'react-router-dom';
 
 
-import { palestraList } from "../../data/dados";
-import Footer from "../../componentes/Footer/Footer";
-
-import henrique from "../../img/palestras/henrique.png";
-
-import andrea from "../../img/palestras/andrea.png";
-
-import mateus from "../../img/palestras/lari-mateus.png";
-
-import moura from "../../img/palestras/moura.png";
-
-function TelaPalestra() {
+// import Navbar from "../../componentes/Navbar/Navbar";
 
 
-  const location = useLocation();
+// import { palestraList } from "../../data/dados";
+// import Footer from "../../componentes/Footer/Footer";
 
-  const navigate = useNavigate();
+// import henrique from "../../img/palestras/henrique.png";
 
-  // Obtém o dado do state
-  const dado = location.state;
+// import andrea from "../../img/palestras/andrea.png";
 
-  const realizarInscrição = () =>{
+// import mateus from "../../img/palestras/lari-mateus.png";
 
-  }
+// import moura from "../../img/palestras/moura.png";
 
-  let palestrante = "Palestrante:";
-
-  let palestrantes = "Palestrantes:";
-
-  let mediadora = "Mediadora:";
-
-  let mediador = "Mediador:";
+// function TelaPalestra() {
 
 
+//   const location = useLocation();
 
-  let objetoStand;
+//   const navigate = useNavigate();
 
-  palestraList.forEach((objeto) => {
-    // Comparação do ID dentro do loop
-    if (objeto.id === dado.id) {
-      objetoStand = objeto;
-      // Interrompe a iteração após encontrar o ID 4
-      return;
-    }
-  });
+//   // Obtém o dado do state
+//   const dado = location.state;
 
+//   const realizarInscrição = () =>{
 
-  return (
+//   }
 
-    <>
+//   let palestrante = "Palestrante:";
 
-      <Navbar />
+//   let palestrantes = "Palestrantes:";
 
+//   let mediadora = "Mediadora:";
 
-      <main className="mainTelaPalestra">
-
-        <img className="imagemMain" src={objetoStand.imgSrc} />
-
-        <div className="standTextoPalestra">
-
-          <h1>{objetoStand.titulo}</h1>
-
-          <p>{objetoStand.descricao}</p>
-
-          <div className="palestranteDados">
-
-              <p>{objetoStand.numeroPalestrante > 1 ? palestrantes : palestrante}</p>
-
-              <div className='divPalestrante'>
-
-                <img
-
-    
-                  src={
-
-                      objetoStand.palestranteImgSrc === 'mateus'
-                          ? mateus
-                          : objetoStand.palestranteImgSrc === 'henrique'
-                          ? henrique
-                          : ""
-                  }
-
-
-                />
-              </div>
+//   let mediador = "Mediador:";
 
 
 
-              <h2>{objetoStand.palestranteNome}</h2>
+//   let objetoStand;
 
-              <p>{objetoStand.palestranteFormacao}</p>
+//   palestraList.forEach((objeto) => {
+//     // Comparação do ID dentro do loop
+//     if (objeto.id === dado.id) {
+//       objetoStand = objeto;
+//       // Interrompe a iteração após encontrar o ID 4
+//       return;
+//     }
+//   });
 
-          </div>
 
-          <div className="palestranteDados">
+//   return (
 
-              <p>{objetoStand.mediadoraGenero > 0 ? mediador : mediadora}</p>
+//     <>
 
-              <div className='divPalestrante'>
+//       <Navbar />
 
-                <img
+
+//       <main className="mainTelaPalestra">
+
+//         <img className="imagemMain" src={objetoStand.imgSrc} />
+
+//         <div className="standTextoPalestra">
+
+//           <h1>{objetoStand.titulo}</h1>
+
+//           <p>{objetoStand.descricao}</p>
+
+//           <div className="palestranteDados">
+
+//               <p>{objetoStand.numeroPalestrante > 1 ? palestrantes : palestrante}</p>
+
+//               <div className='divPalestrante'>
+
+//                 <img
 
     
-                  src={
+//                   src={
 
-                      objetoStand.mediadoraImgSrc === 'andrea'
-                          ? andrea
-                          : objetoStand.mediadoraImgSrc === 'moura'
-                          ? moura
-                          : ""
-                  }
+//                       objetoStand.palestranteImgSrc === 'mateus'
+//                           ? mateus
+//                           : objetoStand.palestranteImgSrc === 'henrique'
+//                           ? henrique
+//                           : ""
+//                   }
 
 
-                />
+//                 />
+//               </div>
+
+
+
+//               <h2>{objetoStand.palestranteNome}</h2>
+
+//               <p>{objetoStand.palestranteFormacao}</p>
+
+//           </div>
+
+//           <div className="palestranteDados">
+
+//               <p>{objetoStand.mediadoraGenero > 0 ? mediador : mediadora}</p>
+
+//               <div className='divPalestrante'>
+
+//                 <img
+
+    
+//                   src={
+
+//                       objetoStand.mediadoraImgSrc === 'andrea'
+//                           ? andrea
+//                           : objetoStand.mediadoraImgSrc === 'moura'
+//                           ? moura
+//                           : ""
+//                   }
+
+
+//                 />
                 
-              </div>
+//               </div>
 
-              <h2>{objetoStand.mediadoraNome}</h2>
+//               <h2>{objetoStand.mediadoraNome}</h2>
 
-              <p>{objetoStand.mediadoraFormacao}</p>
+//               <p>{objetoStand.mediadoraFormacao}</p>
 
-            </div>
+//             </div>
 
          
 
           
 
-          <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
+//           <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
 
-          <iframe
-            className="iframeInscricao"
+//           <iframe
+//             className="iframeInscricao"
 
-            src="https://docs.google.com/forms/d/e/1FAIpQLSc-09DscetTMOM9CsGhCcINrOmfM2P8b4N0dDnAIvYm_OggFQ/viewform?embedded=true"
+//             src="https://docs.google.com/forms/d/e/1FAIpQLSc-09DscetTMOM9CsGhCcINrOmfM2P8b4N0dDnAIvYm_OggFQ/viewform?embedded=true"
 
             
 
-            frameborder="0">
+//             frameborder="0">
               
-              Carregando…
+//               Carregando…
             
             
-          </iframe>
+//           </iframe>
 
 
           
 
-        </div>
+//         </div>
 
               
 
-        {/* <button onClick={realizarInscrição} className="botaoInscrever">Se Inscrever</button> */}
+//         {/* <button onClick={realizarInscrição} className="botaoInscrever">Se Inscrever</button> */}
 
 
-      </main>
+//       </main>
 
 
-      <Footer />
+//       <Footer />
 
-    </>
-
-
-
-
-
-  );
+//     </>
 
 
 
 
-};
 
-export default TelaPalestra;
+//   );
+
+
+
+
+// };
+
+// export default TelaPalestra;

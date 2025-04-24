@@ -1,130 +1,130 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-import './style.css';
+// import './style.css';
 
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-
-
-import Navbar from "../../componentes/Navbar/Navbar";
+// import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 
-import { apresentacaoList } from "../../data/dados";
-import Footer from "../../componentes/Footer/Footer";
-
-import cirandaCabloco from "../../img/culturais/cirandaCabloco.png";
-
-import touLigado from "../../img/culturais/touLigado.png";
-
-import uniaoBh from "../../img/culturais/uniaoBh.png";
-
-import cedili from "../../img/culturais/cedili.png";
-
-import cavaloMarinho from "../../img/culturais/cavaloMarinho.png";
+// import Navbar from "../../componentes/Navbar/Navbar";
 
 
-function TelaApresentacao() {
+// import { apresentacaoList } from "../../data/dados";
+// import Footer from "../../componentes/Footer/Footer";
+
+// import cirandaCabloco from "../../img/culturais/cirandaCabloco.png";
+
+// import touLigado from "../../img/culturais/touLigado.png";
+
+// import uniaoBh from "../../img/culturais/uniaoBh.png";
+
+// import cedili from "../../img/culturais/cedili.png";
+
+// import cavaloMarinho from "../../img/culturais/cavaloMarinho.png";
 
 
-  const location = useLocation();
-
-  const navigate = useNavigate();
-
-  // Obtém o dado do state
-  const dado = location.state;
-
-  const realizarInscrição = () =>{
-
-  }
+// function TelaApresentacao() {
 
 
-  let objetoStand;
+//   const location = useLocation();
 
-  apresentacaoList.forEach((objeto) => {
-    // Comparação do ID dentro do loop
-    if (objeto.id === dado.id) {
-      objetoStand = objeto;
-      // Interrompe a iteração após encontrar o ID 4
-      return;
-    }
-  });
+//   const navigate = useNavigate();
+
+//   // Obtém o dado do state
+//   const dado = location.state;
+
+//   const realizarInscrição = () =>{
+
+//   }
+
+
+//   let objetoStand;
+
+//   apresentacaoList.forEach((objeto) => {
+//     // Comparação do ID dentro do loop
+//     if (objeto.id === dado.id) {
+//       objetoStand = objeto;
+//       // Interrompe a iteração após encontrar o ID 4
+//       return;
+//     }
+//   });
   
   
 
-  return (
+//   return (
 
-    <>
+//     <>
 
-      <Navbar />
+//       <Navbar />
 
-      <main className="mainTelaOficina">
+//       <main className="mainTelaOficina">
 
-        <img className="imagemMain" src={objetoStand.imgSrc} />
+//         <img className="imagemMain" src={objetoStand.imgSrc} />
 
-        <div className="standTextoPalestra">
+//         <div className="standTextoPalestra">
 
-          <div className="palestranteDados">              
+//           <div className="palestranteDados">              
 
-              <div className="divPalestrante">
+//               <div className="divPalestrante">
 
-                <img
+//                 <img
 
 
                         
-                    src={
+//                     src={
 
 
-                        objetoStand.tipoApresen === 'touLigado'
-                            ? touLigado
-                            : objetoStand.tipoApresen === 'cirandaCabloco'
-                            ? cirandaCabloco
-                            : objetoStand.tipoApresen === 'uniaoBh'
-                            ? uniaoBh
-                            : objetoStand.tipoApresen === 'cavaloMarinho'
-                            ? cavaloMarinho
-                            : objetoStand.tipoApresen === 'cedili'
-                            ? cedili
-                            : ""
-                    }
+//                         objetoStand.tipoApresen === 'touLigado'
+//                             ? touLigado
+//                             : objetoStand.tipoApresen === 'cirandaCabloco'
+//                             ? cirandaCabloco
+//                             : objetoStand.tipoApresen === 'uniaoBh'
+//                             ? uniaoBh
+//                             : objetoStand.tipoApresen === 'cavaloMarinho'
+//                             ? cavaloMarinho
+//                             : objetoStand.tipoApresen === 'cedili'
+//                             ? cedili
+//                             : ""
+//                     }
       
       
-                />
+//                 />
 
-              </div>              
+//               </div>              
 
-              <h2>{objetoStand.titulo}</h2>
+//               <h2>{objetoStand.titulo}</h2>
 
-              <h3>{objetoStand.artista}</h3>
+//               <h3>{objetoStand.artista}</h3>
 
-              <p>{objetoStand.descricao}</p>
+//               <p>{objetoStand.descricao}</p>
 
-            </div>      
+//             </div>      
 
         
-          <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
+//           <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
 
-          <Link className="apresentacaoDetalhes" to={objetoStand.urlLink}>Saiba mais</Link>  
+//           <Link className="apresentacaoDetalhes" to={objetoStand.urlLink}>Saiba mais</Link>  
 
 
         
          
 
-        </div>
+//         </div>
 
             
 
-        {/* <button onClick={realizarInscrição} className="botaoInscrever">Se Inscrever</button> */}
+//         {/* <button onClick={realizarInscrição} className="botaoInscrever">Se Inscrever</button> */}
 
         
 
-      </main>
+//       </main>
 
 
-      <Footer />
+//       <Footer />
 
-    </>
+//     </>
 
-  );
+//   );
 
-};
+// };
 
-export default TelaApresentacao;
+// export default TelaApresentacao;

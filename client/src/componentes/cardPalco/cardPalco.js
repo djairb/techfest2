@@ -19,10 +19,11 @@ function CardPalco(props){
 
             <img src={props.imgSrc} />
 
-            <div>                
-           
+            <div>
+
                 <h1>{props.titulo}</h1>
 
+                
                 <p>{props.responsavel}</p>
 
                 <p>Stand {props.stand}, {props.local} • {props.data}, {props.horario} </p>

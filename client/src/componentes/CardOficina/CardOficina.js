@@ -24,6 +24,11 @@ function CardOficina(props){
                 
                 <h1>{props.titulo}</h1>
 
+                {props.foto && (
+                    <img src={props.foto} alt={`Foto de ${props.responsavel}`} />
+                )}
+
+
                 <p>{props.responsavel}</p>
 
                 <p>{props.local} • {props.data}, {props.horario} </p>

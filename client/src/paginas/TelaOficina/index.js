@@ -27,6 +27,10 @@ function TelaOficina() {
 
         <h1>{objetoStand.titulo}</h1>
 
+        {objetoStand.foto && (
+          <img className="imagemResponsavel" src={objetoStand.foto} alt={`Foto de ${objetoStand.responsavel}`} />
+        )}
+
         <h2>Apresentado por: {objetoStand.responsavel}</h2>
 
         <p>{objetoStand.descricao}</p>

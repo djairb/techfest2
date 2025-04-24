@@ -1,109 +1,109 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-import './style.css';
+// import './style.css';
 
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-
-
-import Navbar from "../../componentes/Navbar/Navbar";
+// import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 
-import { showList } from "../../data/dados";
-import Footer from "../../componentes/Footer/Footer";
+// import Navbar from "../../componentes/Navbar/Navbar";
 
 
-import nzambi from "../../img/culturais/nzambi.png";
+// import { showList } from "../../data/dados";
+// import Footer from "../../componentes/Footer/Footer";
 
 
-function TelaShow() {
+// import nzambi from "../../img/culturais/nzambi.png";
 
 
-  const location = useLocation();
-
-  const navigate = useNavigate();
-
-  // Obtém o dado do state
-  const dado = location.state;
-
-  const realizarInscrição = () =>{
-
-  }
+// function TelaShow() {
 
 
-  let objetoStand;
+//   const location = useLocation();
 
-  showList.forEach((objeto) => {
-    // Comparação do ID dentro do loop
-    if (objeto.id === dado.id) {
-      objetoStand = objeto;
-      // Interrompe a iteração após encontrar o ID 4
-      return;
-    }
-  });
+//   const navigate = useNavigate();
+
+//   // Obtém o dado do state
+//   const dado = location.state;
+
+//   const realizarInscrição = () =>{
+
+//   }
+
+
+//   let objetoStand;
+
+//   showList.forEach((objeto) => {
+//     // Comparação do ID dentro do loop
+//     if (objeto.id === dado.id) {
+//       objetoStand = objeto;
+//       // Interrompe a iteração após encontrar o ID 4
+//       return;
+//     }
+//   });
   
   
 
-  return (
+//   return (
 
-    <>
+//     <>
 
-      <Navbar />
+//       <Navbar />
 
-      <main className="mainTelaOficina">
+//       <main className="mainTelaOficina">
 
-        <img className="imagemMain" src={objetoStand.imgSrc} />
+//         <img className="imagemMain" src={objetoStand.imgSrc} />
 
-        <div className="standTextoPalestra">
+//         <div className="standTextoPalestra">
 
-          <div className="palestranteDados">              
+//           <div className="palestranteDados">              
 
-              <div className="divPalestrante">
+//               <div className="divPalestrante">
 
-                <img
+//                 <img
 
 
                         
-                    src={
+//                     src={
 
-                        objetoStand.tipoApresen === 'nzambi'
-                            ? nzambi
-                            : ""
-                    }
+//                         objetoStand.tipoApresen === 'nzambi'
+//                             ? nzambi
+//                             : ""
+//                     }
       
       
-                />
+//                 />
 
-              </div>              
+//               </div>              
 
-              <h2>{objetoStand.nomeArtista}</h2>
+//               <h2>{objetoStand.nomeArtista}</h2>
 
-              <p>{objetoStand.descricao}</p>
+//               <p>{objetoStand.descricao}</p>
 
-            </div>      
+//             </div>      
 
         
-          <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
+//           <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
 
-          <Link className="apresentacaoDetalhes" to={objetoStand.urlLink}>Saiba mais</Link>       
+//           <Link className="apresentacaoDetalhes" to={objetoStand.urlLink}>Saiba mais</Link>       
          
 
-        </div>
+//         </div>
 
             
 
-        {/* <button onClick={realizarInscrição} className="botaoInscrever">Se Inscrever</button> */}
+//         {/* <button onClick={realizarInscrição} className="botaoInscrever">Se Inscrever</button> */}
 
         
 
-      </main>
+//       </main>
 
 
-      <Footer />
+//       <Footer />
 
-    </>
+//     </>
 
-  );
+//   );
 
-};
+// };
 
-export default TelaShow;
+// export default TelaShow;

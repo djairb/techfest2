@@ -148,6 +148,16 @@ section {
 
 }
 
+.cardStand div img{
+
+  width: 180px;
+  
+
+  
+
+
+}
+
 .cardStand h1 {
 
   color: white;
@@ -251,6 +261,13 @@ section {
   margin-top: 10px;
   width: 90%;
   height: auto;
+  
+
+
+}
+
+.containerConteudoSolo img.imagemResponsavel{
+  width: 450px;
   
 
 

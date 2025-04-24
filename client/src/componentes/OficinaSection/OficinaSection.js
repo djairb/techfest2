@@ -106,6 +106,7 @@ function OficinaSection(props) {
                             id={item.id}
                             imgSrc={item.imgSrc}
                             titulo={item.titulo}
+                            foto={item.foto}
                             responsavel={item.responsavel}
                             local={item.local}
                             data={item.data}

@@ -1,73 +1,73 @@
-import './cardPalestra.css'
-import { Link } from 'react-router-dom';
+// import './cardPalestra.css'
+// import { Link } from 'react-router-dom';
 
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
-import henrique from "../../img/palestras/henrique.png";
+// import henrique from "../../img/palestras/henrique.png";
 
-import mateus from "../../img/palestras/lari-mateus.png";
+// import mateus from "../../img/palestras/lari-mateus.png";
 
 
-function CardPalestra(props){
+// function CardPalestra(props){
 
     
-    const navigate = useNavigate();
+//     const navigate = useNavigate();
 
-    const eventoDados = {
+//     const eventoDados = {
 
-        id: props.id
-    //sei onde buscar em tela evento o evento em dados.js pra carregar na pagina
-    }   
+//         id: props.id
+//     //sei onde buscar em tela evento o evento em dados.js pra carregar na pagina
+//     }   
 
 
-    const navegarPagina = () =>{
+//     const navegarPagina = () =>{
 
-        navigate('/tela-palestra', { state: eventoDados });
-    }
+//         navigate('/tela-palestra', { state: eventoDados });
+//     }
 
-    return (
-        <div className="cardStand">
+//     return (
+//         <div className="cardStand">
 
-            <img src={props.imgSrc} />
+//             <img src={props.imgSrc} />
 
-            <div>                
+//             <div>                
            
-                <h1>{props.titulo}</h1>
+//                 <h1>{props.titulo}</h1>
                 
-                <img
+//                 <img
                         
-                        src={
+//                         src={
 
-                            props.palestranteImgSrc === 'mateus'
-                                ? mateus
-                                : props.palestranteImgSrc === 'henrique'
-                                ? henrique
-                                : ""
-                        }
+//                             props.palestranteImgSrc === 'mateus'
+//                                 ? mateus
+//                                 : props.palestranteImgSrc === 'henrique'
+//                                 ? henrique
+//                                 : ""
+//                         }
 
 
-                />
+//                 />
 
                 
-                <h2>{props.palestranteNome}</h2>
+//                 <h2>{props.palestranteNome}</h2>
 
-                <p>{props.local} • {props.data}, às {props.horario} </p>
+//                 <p>{props.local} • {props.data}, às {props.horario} </p>
 
-            </div>
+//             </div>
             
             
 
-            <button onClick={navegarPagina} className="botaoEvento">Ver detalhes</button>
+//             <button onClick={navegarPagina} className="botaoEvento">Ver detalhes</button>
             
             
-        </div>
+//         </div>
             
             
-    );
+//     );
 
-}
+// }
 
-export default CardPalestra;
+// export default CardPalestra;
 
 
 
