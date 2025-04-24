@@ -1,8 +1,8 @@
-import profVitoria from '../img/oficinas/vitoria.jpg'
-import profCleiton from '../img/oficinas/cleiton.jpg'
+import profVitoria from '../img/oficinas/vitoria.png'
+import profCleiton from '../img/oficinas/cleiton.png'
 
 
-import geracaoEncantada from '../img/palco_musica_cultura/geracao_encantada.jpg'
+import geracaoEncantada from '../img/palco_musica_cultura/geracao_encantada.png'
 
 
 

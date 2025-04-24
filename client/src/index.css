@@ -223,9 +223,7 @@ section {
   
 }
 
-.bgChange{
-  background-color: #121212;
-}
+
 
 .content-container {
   flex: 1; /* Isso faz com que o conteúdo ocupe todo o espaço disponível */
