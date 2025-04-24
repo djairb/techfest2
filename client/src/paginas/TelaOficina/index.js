@@ -18,7 +18,7 @@ function TelaOficina() {
   
 
   return (
-    <main className="main-container">
+    <main className="main-container bgChange">
       <Navbar />
 
       <div className="containerConteudoSolo">

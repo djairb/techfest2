@@ -18,7 +18,7 @@ function TelaPalco() {
   
 
   return (
-    <main className="main-container">
+    <main className="main-container bgChange">
       <Navbar />
 
       <div className="containerConteudoSolo">
@@ -26,6 +26,10 @@ function TelaPalco() {
         <img src={objetoStand.imgSrc} />
 
         <h1>{objetoStand.titulo}</h1>
+
+        {objetoStand.foto && (
+          <img className="imagemResponsavel" src={objetoStand.foto} alt={`Foto de ${objetoStand.responsavel}`} />
+        )}
 
         <h2>Apresentado por: {objetoStand.responsavel}</h2>
 

@@ -22,6 +22,10 @@ function CardPalco(props){
             <div>
 
                 <h1>{props.titulo}</h1>
+                
+                {props.foto && (
+                    <img src={props.foto} alt={`Foto de ${props.responsavel}`} />
+                )}
 
                 
                 <p>{props.responsavel}</p>

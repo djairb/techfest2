@@ -2,6 +2,10 @@ import profVitoria from '../img/oficinas/vitoria.jpg'
 import profCleiton from '../img/oficinas/cleiton.jpg'
 
 
+import geracaoEncantada from '../img/palco_musica_cultura/geracao_encantada.jpg'
+
+
+
 
 
 const importAll = (r) => r.keys().map(r);
@@ -287,6 +291,7 @@ export const palcoList = [
     id: 1,
     imgSrc: capaEvento[1],
     titulo: "Furmiga Dub",
+    foto:"",
     responsavel: "Fabiano Formiga",
     descricao: "FurmigaDub é o projeto de Fabiano Formiga, multi-instrumentista paraibano formado pela (UFPB), que tocou nas Orquestras Sinfônicas do Estado, bandas de reggae, heavy metal, brega, sambarock, etcoco de roda, e que desde 2011 se dedica à produção de faixas autorais, misturando música de cultura popular paraibana com estéticas de música eletrônica. Suas canções vêm conquistando o público das principais festas de música brasileira e eletrônica do Brasil, onde ele é presença constante tanto em DJ sets quanto em apresentações ao vivo. Além de compor suas próprias músicas, FurmigaDub é responsável por resgatar e gravar canções de mestres da cultura popular nunca gravados, ajudando a preservar e difundir esses trabalhos tão únicos da cultura brasileira.",
     local: "Praça Maria Aurora",
@@ -299,6 +304,7 @@ export const palcoList = [
     id: 2,
     imgSrc: capaEvento[1],
     titulo: "Grupo de Maracatu Geração Encantada",
+    foto: geracaoEncantada,
     responsavel: "Centro Cultural Raio de Luz",
     descricao: "O Centro Cultural Raio de Luz, é uma organização não governamental de Lagoa de Itaenga, fundada há 21 anos, vem mantendo viva a cultura popular com a tradição do Maracatu de Baque Virado, com o Grupo Geração Encantada. Formado por 20 adolescentes de 11 a 14 anos são das comunidades Açude de Pedra e Arrombado, com vínculo as escolas municipais Denise Maria, Maria Anunciada e Colégio João Vieira Bezerra. O grupo tem como missão fortalecer a cultura popular e preservar as raízes do Maracatu de baque virado. trás para a avenida toques e danças da cultura enraizada pelo sorriso e brilhos nos olhos de quem faz com a cidadania na prática de convivência social.",
     local: "Praça Maria Aurora",
@@ -311,6 +317,7 @@ export const palcoList = [
     id: 3,
     imgSrc: capaEvento[1],
     titulo: "Espetáculo Musical: Um diálogo para o futuro",
+    foto:"",
     responsavel: "Denise Coelho - Centro de Desenvolvimento Local Integrado (CDLI)",
     descricao: "O Centro de Desenvolvimento Integral em Lagoa de Itaenga (CEDILI), é uma Organização Não Governamental atuantes em comunidades do município de Lagoa de Itaenga. De forma intergeracional apresenta o espetáculo musical “Um diálogo para o Futuro”, desenvolvido com os participantes dos Projetos Minha Primeira Opção-Educação e o Projeto Meu lugar-Envelhecer bem. A iniciativa traz ao público as canções dos respectivos compositores, Dudu Falcão com ¨Além do “arco íris” e Luiz Gonzaga com “Asa Branca”. Canções que fazem parte do repertório brasileiro, valorizando a nossa regionalidade.",
     local: "Praça Maria Aurora",
@@ -323,6 +330,7 @@ export const palcoList = [
     id: 4,
     imgSrc: capaEvento[1],
     titulo: "Grupo Cultural Caboclo",
+    foto:"",
     responsavel: "Josuel Caboclo",
     descricao: "A Ciranda Caboclo é um grupo de cultura popular da zona da mata de Pernambuco, uma iniciativa do Poeta Josivaldo Caboclo, filho do Poeta Bio Caboclo, referência na arte do coco de roda na zona da mata. O grupo surgiu em abril 2017 período em que o Mestre Josivaldo Caboclo gravou seu primeiro CD ciranda, o álbum autoral recebeu o título de “Ciranda Caboclo – Um novo jeito de fazer ciranda”.  A ciranda Caboclo traz uma mistura dos estilos da ciranda carnavalesca com a ciranda da mata norte, moldada pela regra poética dos cantadores de viola e com influência do Poeta Bio Caboclo, violeiro, mestre de maracatu e de coco de roda. Nas letras autoral, o Mestre Cirandeiro faz uma abordagem sobre o fortalecimento das relações entre as pessoas e dos valores éticos, além se utilizar de temas voltadas ao romantismo.  A Família Caboclo há mais de 30 anos vem promovendo e difundindo a arte do coco-de-roda, maracatu, viola e ciranda na zona da mata de Pernambuco para o Brasil e o mundo. ",
     local: "Praça Maria Aurora",
@@ -336,6 +344,7 @@ export const palcoList = [
     id: 5,
     imgSrc: capaEvento[1],
     titulo: "Nildo do Coco 'Tome Xote'",
+    foto:"",
     responsavel: "Ana Beatriz",
     descricao: "Nildo do Coco é um artista local que há mais de 25 anos se dedica à música, enaltecendo as raízes do pé de serra, brega e forró. Morador da cidade de Lagoa de Itaenga, Nildo se dedica à música como um hobby apaixonado, e já teve a oportunidade de cantar em alguns bares da cidade, onde é conhecido por sua voz grave. Com uma presença carismática no palco, Nildo nos faz reviver grandes clássicos do pé de serra, forró e brega, transportando o público para um universo de tradição e autenticidade. Através da música Nildo valoriza às raízes culturais da região, e sua paixão e dedicação à arte são evidentes em cada apresentação. Embora a música seja um hobby para Nildo, sua contribuição à cena musical local é inestimável.",
     local: "Praça Maria Aurora",
@@ -348,6 +357,7 @@ export const palcoList = [
     id: 6,
     imgSrc: capaEvento[1],
     titulo: "MaracaFesng",
+    foto:"",
     responsavel: "Ana Lívia",
     descricao: "O Projeto de Extensão MaracaFENSG: Educação Popular e Valorização da Cultura Nordestina é vinculado à Faculdade de Enfermagem Nossa Senhora da Graças (FENSG/UPE) e trabalha, em suas ações, desde de 2010, a promoção de Educação em Saúde através da Educação Popular e ritmos nordestinos, como o Maracatu, o coco e a ciranda, além de promover espaços culturais em eventos intra e extra-muro da Universidade de Pernambuco. Nosso projeto busca a integração entre o saber popular e o saber científico, trazendo sempre a população alcançada para protagonizar seu processo de aprendizagem no que tange o autocuidado, a preservação e a manutenção da saúde.",
     local: "Praça Maria Aurora",
@@ -360,6 +370,7 @@ export const palcoList = [
     id: 7,
     imgSrc: capaEvento[1],
     titulo: "Aulão de Dança",
+    foto:"",
     responsavel: "Deborah e Irlane",
     descricao: "Uma atmosfera destinada ao público das diversas idades com o intuito de recepcioná-los com a uma energia e animação sem limites. Uma excelente oportunidade proporcionada por meio da dança com atividades de impulso a diversão e cuidado com a saúde. Neste momento os participantes terão oportunidade de vivenciar diversos estilos de dança em um ambiente descontraído de interação.",
     local: "Praça Maria Aurora",

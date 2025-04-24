@@ -220,6 +220,11 @@ section {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  
+}
+
+.bgChange{
+  background-color: #121212;
 }
 
 .content-container {
@@ -253,6 +258,7 @@ section {
   margin: 0 auto;
 
   text-align: center;
+  
 
 }
 
