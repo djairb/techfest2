@@ -12,9 +12,10 @@ function CardMapa(props) {
     const [initialPositionY, setInitialPositionY] = useState(0); // Posição inicial Y
     const dragging = useRef(false);
     const lastPosition = useRef({ x: 0, y: 0 });
+    const touchStart = useRef({ x: 0, y: 0 });
 
     const minScale = 0.2;  // Limite mínimo do zoom
-    const maxScale = 1.3;    // Limite máximo do zoom
+    const maxScale = 1.2;    // Limite máximo do zoom
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -55,6 +56,27 @@ function CardMapa(props) {
         dragging.current = false;
     };
 
+    // Eventos para dispositivos móveis
+    const handleTouchStart = (e) => {
+        touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    };
+
+    const handleTouchMove = (e) => {
+        if (e.touches.length > 1) return; // Se houver mais de um toque, ignorar movimento
+
+        const dx = e.touches[0].clientX - touchStart.current.x;
+        const dy = e.touches[0].clientY - touchStart.current.y;
+        setPosition((pos) => ({
+            x: pos.x + dx,
+            y: pos.y + dy
+        }));
+        touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    };
+
+    const handleTouchEnd = () => {
+        // Aqui pode ser um lugar para resetar algo, mas geralmente não é necessário
+    };
+
     const zoomIn = () => {
         setScale((prevScale) => Math.min(prevScale + 0.1, maxScale)); // Limita o aumento do zoom
     };
@@ -80,6 +102,9 @@ function CardMapa(props) {
                 onMouseMove={handleMouseMove}
                 onMouseUp={handleMouseUp}
                 onMouseLeave={handleMouseUp}
+                onTouchStart={handleTouchStart}  // Evento de toque
+                onTouchMove={handleTouchMove}    // Evento de movimento de toque
+                onTouchEnd={handleTouchEnd}      // Evento de fim de toque
             >
                 <img
                     src={imagemMapa}
