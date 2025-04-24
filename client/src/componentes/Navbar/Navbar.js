@@ -35,9 +35,11 @@ function Navbar(){
 
              <Link to="/oficina-all">Oficinas</Link>
 
+             <Link to="/campeonato-all">Campeonatos</Link>
+
              <Link to="/all-stands">Stands</Link>
 
-             <Link to="/palco-all">Apresentações Culturais</Link>
+             <Link to="/palco-all">Apresentações</Link>
 
                 {/* <Link to="/tela-todos-palestra">Palestras</Link>
 

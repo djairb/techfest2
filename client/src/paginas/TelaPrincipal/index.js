@@ -26,6 +26,7 @@ import LazerSection from "../../componentes/LazerSection/LazerSection";
 import MainVideo from "../../componentes/video";
 import PalcoSection from "../../componentes/PalcoSection/PalcoSection";
 import CardMapa from "../../componentes/cardMapa/cardMapa";
+import CampeonatoSection from "../../componentes/CampeonatoSection/CampeonatoSection";
 
 
 function TelaPrincipal() {
@@ -57,31 +58,38 @@ function TelaPrincipal() {
         
         />
 
+        <CampeonatoSection
+
+          title="Campeonatos"
+          wallpaper="1"
+
+        />
+
         <StandSection
 
           title="Exposições - Stands"
-          wallpaper="1"        
+          wallpaper="2"        
         
         />
 
         <PalcoSection
 
           title="Palco, Música e Cultura"
-          wallpaper="2"         
+          wallpaper="0"         
         
         />
 
         <CardMapa
 
         title="Mapa do Evento"
-        wallpaper="0" 
+        wallpaper="1" 
 
         />
 
         <CardLocation
 
         title="Localização"
-        wallpaper="1" 
+        wallpaper="2" 
 
         />
 
@@ -89,7 +97,7 @@ function TelaPrincipal() {
 
         <Apoio
 
-        wallpaper="2"
+        wallpaper="0"
 
         />
 

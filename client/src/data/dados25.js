@@ -500,3 +500,25 @@ export const oficinaList = [
   
   
 ];
+
+export const campeonatoList = [
+
+  {
+    id: 1,
+    imgSrc: capaEvento[3],
+    titulo: "Crie seu primeiro site",
+    foto: profCleiton,
+    responsavel: "Cleiton Melo",
+    descricao: "'Crie seu primeiro site' é uma oficina ofertada prática e interativa que visa ensinar os fundamentos do desenvolvimento de sites. Ministrada por Cleiton, Desenvolvedor de software Senior no Ministério da Cidadania do Governo Federal, nessa oficina, você aprenderá a criar um site do zero utilizando as tecnologias mais populares do mercado, incluindo HTML, CSS, JavaScript e Bootstrap. Com orientação passo a passo, você descobrirá como estruturar o conteúdo do seu site, estilizá-lo com CSS, adicionar interatividade com JavaScript e utilizar o framework Bootstrap para criar um design responsivo e moderno. Ao final da oficina, você terá criado seu próprio site e estará preparado para continuar explorando o mundo do desenvolvimento web.",
+    tipo:"Minicurso",
+    local: "Prédio do CTACS - Sala 02",
+    data:"07 de Maio",
+    horario:"às 08h00",
+    
+
+  }
+
+  
+  
+];
+
