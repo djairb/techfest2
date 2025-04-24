@@ -25,6 +25,7 @@ import GameSection from "../../componentes/GameSection/GameSection";
 import LazerSection from "../../componentes/LazerSection/LazerSection";
 import MainVideo from "../../componentes/video";
 import PalcoSection from "../../componentes/PalcoSection/PalcoSection";
+import CardMapa from "../../componentes/cardMapa/cardMapa";
 
 
 function TelaPrincipal() {
@@ -70,6 +71,13 @@ function TelaPrincipal() {
         
         />
 
+        <CardMapa
+
+        title="Mapa do Evento"
+        wallpaper="0" 
+
+        />
+
         <CardLocation
 
         title="Localização"
@@ -77,9 +85,11 @@ function TelaPrincipal() {
 
         />
 
+
+
         <Apoio
 
-        wallpaper="0"
+        wallpaper="2"
 
         />
 

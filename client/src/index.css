@@ -400,25 +400,25 @@ section {
   .containerConteudoSolo p{
 
     letter-spacing: 0px;
-
+    
     
   }
 
-
-
-}
-
-
-
-@media only screen and (max-width: 1024px) {
+  .containerConteudoSolo img.imagemResponsavel{
+    width: 250px;
+    
+  
+  
+  }
 
   
 
 
 
-
-
 }
+
+
+
 
 
 
@@ -672,6 +672,8 @@ section {
 
 
     }
+
+    
 
 
 }

@@ -1,0 +1,43 @@
+.zoom-controls {
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  /* .image-container {
+    width: 800px;
+    height: 600px;
+    overflow: scroll;
+    border: 2px solid #ccc;
+    margin: 0 auto;
+    cursor: grab;
+  }
+  
+  .zoomable-image {
+    transform-origin: top left;
+    display: block;
+  } */
+
+  
+  .image-container {
+    width: 80%; /* ou o tamanho que você quiser */
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;  /* Alinha a imagem horizontalmente */
+    align-items: center;      /* Alinha a imagem verticalmente */
+    cursor: grab;
+    border-radius: 10px;
+    /* border: 2px solid #ccc; */
+    margin: 0 auto; /* Para centralizar o container no layout */
+  }
+  
+  .zoomable-image {
+    transform: scale(1); /* Aplica o zoom */
+    transition: transform 0.1s ease; /* Suaviza o zoom */
+ 
+    user-select: none;
+    pointer-events: none; /* impede interação direta */
+  }
+  
