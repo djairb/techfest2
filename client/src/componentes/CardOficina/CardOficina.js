@@ -25,7 +25,7 @@ function CardOficina(props){
 
                 <p>{props.responsavel}</p>
 
-                <p>{props.local} • {props.data}, às {props.horario} </p>
+                <p>{props.local} • {props.data}, {props.horario} </p>
 
             </div>
             

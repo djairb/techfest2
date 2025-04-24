@@ -81,7 +81,7 @@ function MainHome() {
 
     useEffect(() => {
         const typed = new Typed('#my-h1', {
-            strings: ['O Maior Evento de Tecnologia da Mata Norte está de volta!'],
+            strings: ['Tecnologia e Cultura interiorizando ideias e oportunidades!'],
             typeSpeed: 40,
             backSpeed: 20,
             loop: true,

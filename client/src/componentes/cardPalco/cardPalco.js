@@ -25,7 +25,7 @@ function CardPalco(props){
 
                 <p>{props.responsavel}</p>
 
-                <p>Stand {props.stand}, {props.local} • {props.data}, às {props.horario} </p>
+                <p>Stand {props.stand}, {props.local} • {props.data}, {props.horario} </p>
 
             </div>
             
