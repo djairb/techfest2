@@ -20,7 +20,8 @@ function CardOficina(props){
             <img src={props.imgSrc} />
 
             <div>                
-           
+                <p>{props.tipo}</p>
+                
                 <h1>{props.titulo}</h1>
 
                 <p>{props.responsavel}</p>

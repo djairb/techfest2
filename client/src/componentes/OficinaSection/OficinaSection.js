@@ -110,7 +110,7 @@ function OficinaSection(props) {
                             local={item.local}
                             data={item.data}
                             horario={item.horario}
-                            stand={item.stand}                              
+                            tipo={item.tipo}                              
                         />
 
                     </SwiperSlide>

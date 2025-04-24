@@ -1,7 +1,13 @@
+
+
+// import profVitoria from '../assets/fotosProfessores/vitoria.jpg';
+// import profJoao from '../assets/fotosProfessores/joao.jpg';
+
+
+
 const importAll = (r) => r.keys().map(r);
 
 const logosProjetos = importAll(require.context("../img/capas", false, /\.(png|jpe?g|svg)$/));
-
 
 
 export const standInternos = [
@@ -373,8 +379,8 @@ export const oficinaList = [
     id: 1,
     imgSrc: logosProjetos[2],
     titulo: "Crie seu primeiro site",
-    responsavel: "Cleiton Melo, Desenvolvedor de software Senior no Ministério da Cidadania do Governo Federal",
-    descricao: "'Crie seu primeiro site' é uma oficina prática e interativa que visa ensinar os fundamentos do desenvolvimento de sites. Nessa oficina, você aprenderá a criar um site do zero utilizando as tecnologias mais populares do mercado, incluindo HTML, CSS, JavaScript e Bootstrap. Com orientação passo a passo, você descobrirá como estruturar o conteúdo do seu site, estilizá-lo com CSS, adicionar interatividade com JavaScript e utilizar o framework Bootstrap para criar um design responsivo e moderno. Ao final da oficina, você terá criado seu próprio site e estará preparado para continuar explorando o mundo do desenvolvimento web.",
+    responsavel: "Cleiton Melo",
+    descricao: "'Crie seu primeiro site' é uma oficina ofertada prática e interativa que visa ensinar os fundamentos do desenvolvimento de sites. Ministrada por Cleiton, Desenvolvedor de software Senior no Ministério da Cidadania do Governo Federal, nessa oficina, você aprenderá a criar um site do zero utilizando as tecnologias mais populares do mercado, incluindo HTML, CSS, JavaScript e Bootstrap. Com orientação passo a passo, você descobrirá como estruturar o conteúdo do seu site, estilizá-lo com CSS, adicionar interatividade com JavaScript e utilizar o framework Bootstrap para criar um design responsivo e moderno. Ao final da oficina, você terá criado seu próprio site e estará preparado para continuar explorando o mundo do desenvolvimento web.",
     tipo:"Minicurso",
     local: "Prédio do CTACS - Sala 02",
     data:"07 de Maio",
@@ -435,11 +441,11 @@ export const oficinaList = [
 
   },
   {
-    id: 5,
+    id: 6,
     imgSrc: logosProjetos[2],
     titulo: "Da Terra ao Prato: Cultive Sua Própria Horta!",
-    responsavel: "Profª Vitória Régia",
-    descricao: "Venham aprender a manter sua própria horta doméstica, mesmo em pequenos espaços, promovendo o cultivo de temperos, hortaliças e ervas medicinais de forma prática, sustentável e acessível. Ao final deste momento serão capazes de escolher os recipientes ideais, preparar o solo, selecionar as plantas adequadas, realizar os cuidados essenciais e colher os benefícios de uma alimentação mais saudável e conectada com a natureza. Além disso, a oficina tem o objetivo de promover a segurança alimentar e a sustentabilidade em diversos contextos. Esperamos que vocês tenham inspiração para produzir alimentos, escolhendo os recipientes e plantas ideais, preparar o solo de forma correta, cuidados básicos do cultivo, reduzir impactos ambientais e garantir uma produção de alimentos segura a sua saúde.",
+    responsavel: "Profª Vitória Régia e Prof° Everton Nascimento",
+    descricao: "Venham aprender a manter sua própria horta doméstica, mesmo em pequenos espaços, promovendo o cultivo de temperos, hortaliças e ervas medicinais de forma prática, sustentável e acessível. Ao final deste momento serão capazes de escolher os recipientes ideais, preparar o solo, selecionar as plantas adequadas, realizar os cuidados essenciais e colher os benefícios de uma alimentação mais saudável e conectada com a natureza. Além disso, a oficina tem o objetivo de promover a segurança alimentar e a sustentabilidade em diversos contextos. Esperamos que vocês tenham inspiração para produzir alimentos, escolhendo os recipientes e plantas ideais, preparar o solo de forma correta, cuidados básicos do cultivo, reduzir impactos ambientais e garantir uma produção de alimentos segura a sua saúde. Professora Vitória é Engenheira Agrônoma e Mestre em Engenharia Agrícola. Professor Everton é Engenheiro Agrônomo, Mestre em fitopatologia, Doutorando em Fitopatologia.",
     tipo:"Minicurso",
     local: "Prédio do CTACS - Area Externa",
     data:"07 de Maio",
@@ -449,11 +455,24 @@ export const oficinaList = [
   },
 
   // {
-  //   id: 5,
+  //   id: 7,
   //   imgSrc: logosProjetos[2],
   //   titulo: "A função social das tecnologias: A experiência do Laboratório Multidisciplinar de Tecnologia Social/UFAPE",
   //   responsavel: "Professor Dr. Anderson de Alencar",
   //   descricao: "A função social das tecnologias: A experiência do Laboratório Multidisciplinar de Tecnologia Social/UFAPE",
+  //   tipo:"Painel",
+  //   local: "Prédio do CTACS - Auditório",
+  //   data:"07 de Maio",
+  //   horario:"às 08h00",
+  //   stand: "5"   
+
+  // },
+  // {
+  //   id: 8,
+  //   imgSrc: logosProjetos[2],
+  //   titulo: "Tecnologia e Acessibilidade um Futuro presente",
+  //   responsavel: "Pedro Izidio",
+  //   descricao: "",
   //   tipo:"Painel",
   //   local: "Prédio do CTACS - Auditório",
   //   data:"07 de Maio",
