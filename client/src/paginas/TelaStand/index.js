@@ -31,7 +31,7 @@ function TelaStand() {
 
         <p>{objetoStand.descricao}</p>
 
-        <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
+        <p>Stand: {objetoStand.stand} - {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
 
         <button onClick={abrirPaginaTodos} className="botaoVerTodos">Todos</button>
 

@@ -12,6 +12,10 @@ const importAll = (r) => r.keys().map(r);
 
 const capaEvento = importAll(require.context("../img/capas", false, /\.(png|jpe?g|svg)$/));
 
+const campeonatoLogos = importAll(require.context("../img/campeonatos", false, /\.(png|jpe?g|svg)$/));
+
+
+
 
 export const standInternos = [
 
@@ -296,8 +300,7 @@ export const palcoList = [
     descricao: "FurmigaDub é o projeto de Fabiano Formiga, multi-instrumentista paraibano formado pela (UFPB), que tocou nas Orquestras Sinfônicas do Estado, bandas de reggae, heavy metal, brega, sambarock, etcoco de roda, e que desde 2011 se dedica à produção de faixas autorais, misturando música de cultura popular paraibana com estéticas de música eletrônica. Suas canções vêm conquistando o público das principais festas de música brasileira e eletrônica do Brasil, onde ele é presença constante tanto em DJ sets quanto em apresentações ao vivo. Além de compor suas próprias músicas, FurmigaDub é responsável por resgatar e gravar canções de mestres da cultura popular nunca gravados, ajudando a preservar e difundir esses trabalhos tão únicos da cultura brasileira.",
     local: "Praça Maria Aurora",
     data:"08 e 09 de Maio",
-    horario:"às 08h00",
-    stand: "1"   
+    horario:"às 08h00" 
 
   },
   {
@@ -309,8 +312,7 @@ export const palcoList = [
     descricao: "O Centro Cultural Raio de Luz, é uma organização não governamental de Lagoa de Itaenga, fundada há 21 anos, vem mantendo viva a cultura popular com a tradição do Maracatu de Baque Virado, com o Grupo Geração Encantada. Formado por 20 adolescentes de 11 a 14 anos são das comunidades Açude de Pedra e Arrombado, com vínculo as escolas municipais Denise Maria, Maria Anunciada e Colégio João Vieira Bezerra. O grupo tem como missão fortalecer a cultura popular e preservar as raízes do Maracatu de baque virado. trás para a avenida toques e danças da cultura enraizada pelo sorriso e brilhos nos olhos de quem faz com a cidadania na prática de convivência social.",
     local: "Praça Maria Aurora",
     data:"08 e 09 de Maio",
-    horario:"às 08h00",
-    stand: "2"   
+    horario:"às 08h00"
 
   },
   {
@@ -322,8 +324,7 @@ export const palcoList = [
     descricao: "O Centro de Desenvolvimento Integral em Lagoa de Itaenga (CEDILI), é uma Organização Não Governamental atuantes em comunidades do município de Lagoa de Itaenga. De forma intergeracional apresenta o espetáculo musical “Um diálogo para o Futuro”, desenvolvido com os participantes dos Projetos Minha Primeira Opção-Educação e o Projeto Meu lugar-Envelhecer bem. A iniciativa traz ao público as canções dos respectivos compositores, Dudu Falcão com ¨Além do “arco íris” e Luiz Gonzaga com “Asa Branca”. Canções que fazem parte do repertório brasileiro, valorizando a nossa regionalidade.",
     local: "Praça Maria Aurora",
     data:"08 e 09 de Maio",
-    horario:"às 08h00",
-    stand: "3"   
+    horario:"às 08h00" 
 
   },
   {
@@ -335,8 +336,7 @@ export const palcoList = [
     descricao: "A Ciranda Caboclo é um grupo de cultura popular da zona da mata de Pernambuco, uma iniciativa do Poeta Josivaldo Caboclo, filho do Poeta Bio Caboclo, referência na arte do coco de roda na zona da mata. O grupo surgiu em abril 2017 período em que o Mestre Josivaldo Caboclo gravou seu primeiro CD ciranda, o álbum autoral recebeu o título de “Ciranda Caboclo – Um novo jeito de fazer ciranda”.  A ciranda Caboclo traz uma mistura dos estilos da ciranda carnavalesca com a ciranda da mata norte, moldada pela regra poética dos cantadores de viola e com influência do Poeta Bio Caboclo, violeiro, mestre de maracatu e de coco de roda. Nas letras autoral, o Mestre Cirandeiro faz uma abordagem sobre o fortalecimento das relações entre as pessoas e dos valores éticos, além se utilizar de temas voltadas ao romantismo.  A Família Caboclo há mais de 30 anos vem promovendo e difundindo a arte do coco-de-roda, maracatu, viola e ciranda na zona da mata de Pernambuco para o Brasil e o mundo. ",
     local: "Praça Maria Aurora",
     data:"08 e 09 de Maio",
-    horario:"às 08h00",
-    stand: "4"   
+    horario:"às 08h00"
 
   },
 
@@ -349,8 +349,7 @@ export const palcoList = [
     descricao: "Nildo do Coco é um artista local que há mais de 25 anos se dedica à música, enaltecendo as raízes do pé de serra, brega e forró. Morador da cidade de Lagoa de Itaenga, Nildo se dedica à música como um hobby apaixonado, e já teve a oportunidade de cantar em alguns bares da cidade, onde é conhecido por sua voz grave. Com uma presença carismática no palco, Nildo nos faz reviver grandes clássicos do pé de serra, forró e brega, transportando o público para um universo de tradição e autenticidade. Através da música Nildo valoriza às raízes culturais da região, e sua paixão e dedicação à arte são evidentes em cada apresentação. Embora a música seja um hobby para Nildo, sua contribuição à cena musical local é inestimável.",
     local: "Praça Maria Aurora",
     data:"08 e 09 de Maio",
-    horario:"às 08h00",
-    stand: "5"   
+    horario:"às 08h00" 
 
   },
   {
@@ -362,8 +361,7 @@ export const palcoList = [
     descricao: "O Projeto de Extensão MaracaFENSG: Educação Popular e Valorização da Cultura Nordestina é vinculado à Faculdade de Enfermagem Nossa Senhora da Graças (FENSG/UPE) e trabalha, em suas ações, desde de 2010, a promoção de Educação em Saúde através da Educação Popular e ritmos nordestinos, como o Maracatu, o coco e a ciranda, além de promover espaços culturais em eventos intra e extra-muro da Universidade de Pernambuco. Nosso projeto busca a integração entre o saber popular e o saber científico, trazendo sempre a população alcançada para protagonizar seu processo de aprendizagem no que tange o autocuidado, a preservação e a manutenção da saúde.",
     local: "Praça Maria Aurora",
     data:"08 e 09 de Maio",
-    horario:"às 08h00",
-    stand: "6"   
+    horario:"às 08h00"  
 
   },
   {
@@ -375,8 +373,7 @@ export const palcoList = [
     descricao: "Uma atmosfera destinada ao público das diversas idades com o intuito de recepcioná-los com a uma energia e animação sem limites. Uma excelente oportunidade proporcionada por meio da dança com atividades de impulso a diversão e cuidado com a saúde. Neste momento os participantes terão oportunidade de vivenciar diversos estilos de dança em um ambiente descontraído de interação.",
     local: "Praça Maria Aurora",
     data:"08 e 09 de Maio",
-    horario:"às 08h00",
-    stand: "7"   
+    horario:"às 08h00"   
 
   },
   
@@ -506,15 +503,48 @@ export const campeonatoList = [
   {
     id: 1,
     imgSrc: capaEvento[3],
-    titulo: "Crie seu primeiro site",
-    foto: profCleiton,
-    responsavel: "Cleiton Melo",
-    descricao: "'Crie seu primeiro site' é uma oficina ofertada prática e interativa que visa ensinar os fundamentos do desenvolvimento de sites. Ministrada por Cleiton, Desenvolvedor de software Senior no Ministério da Cidadania do Governo Federal, nessa oficina, você aprenderá a criar um site do zero utilizando as tecnologias mais populares do mercado, incluindo HTML, CSS, JavaScript e Bootstrap. Com orientação passo a passo, você descobrirá como estruturar o conteúdo do seu site, estilizá-lo com CSS, adicionar interatividade com JavaScript e utilizar o framework Bootstrap para criar um design responsivo e moderno. Ao final da oficina, você terá criado seu próprio site e estará preparado para continuar explorando o mundo do desenvolvimento web.",
-    tipo:"Minicurso",
-    local: "Prédio do CTACS - Sala 02",
-    data:"07 de Maio",
+    titulo: "Campeonato de FreeFire",
+    logo: campeonatoLogos[0],
+    tipo:"freefire",
+    // tipo:"freefire" a logo do freefire é diferente
+    responsavel: "Prof. Alex",
+    descricao: "A 2ª edição do Campeonato de Free Fire chega com tudo no TECHfest - Festival de Inovação e Tecnologia! O campo de batalha da disciplina e planejamento das equipes está a vista… e só as verdadeiras lendas sobreviverão! Inscreva seu squad, convoque sua tropa e entre na conexão para disputar cada segundo com estratégia, habilidade e coração. Essa não é só uma competição - é um duelo de titãs onde apenas os melhores alcançarão a glória! Sinta a adrenalina. Viva a emoção. Mostre sua força, lidere sua equipe à vitória e escreva seu nome no topo do pódio. A arena te chama. Vai encarar?",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
     horario:"às 08h00",
-    
+    stand: "14"    
+    // add o link do form aq, cada um tem um
+
+  },
+
+  {
+    id: 2,
+    imgSrc: capaEvento[3],
+    titulo: "Campeonato de Futebol eletrônico",
+    logo: campeonatoLogos[1],
+    tipo:"futebol",
+    responsavel: "Prof. Geovane",
+    descricao: "Mostre suas habilidades no futebol virtual! Se você é de Lagoa de Itaenga ou região, venha disputar a segunda edição do campeonato de FIFA no TECHfest - Festival de Inovação e Tecnologia. Prepare-se para encarar os melhores jogadores e fazer história nos gramados digitais! Participe de uma competição emocionante, repleta de inovação e tecnologia, e ainda tenha a chance de ganhar prêmios incríveis. Não perca essa oportunidade de brilhar no universo dos eSports!",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
+    horario:"às 08h00",
+    stand: "15"    
+    // add o link do form aq, cada um tem um
+
+  },
+  {
+    id: 3,
+    imgSrc: capaEvento[3],
+    titulo: "Campeonato de Futmesa",
+    logo: campeonatoLogos[2],
+    tipo:"futebol",
+    responsavel: "Prof. Andreis",
+    descricao: "É hora do jogo! O Torneio Conexão Futmesa (Duplas) chega com tudo no Conexão TECHfest, no dia 09 de maio! Forme sua dupla, entre em quadra e mostre quem são os Reis da mesa! Desafios, adrenalina e muita rivalidade te esperam. E só os melhores vão levantar o troféu!",
+    local: "Praça Maria Aurora",
+    data:"09 de Maio",
+    horario:"às 08h00",
+    stand: "12"    
+    // add o link do form aq, cada um tem um
 
   }
 

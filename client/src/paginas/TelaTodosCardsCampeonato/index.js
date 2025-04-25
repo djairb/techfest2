@@ -24,23 +24,23 @@ function TelaTodosCardsCampeonato() {
 
           {campeonatoList.map((item) => (
 
-                  <CardCampeonato
+            <CardCampeonato
 
-                    id={item.id}
-                    imgSrc={item.imgSrc}
-                    titulo={item.titulo}
-                    foto={item.foto}
-                    responsavel={item.responsavel}
-                    local={item.local}
-                    data={item.data}
-                    horario={item.horario}
-                    stand={item.stand}
-                  />
+              id={item.id}
+              imgSrc={item.imgSrc}
+              titulo={item.titulo}
+              logo={item.logo}
+              local={item.local}
+              data={item.data}
+              horario={item.horario}
+              stand={item.stand}
+              tipo={item.tipo}
+            />
 
 
-                ))}
+          ))}
 
-        </div>
+       </div>
 
 
       <Footer/>

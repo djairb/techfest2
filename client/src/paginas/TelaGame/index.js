@@ -1,117 +1,117 @@
-import React from "react";
+// import React from "react";
 
-import './style.css';
+// import './style.css';
 
-import { useLocation, useNavigate } from 'react-router-dom';
-
-
-import Navbar from "../../componentes/Navbar/Navbar";
+// import { useLocation, useNavigate } from 'react-router-dom';
 
 
-import freefire from "../../img/gamer/freefire.png";
-
-import fifa from "../../img/gamer/fifa.png";
+// import Navbar from "../../componentes/Navbar/Navbar";
 
 
+// import freefire from "../../img/gamer/freefire.png";
 
-import { gameList } from "../../data/dados";
-import Footer from "../../componentes/Footer/Footer";
-
-function TelaGame() {
-
-  const realizarInscrição = () => {
+// import fifa from "../../img/gamer/fifa.png";
 
 
-  }
 
-  const location = useLocation();
+// import { gameList } from "../../data/dados";
+// import Footer from "../../componentes/Footer/Footer";
 
-  const navigate = useNavigate();
+// function TelaGame() {
 
-  // Obtém o dado do state
-  const dado = location.state;
-
-  let objetoStand;
-
-  gameList.forEach((objeto) => {
-    // Comparação do ID dentro do loop
-    if (objeto.id === dado.id) {
-      objetoStand = objeto;
-      // Interrompe a iteração após encontrar o ID 4
-      return;
-    }
-  });
+//   const realizarInscrição = () => {
 
 
-  return (
+//   }
 
-    <>
+//   const location = useLocation();
 
-      <Navbar />
+//   const navigate = useNavigate();
+
+//   // Obtém o dado do state
+//   const dado = location.state;
+
+//   let objetoStand;
+
+//   gameList.forEach((objeto) => {
+//     // Comparação do ID dentro do loop
+//     if (objeto.id === dado.id) {
+//       objetoStand = objeto;
+//       // Interrompe a iteração após encontrar o ID 4
+//       return;
+//     }
+//   });
 
 
-      <main className="mainTelaStand">
+//   return (
 
-        <img src={objetoStand.imgSrc} />
+//     <>
 
-        <div className="standTextoPalestra">
+//       <Navbar />
 
-          <img
+
+//       <main className="mainTelaStand">
+
+//         <img src={objetoStand.imgSrc} />
+
+//         <div className="standTextoPalestra">
+
+//           <img
                       
-              className={
+//               className={
 
-                objetoStand.tipoGame === 'freefire'
-                    ? "imgGameCardFreeFire"
-                    : 'imgGameCardFiFa'
-              }
+//                 objetoStand.tipoGame === 'freefire'
+//                     ? "imgGameCardFreeFire"
+//                     : 'imgGameCardFiFa'
+//               }
                   
-              src={
+//               src={
 
-                objetoStand.tipoGame === 'freefire'
-                    ? freefire
-                    : objetoStand.tipoGame === 'fifa'
-                    ? fifa
-                    : ""
-              }
-          /> 
+//                 objetoStand.tipoGame === 'freefire'
+//                     ? freefire
+//                     : objetoStand.tipoGame === 'fifa'
+//                     ? fifa
+//                     : ""
+//               }
+//           /> 
 
-          <h1>{objetoStand.titulo}</h1>
+//           <h1>{objetoStand.titulo}</h1>
 
-          <p>{objetoStand.descricao}</p>
+//           <p>{objetoStand.descricao}</p>
 
-          <p>{objetoStand.local} • {objetoStand.data}, às {objetoStand.horario} </p>
+//           <p>{objetoStand.local} • {objetoStand.data}, às {objetoStand.horario} </p>
 
-          <p>Faça sua inscrição abaixo:</p>
+//           <p>Faça sua inscrição abaixo:</p>
 
-          <iframe className="iframeInscricao" src={objetoStand.iframeSrc} frameborder="0">Carregando…</iframe> 
+//           <iframe className="iframeInscricao" src={objetoStand.iframeSrc} frameborder="0">Carregando…</iframe> 
 
                     
 
-        </div>
+//         </div>
 
         
 
                
 
-        {/* <button onClick={realizarInscrição} className="botaoInscrever">Se Inscrever</button> */}
+//         {/* <button onClick={realizarInscrição} className="botaoInscrever">Se Inscrever</button> */}
 
 
-      </main>
+//       </main>
 
 
-      <Footer />
+//       <Footer />
 
-    </>
-
-
-
-
-
-  );
+//     </>
 
 
 
 
-};
 
-export default TelaGame;
+//   );
+
+
+
+
+// };
+
+// export default TelaGame;

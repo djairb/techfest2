@@ -1,75 +1,75 @@
-import './CardGame.css'
-import { Link } from 'react-router-dom';
+// import './CardGame.css'
+// import { Link } from 'react-router-dom';
 
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
-import freefire from "../../img/gamer/freefire.png";
+// import freefire from "../../img/gamer/freefire.png";
 
-import fifa from "../../img/gamer/fifa.png";
+// import fifa from "../../img/gamer/fifa.png";
 
 
-function CardGame(props){
+// function CardGame(props){
 
     
-    const navigate = useNavigate();
+//     const navigate = useNavigate();
 
-    const eventoDados = {
+//     const eventoDados = {
 
-        id: props.id
-    //sei onde buscar em tela evento o evento em dados.js pra carregar na pagina
-    }    
+//         id: props.id
+//     //sei onde buscar em tela evento o evento em dados.js pra carregar na pagina
+//     }    
 
 
-    const navegarPagina = () =>{
+//     const navegarPagina = () =>{
 
-        navigate('/tela-game', { state: eventoDados });
-    }
+//         navigate('/tela-game', { state: eventoDados });
+//     }
 
-    return (
-        <div class="cardStand">
+//     return (
+//         <div class="cardStand">
 
-            <img src={props.imgSrc} />
+//             <img src={props.imgSrc} />
 
-            <div>
+//             <div>
 
-                <img
+//                 <img
                     
-                    className={
+//                     className={
 
-                        props.tipoGame === 'freefire'
-                            ? "imgGameCardFreeFire"
-                            : 'imgGameCardFiFa'
-                    }
+//                         props.tipoGame === 'freefire'
+//                             ? "imgGameCardFreeFire"
+//                             : 'imgGameCardFiFa'
+//                     }
                        
-                    src={
+//                     src={
 
-                        props.tipoGame === 'freefire'
-                            ? freefire
-                            : props.tipoGame === 'fifa'
-                            ? fifa
-                            : ""
-                    }
-                />                
+//                         props.tipoGame === 'freefire'
+//                             ? freefire
+//                             : props.tipoGame === 'fifa'
+//                             ? fifa
+//                             : ""
+//                     }
+//                 />                
            
-                <h1>{props.titulo}</h1>
+//                 <h1>{props.titulo}</h1>
 
-                <p>{props.local} • {props.data}, às {props.horario} </p>
+//                 <p>{props.local} • {props.data}, às {props.horario} </p>
 
-            </div>
+//             </div>
             
             
 
-            <button onClick={navegarPagina} className="botaoEvento">Ver detalhes</button>        
+//             <button onClick={navegarPagina} className="botaoEvento">Ver detalhes</button>        
             
             
-        </div>
+//         </div>
             
             
-    );
+//     );
 
-}
+// }
 
-export default CardGame;
+// export default CardGame;
 
 
 

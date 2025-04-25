@@ -158,6 +158,17 @@ section {
 
 }
 
+.cardStand div img.logoFreefire{
+
+  width: 280px;
+  
+
+  
+
+
+}
+
+
 .cardStand h1 {
 
   color: white;
@@ -272,6 +283,20 @@ section {
 
 .containerConteudoSolo img.imagemResponsavel{
   width: 450px;
+  
+
+
+}
+
+.containerConteudoSolo img.campeonatoLogo{
+  width: 350px;
+  
+
+
+}
+
+.containerConteudoSolo img.campeonatoLogo.freeFireLogo{
+  width: 500px;
   
 
 

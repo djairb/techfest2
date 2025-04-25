@@ -110,7 +110,7 @@ function PalcoSection(props) {
                             local={item.local}
                             data={item.data}
                             horario={item.horario}
-                            stand={item.stand}                              
+                                                      
                         />
 
                     </SwiperSlide>

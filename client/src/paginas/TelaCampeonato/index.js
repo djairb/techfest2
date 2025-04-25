@@ -27,15 +27,19 @@ function TelaCampeonato() {
 
         <h1>{objetoStand.titulo}</h1>
 
-        {objetoStand.foto && (
-          <img className="imagemResponsavel" src={objetoStand.foto} alt={`Foto de ${objetoStand.responsavel}`} />
-        )}
-
-        <h2>Apresentado por: {objetoStand.responsavel}</h2>
+        <img
+        
+          className= {objetoStand.tipo == "freefire" ? "campeonatoLogo freeFireLogo" : "campeonatoLogo"}
+          
+          src={objetoStand.logo}
+          
+          />
 
         <p>{objetoStand.descricao}</p>
 
-        <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
+        <p>Responsável: {objetoStand.responsavel}</p>
+
+        <p>Stand: {objetoStand.stand} - {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
 
         <button onClick={abrirPaginaTodos} className="botaoVerTodos">Todos</button>
 

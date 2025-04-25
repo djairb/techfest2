@@ -106,11 +106,11 @@ function CampeonatoSection(props) {
                             id={item.id}
                             imgSrc={item.imgSrc}
                             titulo={item.titulo}
-                            foto={item.foto}
-                            responsavel={item.responsavel}
+                            logo={item.logo}
                             local={item.local}
                             data={item.data}
                             horario={item.horario}
+                            stand={item.stand}
                             tipo={item.tipo}                              
                         />
 
