@@ -6,6 +6,10 @@ import geracaoEncantada from '../img/palco_musica_cultura/geracao_encantada.png'
 
 
 
+import amandaHadassa from '../img/palco_musica_cultura/amanda_hadassa.png'
+
+
+
 
 
 const importAll = (r) => r.keys().map(r);
@@ -376,6 +380,19 @@ export const palcoList = [
     horario:"às 08h00"   
 
   },
+  {
+    id: 8,
+    imgSrc: capaEvento[1],
+    titulo: "Amanda Vitória & Hadassa Vitória",
+    foto:amandaHadassa,
+    responsavel: "Amanda Vitória & Hadassa Vitória",
+    descricao: "A música gospel, com sua mensagem de fé, esperança e inspiração, tem o poder de tocar corações e transformar ambientes. Em um evento como o TechFest, onde inovação e tecnologia estão em destaque, ela oferece uma pausa para reflexão e conexão espiritual. Assim, a música gospel traz não só diversidade cultural, mas também um momento de renovação, mostrando que, além da tecnologia, ela pode ser um veículo de emoção e fortalecimento da fé.",
+    local: "Praça Maria Aurora",
+    data:"08 e 09 de Maio",
+    horario:"às 08h00"   
+
+  },
+  
   
   
 ];
