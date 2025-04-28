@@ -172,12 +172,24 @@ export const standInternos = [
     horario:"às 08h00",
     stand: "14"   
   },
+  // {
+  //   id: 15,
+  //   imgSrc: capaEvento[0],
+  //   titulo: "Conectas Elas! Um aplicativo para promoção dos direitos da mulher e o combate à violência doméstica e familiar",
+  //   responsavel: "Prof. Anderson - LTS/UFAPE",
+  //   descricao: "O APP de educacional será desenvolvido com o objetivo de promover os direitos das mulheres e combater a violência doméstica e familiar no município de Lagoa de Itaenga - PE. No qual a população poderá baixar nos seus celulares ou computadores o dispositivo para com painéis de informações, interação e denúncias em combate à violência ou violação dos direitos das mulheres. Programa Institucional de Bolsa de Extensão (PIBEX - UFAPE) pela Pró Reitora de Extensão e Cultura da UFAPE.",
+  //   local: "Praça Maria Aurora",
+  //   data:"08 e 09 de Maio",
+  //   horario:"às 08h00",
+  //   stand: "15"   
+  // },
+
   {
     id: 15,
     imgSrc: capaEvento[0],
-    titulo: "Conectas Elas! Um aplicativo para promoção dos direitos da mulher e o combate à violência doméstica e familiar",
-    responsavel: "Prof. Anderson - LTS/UFAPE",
-    descricao: "O APP de educacional será desenvolvido com o objetivo de promover os direitos das mulheres e combater a violência doméstica e familiar no município de Lagoa de Itaenga – PE. No qual a população poderá baixar nos seus celulares ou computadores o dispositivo para com painéis de informações, interação e denúncias em combate à violência ou violação dos direitos das mulheres. Programa Institucional de Bolsa de Extensão (PIBEX - UFAPE) pela Pró Reitora de Extensão e Cultura da UFAPE.",
+    titulo: "Conexão Inteligência Artificial na Impressão 3D",
+    responsavel: "Prof. Danrley Santiago - ETE Maria Eduarda Ramos de Barros",
+    descricao: "Os visitantes irão conhecer a experiência da ETE Maria Eduarda Ramos de Barros. A Inteligência Artificial (IA) e a Impressão 3D são tecnologias complementares que estão transformando indústrias. Enquanto a IA utiliza algoritmos para analisar dados, otimizar processos e prever resultados, a impressão 3D permite a criação rápida de objetos físicos complexos, desde protótipos até peças funcionais. Juntas, elas aceleram a inovação: a IA pode aprimorar projetos 3D, reduzindo falhas e personalizando geometrias, enquanto impressoras 3D materializam soluções inteligentes em tempo recorde. Com a democratização dessas tecnologias, empresas e makers ganham poder para inovar em escala, reduzindo custos e tempo. O futuro promete integração ainda maior, com sistemas autônomos projetando e fabricando sob demanda.",
     local: "Praça Maria Aurora",
     data:"08 e 09 de Maio",
     horario:"às 08h00",
@@ -232,7 +244,7 @@ export const standInternos = [
     imgSrc: capaEvento[0],
     titulo: "Conexão 4.0 - Juventudes",
     responsavel: "Secretaria de Juventude - Jackson",
-    descricao: "Espaço destinado a promoção do bem-estar físico, mental e emocional da população. Iniciativa coordenada pela Secretaria Municipal de Saúde de Lagoa de Itaenga em parceria com o Governo de Pernambuco com o intuito de articular as políticas públicas de saúde e bem estar. O espaço terá muitas trocas de experiências entre profissionais de saúde e o público em geral, de forma interativa e dinâmica. A ação será voltada para o público diversificado, famílias, jovens e idosos com a ideia de possibilitar o acesso as políticas de forma segura e qualidade a vida dos participantes.",
+    descricao: "Ambiente que articula as políticas públicas para a oferta de serviços aos jovens interessados (15 a 29 anos). Iniciativa coordenada pela Secretaria Municipal de Juventudes de Lagoa de Itaenga em parceria com o Governo de Pernambuco por meio da Gerência de Políticas em Juventudes. A oferta de mini oficinas, cadastro do ID jovem, serviços de retiradas de documentos e acesso a cidadania visa apoiar na inclusão social do acesso aos direitos e garantia do exercício da cidadania.",
     local: "Praça Maria Aurora",
     data:"08 e 09 de Maio",
     horario:"às 08h00",
@@ -365,11 +377,11 @@ export const palcoList = [
     imgSrc: capaEvento[1],
     titulo: "Aulão de Dança",
     foto:"",
-    responsavel: "Deborah e Irlane",
+    responsavel: "Profª Debora e Profª Irlane",
     descricao: "Uma atmosfera destinada ao público das diversas idades com o intuito de recepcioná-los com a uma energia e animação sem limites. Uma excelente oportunidade proporcionada por meio da dança com atividades de impulso a diversão e cuidado com a saúde. Neste momento os participantes terão oportunidade de vivenciar diversos estilos de dança em um ambiente descontraído de interação.",
     local: "Praça Maria Aurora",
-    data:"08 e 09 de Maio",
-    horario:"às 08h00"   
+    data:"07de Maio",
+    horario:"às 18h00"   
 
   },
   {
@@ -393,7 +405,7 @@ export const oficinaList = [
 
   {
     id: 1,
-    imgSrc: capaEvento[2],
+    imgSrc: capaEvento[4],
     titulo: "Crie seu primeiro site",
     foto: profCleiton,
     responsavel: "Cleiton Melo",
@@ -401,29 +413,29 @@ export const oficinaList = [
     tipo:"Minicurso",
     local: "Prédio do CTACS - Sala 02",
     data:"07 de Maio",
-    horario:"às 08h00",
+    horario:"às 14h00",
     link:"https://forms.gle/24dHt2p1XATZtvfh9"
     
 
   },
   {
     id: 2,
-    imgSrc: capaEvento[2],
+    imgSrc: capaEvento[4],
     titulo: "Musicalização com FurmigaDub",
     foto:"",
     responsavel: "Fabiano Formiga",
     descricao: "Como cada um se relaciona com a música? - Exercícios de improvisação - Noções básicas de harmonia e teoria musical - Facilitador Fabiano Formiga multi-instrumentista paraibano formado pela (UFPB).",
-    local: "Prédio do CTACS - Sala 04, Centro de Hidroginástica",
+    local: "Prédio do CTACS - Sala 04",
     tipo:"Minicurso",
     data:"07 de Maio",
-    horario:"às 08h00",
+    horario:"às 08h30 e às 14h00",
     link:"https://forms.gle/FGta3yy21E1e4kR59"
      
 
   },
   {
     id: 3,
-    imgSrc: capaEvento[2],
+    imgSrc: capaEvento[4],
     titulo: "Barbearia em Ação: Cortes Grátis e Técnicas Profissionais",
     foto:"",
     responsavel: "Barbeiros Nierlyson e Mateus",
@@ -431,14 +443,14 @@ export const oficinaList = [
     tipo:"Minicurso",
     local: "Prédio do CTACS",
     data:"07 de Maio",
-    horario:"às 08h00",
+    horario:"às 09h00",
     link:"https://forms.gle/jMWqTeQVYotS2CRX8"
      
 
   },
   {
     id: 4,
-    imgSrc: capaEvento[2],
+    imgSrc: capaEvento[4],
     titulo: "Eletrônica e Programação com Arduino",
     foto:"",
     responsavel: "Prof. Manoel",
@@ -446,29 +458,29 @@ export const oficinaList = [
     tipo:"Minicurso",
     local: "Prédio do CTACS - Sala 01",
     data:"07 de Maio",
-    horario:"às 08h00",
+    horario:"às 08h30 e às 14h00",
     link:"https://forms.gle/5XDFNf4SiGK2RJYQA"
      
 
   },
   {
     id: 5,
-    imgSrc: capaEvento[2],
-    titulo: "Beleza e Empreendedorismo",
+    imgSrc: capaEvento[4],
+    titulo: "Mulheres empreendedoras: Mãos que Criam, Vozes que Inspiram",
     foto:"",
     responsavel: "Jaciara, Paula, Laiz",
     descricao: "O projeto Empreendedoras Conectadas trará uma série de oficinas práticas voltadas para mulheres que atuam ou desejam ingressar no setor da beleza. As atividades incluirão três áreas fundamentais: manicure, estética e design de sobrancelhas, conduzidas por profissionais experientes que compartilharão suas trajetórias, desafios e aprendizados no empreendedorismo e com práticas.",
     tipo:"Minicurso",
-    local: "Prédio do CTACS - Sala 03",
+    local: "Prédio do CTACS - Sala 02",
     data:"07 de Maio",
-    horario:"às 08h00",
+    horario:"às 08h30",
     link: "https://forms.gle/EzFfVXuPwDsAvw6S7"
     
 
   },
   {
     id: 6,
-    imgSrc: capaEvento[2],
+    imgSrc: capaEvento[4],
     titulo: "Da Terra ao Prato: Cultive Sua Própria Horta!",
     foto: profVitoria,
     responsavel: "Profª Vitória Régia e Prof° Everton Nascimento",
@@ -476,7 +488,7 @@ export const oficinaList = [
     tipo:"Minicurso",
     local: "Prédio do CTACS - Area Externa",
     data:"07 de Maio",
-    horario:"às 08h00",
+    horario:"às 08h30 e às 14h00",
     link:"https://forms.gle/snBr3DTT3M6aSKet5"
      
 
@@ -484,34 +496,35 @@ export const oficinaList = [
 
   {
     id: 7,
-    imgSrc: capaEvento[2],
-    titulo: "Design Thinking: Do Problema à Solução",
+    imgSrc: capaEvento[4],
+    // 4 para minicurso 5 para palestra
+    titulo: "Design Thinking com o Armazém da Criatividade – Porto Digital",
     foto: "",
     responsavel: "Profª Pâmela Dias",
     descricao: "O Design Thinking é uma abordagem prática e inovadora para solucionar problemas com foco nas pessoas. Neste minicurso, você vai conhecer e aplicar as principais etapas desse processo — empatia, definição, ideação, prototipagem e testes — para desenvolver soluções criativas e eficazes. Ao longo das atividades, você aprenderá a trabalhar de forma colaborativa, exercitando o pensamento crítico e a escuta ativa, sempre com o objetivo de gerar impacto real. Ideal para quem deseja transformar ideias em ações e promover inovação em qualquer área.",
     tipo:"Minicurso",
     local: "Prédio do CTACS - Sala 03",
     data:"07 de Maio",
-    horario:"às 08h00",
+    horario:"às 14h00",
     link:"https://forms.gle/Z5FN1RRiwi4kTk4w6"
      
 
   },
   
 
-  // {
-  //   id: 7,
-  //   imgSrc: capaEvento[2],
-  //   titulo: "A função social das tecnologias: A experiência do Laboratório Multidisciplinar de Tecnologia Social/UFAPE",
-  //   responsavel: "Professor Dr. Anderson de Alencar",
-  //   descricao: "A função social das tecnologias: A experiência do Laboratório Multidisciplinar de Tecnologia Social/UFAPE",
-  //   tipo:"Painel",
-  //   local: "Prédio do CTACS - Auditório",
-  //   data:"07 de Maio",
-  //   horario:"às 08h00",
-  //   stand: "5"   
+  {
+    id: 8,
+    imgSrc: capaEvento[5],
+    titulo: "A função social das tecnologias: A experiência do Laboratório Multidisciplinar de Tecnologia Social/UFAPE",
+    responsavel: "Professor Dr. Anderson de Alencar",
+    descricao: "Nesta palestra, será apresentada a atuação do Laboratório Multidisciplinar de Tecnologia Social (LMTS) da Universidade Federal do Agreste de Pernambuco (UFAPE), destacando como a tecnologia pode ser pensada e aplicada a partir de uma perspectiva voltada para o bem comum e o desenvolvimento social. A proposta é discutir o papel das tecnologias sociais como ferramentas de transformação, inclusão e fortalecimento de comunidades, a partir de experiências concretas desenvolvidas pelo laboratório junto a populações em situação de vulnerabilidade. A atividade também convida à reflexão sobre a responsabilidade social da ciência e da tecnologia, e como práticas colaborativas e interdisciplinares podem gerar soluções inovadoras para desafios sociais reais.",
+    tipo:"Painel",
+    local: "Prédio do CTACS - Auditório",
+    data:"07 de Maio",
+    horario:"às 10h00"
+     
 
-  // },
+  },
   // {
   //   id: 8,
   //   imgSrc: capaEvento[2],

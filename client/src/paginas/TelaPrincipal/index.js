@@ -53,7 +53,7 @@ function TelaPrincipal() {
 
         <OficinaSection
 
-          title="Oficinas"
+          title="Minicursos e Palestras"
           wallpaper="0"
         
         />

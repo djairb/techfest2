@@ -28,7 +28,7 @@ function TelaTodosCardsOficina() {
 
       
 
-        <h1 className="titulo titleApresent">Oficinas</h1>
+        <h1 className="titulo titleApresent">Minicursos e Palestras</h1>
 
         <div className="containerTelaTodosCards">
 
