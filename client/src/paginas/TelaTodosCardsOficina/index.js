@@ -34,21 +34,21 @@ function TelaTodosCardsOficina() {
 
           {oficinaList.map((item) => (
 
-                  <CardOficina
+            <CardOficina
 
-                    id={item.id}
-                    imgSrc={item.imgSrc}
-                    titulo={item.titulo}
-                    foto={item.foto}
-                    responsavel={item.responsavel}
-                    local={item.local}
-                    data={item.data}
-                    horario={item.horario}
-                    stand={item.stand}
-                  />
+              id={item.id}
+              imgSrc={item.imgSrc}
+              titulo={item.titulo}
+              foto={item.foto}
+              responsavel={item.responsavel}
+              local={item.local}
+              data={item.data}
+              horario={item.horario}
+              tipo={item.tipo}
+            />
 
 
-                ))}
+          ))}
 
         </div>
 

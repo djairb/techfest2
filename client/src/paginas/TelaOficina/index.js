@@ -37,7 +37,24 @@ function TelaOficina() {
 
         <p>Local: {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
 
+        <iframe
+        
+            className="iframeInscricao"
+
+            src={objetoStand.link}
+
+            
+
+            frameborder="0">
+              
+              Carregando…
+            
+            
+        </iframe>
+
         <button onClick={abrirPaginaTodos} className="botaoVerTodos">Todos</button>
+
+        
 
       </div>
 

@@ -1,14 +1,9 @@
 import profVitoria from '../img/oficinas/vitoria.png'
 import profCleiton from '../img/oficinas/cleiton.png'
 
-
 import geracaoEncantada from '../img/palco_musica_cultura/geracao_encantada.png'
 
-
-
 import amandaHadassa from '../img/palco_musica_cultura/amanda_hadassa.png'
-
-
 
 
 
@@ -17,9 +12,6 @@ const importAll = (r) => r.keys().map(r);
 const capaEvento = importAll(require.context("../img/capas", false, /\.(png|jpe?g|svg)$/));
 
 const campeonatoLogos = importAll(require.context("../img/campeonatos", false, /\.(png|jpe?g|svg)$/));
-
-
-
 
 export const standInternos = [
 
@@ -410,6 +402,7 @@ export const oficinaList = [
     local: "Prédio do CTACS - Sala 02",
     data:"07 de Maio",
     horario:"às 08h00",
+    link:"https://forms.gle/24dHt2p1XATZtvfh9"
     
 
   },
@@ -424,6 +417,7 @@ export const oficinaList = [
     tipo:"Minicurso",
     data:"07 de Maio",
     horario:"às 08h00",
+    link:"https://forms.gle/FGta3yy21E1e4kR59"
      
 
   },
@@ -438,6 +432,7 @@ export const oficinaList = [
     local: "Prédio do CTACS",
     data:"07 de Maio",
     horario:"às 08h00",
+    link:"https://forms.gle/jMWqTeQVYotS2CRX8"
      
 
   },
@@ -452,6 +447,7 @@ export const oficinaList = [
     local: "Prédio do CTACS - Sala 01",
     data:"07 de Maio",
     horario:"às 08h00",
+    link:"https://forms.gle/5XDFNf4SiGK2RJYQA"
      
 
   },
@@ -466,6 +462,7 @@ export const oficinaList = [
     local: "Prédio do CTACS - Sala 03",
     data:"07 de Maio",
     horario:"às 08h00",
+    link: "https://forms.gle/EzFfVXuPwDsAvw6S7"
     
 
   },
@@ -480,9 +477,27 @@ export const oficinaList = [
     local: "Prédio do CTACS - Area Externa",
     data:"07 de Maio",
     horario:"às 08h00",
+    link:"https://forms.gle/snBr3DTT3M6aSKet5"
      
 
   },
+
+  {
+    id: 7,
+    imgSrc: capaEvento[2],
+    titulo: "Design Thinking: Do Problema à Solução",
+    foto: "",
+    responsavel: "Profª Pâmela Dias",
+    descricao: "O Design Thinking é uma abordagem prática e inovadora para solucionar problemas com foco nas pessoas. Neste minicurso, você vai conhecer e aplicar as principais etapas desse processo — empatia, definição, ideação, prototipagem e testes — para desenvolver soluções criativas e eficazes. Ao longo das atividades, você aprenderá a trabalhar de forma colaborativa, exercitando o pensamento crítico e a escuta ativa, sempre com o objetivo de gerar impacto real. Ideal para quem deseja transformar ideias em ações e promover inovação em qualquer área.",
+    tipo:"Minicurso",
+    local: "Prédio do CTACS - Sala 03",
+    data:"07 de Maio",
+    horario:"às 08h00",
+    link:"https://forms.gle/Z5FN1RRiwi4kTk4w6"
+     
+
+  },
+  
 
   // {
   //   id: 7,
@@ -529,7 +544,8 @@ export const campeonatoList = [
     local: "Praça Maria Aurora",
     data:"08 e 09 de Maio",
     horario:"às 08h00",
-    stand: "14"    
+    stand: "14",
+    link:"https://forms.gle/rtpadhnXqeCf4hFx8"    
     // add o link do form aq, cada um tem um
 
   },
@@ -545,7 +561,8 @@ export const campeonatoList = [
     local: "Praça Maria Aurora",
     data:"08 e 09 de Maio",
     horario:"às 08h00",
-    stand: "15"    
+    stand: "15",
+    link:"https://forms.gle/2xh6brbLbJroWjyYA"    
     // add o link do form aq, cada um tem um
 
   },
@@ -560,7 +577,8 @@ export const campeonatoList = [
     local: "Praça Maria Aurora",
     data:"09 de Maio",
     horario:"às 08h00",
-    stand: "12"    
+    stand: "12",
+    link:"https://forms.gle/hApjbLMff3AYfvqP9"    
     // add o link do form aq, cada um tem um
 
   }
