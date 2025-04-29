@@ -1,6 +1,6 @@
 import "./Apoio.css";
 import { useEffect, useState } from 'react';
-import { imagesRight, logosApoio } from '../../data/img';
+import { imagesRight, logosMaster, logosOuro } from '../../data/img';
 
 function Apoio(props) {
     const [bgIndex, setBgIndex] = useState(Number(props.wallpaper));
@@ -21,17 +21,30 @@ function Apoio(props) {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const quemEstaLink = [
+    const masterLink = [
         "https://www.bb.com.br/site/",
-        "https://nubank.com.br/",
-        "https://www.daycoval.com.br/",
-        "https://jsl.com.br/",
+        "https://www.bbseguros.com.br/",
+        "https://www.caixacapitalizacao.com.br/",
         "https://www.cantustore.com.br/",
-        "https://www.elecnor.com.br/",
-        "https://www.brasilcap.com.br/",
         "https://www.copaenergia.com.br/",
+        "https://jsl.com.br/",
+        "https://www.elecnor.com.br/",
+        "https://b3.com.br/",
+        "https://www.brasilcap.com.br/",
+        "https://www.man-es.com/pt/global-pt/brasil",
+        "https://nubank.com.br/",
+        "https://www.ticket.com.br/sobre/edenred/",
+        "https://www.vwfs.com.br/"
+    ];
+
+    
+    const ouroLink = [
+        "https://zoomsocial.com.br/",
         "https://itaenga.pe.gov.br/",
-        "",
+        "https://www.acessowifi.com.br/",
+        "https://www.instagram.com/carladiasassessoriaemeventos/",
+        "https://www.instagram.com/pernambucoprefabricados/",
+        
     ];
 
     // Duplicando as imagens para criar o efeito de loop infinito
@@ -39,17 +52,31 @@ function Apoio(props) {
 
     return (
         <section style={{ backgroundImage: isMobile ? 'none' : `url(${imagesRight[bgIndex]})` }}>
-            <h1 className="titulo">Apoio</h1>
 
-            <div className="container-apoio-imagens">
-                {logosApoio.map((image, index) => (
-                    <a href={quemEstaLink[index % logosApoio.length]} target="_blank" rel="noopener noreferrer" key={index}>
-                        <img src={image} alt={`Imagem ${index}`} />
-                    </a>
+<h1 className="titulo">Apoio Master</h1>
 
-                ))}
+<div className="container-apoio-imagens">
+    {logosMaster.map((image, index) => (
+        <a href={masterLink[index % logosMaster.length]} target="_blank" rel="noopener noreferrer" key={index}>
+            <img src={image} alt={`Imagem ${index}`} />
+        </a>
 
-            </div>
+    ))}
+
+</div>
+
+<h1 className="titulo">Apoio Ouro</h1>
+
+<div className="container-apoio-imagens">
+    {logosOuro.map((image, index) => (
+        <a href={ouroLink[index % logosOuro.length]} target="_blank" rel="noopener noreferrer" key={index}>
+            <img src={image} alt={`Imagem ${index}`} />
+        </a>
+
+    ))}
+
+</div>
+            
         </section>
     );
 }

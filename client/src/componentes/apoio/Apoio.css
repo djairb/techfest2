@@ -3,11 +3,14 @@
     display: flex;
     
     flex-wrap: wrap;
-    width: 50%;
+    width: 70%;
 
     gap: 35px;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
 
     filter: grayscale(0%); /* Imagens em preto e branco */
     
@@ -47,6 +50,7 @@
     transform: scale(1.1); /* Aumenta levemente o tamanho */
     filter: grayscale(0%); /* Volta a ter cor */
 }
+
 
 /* Animação de rolagem horizontal */
 @keyframes scroll {

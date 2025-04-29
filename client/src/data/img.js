@@ -6,5 +6,7 @@ export const imagesLeft = importAll(require.context("../img/bg-section-left", fa
 
 export const imagesRight = importAll(require.context("../img/bg-section-right", false, /\.(png|jpe?g|svg)$/));
 
-export const logosApoio = importAll(require.context("../img/apoio", false, /\.(png|jpe?g|svg)$/));
+export const logosMaster = importAll(require.context("../img/apoio/master", false, /\.(png|jpe?g|svg)$/));
+
+export const logosOuro = importAll(require.context("../img/apoio/ouro", false, /\.(png|jpe?g|svg)$/));
 
