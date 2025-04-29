@@ -25,7 +25,7 @@ function CardCampeonato(props){
 
                 <img className={props.tipo=="freefire" ? "logoFreefire" : ""} src={props.logo} />
 
-                <p>Stand {props.stand} - {props.local} • {props.data}, {props.horario}</p>
+                <p>{props.local} • {props.data}, {props.horario}</p>
 
             </div>
             

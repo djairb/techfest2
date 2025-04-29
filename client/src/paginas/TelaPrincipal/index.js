@@ -67,7 +67,7 @@ function TelaPrincipal() {
 
         <StandSection
 
-          title="Exposições - Stands"
+          title="Exposições e Espaços"
           wallpaper="2"        
         
         />

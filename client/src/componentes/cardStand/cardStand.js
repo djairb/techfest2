@@ -25,7 +25,7 @@ function CardStand(props){
 
                 <p>{props.responsavel}</p>
 
-                <p>Stand {props.stand}, {props.local} • {props.data}, {props.horario} </p>
+                <p>{props.local} • {props.data}, {props.horario} </p>
 
             </div>
             

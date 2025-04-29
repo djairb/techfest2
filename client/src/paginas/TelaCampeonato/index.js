@@ -39,7 +39,7 @@ function TelaCampeonato() {
 
         <p>Responsável: {objetoStand.responsavel}</p>
 
-        <p>Stand: {objetoStand.stand} - {objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
+        <p>{objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
 
         <iframe
         

@@ -37,7 +37,7 @@ function Navbar(){
 
              <Link to="/campeonato-all">Campeonatos</Link>
 
-             <Link to="/all-stands">Stands</Link>
+             <Link to="/all-stands">Exposições</Link>
 
              <Link to="/palco-all">Apresentações</Link>
 

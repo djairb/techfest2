@@ -27,7 +27,7 @@ function TelaTodosCardsStand() {
 
       
 
-        <h1 className="titulo titleApresent">Stands</h1>
+        <h1 className="titulo titleApresent">Exposições e Espaços</h1>
 
         <div className="containerTelaTodosCards">
 
@@ -42,7 +42,7 @@ function TelaTodosCardsStand() {
                     local={item.local}
                     data={item.data}
                     horario={item.horario}
-                    stand={item.stand}
+                    
                   />
 
 
