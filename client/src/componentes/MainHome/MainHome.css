@@ -178,14 +178,18 @@
 
     .containerTexto{
         width: 95%;
+        margin-left: 0px;
     }
 
     
 
-    .containerTexto h1{
-        font-size: 48px;
+    .containerTexto .containerFrase h1{
+        font-size: 30px;
         text-align: center;
-        width: 100%;
+        max-width: 85%;
+        margin: 0 auto;
+        
+        height: 150px;
     }
 
     .logoGrande{

@@ -30,27 +30,6 @@
     transform: scale(1.1);
 }
 
-/* Container interno para as imagens */
-.container-apoio-imagens-inner {
-    display: flex;
-    animation: scroll 20s linear infinite; /* Animação de rolagem */
-}
-
-/* Estilos para as imagens */
-.container-apoio-imagens-inner img {
-    width: 130px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
-    margin-right: 20px; /* Espaçamento entre as imagens */
-    filter: grayscale(0%); /* Imagens em preto e branco */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave */
-}
-
-/* Efeito de hover */
-.container-apoio-imagens-inner img:hover {
-    transform: scale(1.1); /* Aumenta levemente o tamanho */
-    filter: grayscale(0%); /* Volta a ter cor */
-}
-
 
 /* Animação de rolagem horizontal */
 @keyframes scroll {

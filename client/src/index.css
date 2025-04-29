@@ -403,8 +403,14 @@ section {
 
   .cardStand {
     flex-basis: 100%;
-    width: 200px;
+    width: 250px;
     height: auto;
+  }
+
+
+  .cardStand h1{
+    font-size: 1.2rem;
+    max-width: 90%;
   }
 
 
@@ -696,6 +702,15 @@ section {
         width: 95%;
 
 
+    }
+
+    .titulo{
+      text-align: center;
+      
+    }
+
+    .container-apoio-imagens{
+      margin: 15px 0;
     }
 
     

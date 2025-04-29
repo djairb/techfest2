@@ -53,29 +53,29 @@ function Apoio(props) {
     return (
         <section style={{ backgroundImage: isMobile ? 'none' : `url(${imagesRight[bgIndex]})` }}>
 
-<h1 className="titulo">Apoio Master</h1>
+            <h1 className="titulo">Apoio Master</h1>
 
-<div className="container-apoio-imagens">
-    {logosMaster.map((image, index) => (
-        <a href={masterLink[index % logosMaster.length]} target="_blank" rel="noopener noreferrer" key={index}>
-            <img src={image} alt={`Imagem ${index}`} />
-        </a>
+            <div className="container-apoio-imagens">
+                {logosMaster.map((image, index) => (
+                    <a href={masterLink[index % logosMaster.length]} target="_blank" rel="noopener noreferrer" key={index}>
+                        <img src={image} alt={`Imagem ${index}`} />
+                    </a>
 
-    ))}
+                ))}
 
-</div>
+            </div>
 
-<h1 className="titulo">Apoio Ouro</h1>
+            <h1 className="titulo">Apoio Ouro</h1>
 
-<div className="container-apoio-imagens">
-    {logosOuro.map((image, index) => (
-        <a href={ouroLink[index % logosOuro.length]} target="_blank" rel="noopener noreferrer" key={index}>
-            <img src={image} alt={`Imagem ${index}`} />
-        </a>
+            <div className="container-apoio-imagens">
+                {logosOuro.map((image, index) => (
+                    <a href={ouroLink[index % logosOuro.length]} target="_blank" rel="noopener noreferrer" key={index}>
+                        <img src={image} alt={`Imagem ${index}`} />
+                    </a>
 
-    ))}
+                ))}
 
-</div>
+            </div>
             
         </section>
     );
