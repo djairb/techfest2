@@ -151,6 +151,7 @@ section {
 .cardStand div img{
 
   width: 180px;
+  margin: 0 auto;
   
 
   
@@ -444,6 +445,8 @@ section {
 
   
 
+  
+
 
 
 }
@@ -711,6 +714,35 @@ section {
 
     .container-apoio-imagens{
       margin: 15px 0;
+    }
+
+    section{
+      min-height: 500px;
+      padding: 20px;
+      
+    }
+
+    section h1{
+      margin-bottom: 20px;
+    }
+
+    
+    .cardStand div img.logoFreefire{
+
+      width: 100%;
+      margin: 0 auto;
+      
+
+      
+
+
+    }
+
+    .containerConteudoSolo img.campeonatoLogo.freeFireLogo{
+      width: 100%;
+      
+    
+    
     }
 
     
