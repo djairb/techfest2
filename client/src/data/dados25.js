@@ -632,7 +632,7 @@ export const campeonatoList = [
     data:"09 de Maio",
     horario:"às 08h00",
     stand: "12",
-    link:"https://forms.gle/hApjbLMff3AYfvqP9"    
+    link:""    
     // add o link do form aq, cada um tem um
 
   }

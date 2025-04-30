@@ -41,20 +41,27 @@ function TelaCampeonato() {
 
         <p>{objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
 
-        <iframe
+        {objetoStand.link &&
         
+          <iframe
+
             className="iframeInscricao"
 
             src={objetoStand.link}
 
-            
+
 
             frameborder="0">
-              
-              Carregando…
-            
-            
-        </iframe>
+
+            Carregando…
+
+
+          </iframe>
+
+
+        }
+
+        
 
         <button onClick={abrirPaginaTodos} className="botaoVerTodos">Todos</button>
 
