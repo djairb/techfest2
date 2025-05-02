@@ -13,13 +13,11 @@ import pamela from '../img/palco_musica_cultura/pamela.png'
 
 import furmiga from '../img/palco_musica_cultura/furmiga.png'
 
-
 import grupoCaboclo from '../img/palco_musica_cultura/grupoCaboclo.png'
-
 
 import mestreAnderson from '../img/palco_musica_cultura/mestreAnderson.png'
 
-
+import capibaribe from '../img/palco_musica_cultura/capibaribe.png'
 
 
 const importAll = (r) => r.keys().map(r);
@@ -441,7 +439,7 @@ export const palcoList = [
     id: 12,
     imgSrc: capaEvento[1],
     titulo: "Batalha do Capibaribe",
-    foto:"",
+    foto:capibaribe,
     responsavel: "MC Dark - MC Lucas",
     descricao: "A cena do hip hop é um caldeirão pulsante de criatividade e expressão, onde diferentes formas de arte se entrelaçam e se fortalecem. As batalhas de rima, verdadeiros duelos verbais, revelam a habilidade dos MCs em improvisar e usar as palavras como armas e poesias. As batalhas de B-boy, com seus movimentos acrobáticos e coreografias complexas, mostram a força e a leveza do corpo em sintonia com a música. O grafite, com suas cores vibrantes e mensagens impactantes, transforma muros e paredes em telas de protesto e beleza. E o skate, com suas manobras radicais e espírito livre, representa a busca por adrenalina e superação. Juntos, esses elementos compõem uma cultura urbana vibrante e em constante evolução, que ecoa a voz das ruas e celebra a diversidade. ",
     local: "Palco - Praça Maria Aurora",
