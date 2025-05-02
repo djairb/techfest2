@@ -58,19 +58,19 @@ function TelaPrincipal() {
         
         />
 
+        <StandSection
+
+        title="Exposições Tecnológicas e Inovadoras"
+        wallpaper="1"        
+
+        />
+
         <CampeonatoSection
 
           title="Campeonatos"
-          wallpaper="1"
+          wallpaper="2"
 
-        />
-
-        <StandSection
-
-          title="Exposições e Espaços"
-          wallpaper="2"        
-        
-        />
+        />       
 
         <PalcoSection
 

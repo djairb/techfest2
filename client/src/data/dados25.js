@@ -11,6 +11,15 @@ import aline from '../img/palco_musica_cultura/aline.png'
 
 import pamela from '../img/palco_musica_cultura/pamela.png'
 
+import furmiga from '../img/palco_musica_cultura/furmiga.png'
+
+
+import grupoCaboclo from '../img/palco_musica_cultura/grupoCaboclo.png'
+
+
+import mestreAnderson from '../img/palco_musica_cultura/mestreAnderson.png'
+
+
 
 
 const importAll = (r) => r.keys().map(r);
@@ -270,7 +279,7 @@ export const standInternos = [
   
   {
     id: 23,
-    imgSrc: capaEvento[0],
+    imgSrc: capaEvento[6],
     titulo: "Conexão Games",
     responsavel: "Prof. Arthur Yuri",
     descricao: "Bem-vindo à Sala de Games Festival, um ecossistema onde a diversão não tem limites! Prepare-se para uma imersão completa no universo dos games com várias atrações que prometem agradar a todos os tipos de jogadores. Serão 50M² equipada com os clássicos fliperamas, que trazem de volta a nostalgia dos jogos de arcade, além de um simulador de corrida para você sentir a adrenalina de uma pista de corrida com todo o realismo. Para os fãs de consoles modernos, temos os incríveis kits PlayStation 5, onde você pode jogar os títulos mais recentes e imersivos. E, claro, para quem adora se divertir em grupo, temos o kit Just Dance, com coreografias animadas que vão fazer todo mundo se mover. O ambiente acolhe até 25 pessoas por vez, proporcionando uma experiência divertida e dinâmica para todos. Cada sessão tem duração de aproximadamente 20 minutos, com intervalos, para que mais grupos possam entrar e se divertir. As entradas e saídas serão organizadas de maneira eficiente, garantindo que todos aproveitem ao máximo a experiência sem filas longas. Não perca essa oportunidade de se divertir e testar suas habilidades em diferentes modalidades de jogos!",
@@ -299,7 +308,7 @@ export const palcoList = [
     id: 1,
     imgSrc: capaEvento[1],
     titulo: "Furmiga Dub",
-    foto:"",
+    foto:furmiga,
     responsavel: "Fabiano Formiga",
     descricao: "FurmigaDub é o projeto de Fabiano Formiga, multi-instrumentista paraibano formado pela (UFPB), que tocou nas Orquestras Sinfônicas do Estado, bandas de reggae, heavy metal, brega, sambarock, etcoco de roda, e que desde 2011 se dedica à produção de faixas autorais, misturando música de cultura popular paraibana com estéticas de música eletrônica. Suas canções vêm conquistando o público das principais festas de música brasileira e eletrônica do Brasil, onde ele é presença constante tanto em DJ sets quanto em apresentações ao vivo. Além de compor suas próprias músicas, FurmigaDub é responsável por resgatar e gravar canções de mestres da cultura popular nunca gravados, ajudando a preservar e difundir esses trabalhos tão únicos da cultura brasileira.",
     local: "Palco - Praça Maria Aurora",
@@ -335,8 +344,8 @@ export const palcoList = [
     id: 4,
     imgSrc: capaEvento[1],
     titulo: "Grupo Cultural Caboclo",
-    foto:"",
-    responsavel: "Josuel Caboclo",
+    foto:grupoCaboclo,
+    responsavel: "Josué Caboclo",
     descricao: "A Ciranda Caboclo é um grupo de cultura popular da zona da mata de Pernambuco, uma iniciativa do Poeta Josivaldo Caboclo, filho do Poeta Bio Caboclo, referência na arte do coco de roda na zona da mata. O grupo surgiu em abril 2017 período em que o Mestre Josivaldo Caboclo gravou seu primeiro CD ciranda, o álbum autoral recebeu o título de “Ciranda Caboclo – Um novo jeito de fazer ciranda”.  A ciranda Caboclo traz uma mistura dos estilos da ciranda carnavalesca com a ciranda da mata norte, moldada pela regra poética dos cantadores de viola e com influência do Poeta Bio Caboclo, violeiro, mestre de maracatu e de coco de roda. Nas letras autoral, o Mestre Cirandeiro faz uma abordagem sobre o fortalecimento das relações entre as pessoas e dos valores éticos, além se utilizar de temas voltadas ao romantismo.  A Família Caboclo há mais de 30 anos vem promovendo e difundindo a arte do coco-de-roda, maracatu, viola e ciranda na zona da mata de Pernambuco para o Brasil e o mundo. ",
     local: "Palco - Praça Maria Aurora",
     data:"08 de Maio",
@@ -420,7 +429,7 @@ export const palcoList = [
     id: 11,
     imgSrc: capaEvento[1],
     titulo: "Ciranda com Mestre Anderson",
-    foto:"",
+    foto:mestreAnderson,
     responsavel: "Mestre Anderson",
     descricao: "Trazendo as raízes da cultura popular pernambucana para o TechFest, Mestre Anderson conduz uma vibrante roda de ciranda que convida todos a se conectar com o ritmo, o corpo e a tradição. Com seus passos marcados e cantos envolventes, ele transforma o espaço em um verdadeiro terreiro de celebração e pertencimento. A ciranda, com sua força coletiva e simbólica, resgata memórias afetivas e celebra a identidade do nosso povo em meio ao universo da tecnologia.",
     local: "Palco - Praça Maria Aurora",
@@ -463,7 +472,7 @@ export const oficinaList = [
     id: 2,
     imgSrc: capaEvento[4],
     titulo: "Musicalização com FurmigaDub",
-    foto:"",
+    foto:furmiga,
     responsavel: "Fabiano Formiga",
     descricao: "Como cada um se relaciona com a música? - Exercícios de improvisação - Noções básicas de harmonia e teoria musical - Facilitador Fabiano Formiga multi-instrumentista paraibano formado pela (UFPB).",
     local: "Prédio do CTACS - Sala 04",
@@ -541,8 +550,8 @@ export const oficinaList = [
     // 4 para minicurso 5 para palestra
     titulo: "Design Thinking com o Armazém da Criatividade - Porto Digital",
     foto: pamela,
-    responsavel: "Profª Pâmela Dias",
-    descricao: "Os participantes terão imersão na metodologia de modelagem de negócios a partir do Design Thinking facilitada por Laís Queiroz que é Designer pela UFPE, Pós Graduanda em gestão e análise estratégica de dados pela PUC MINAS, atua como analista de inovação no Porto Digital/Armazém da Criatividade.",
+    responsavel: "Designer Laís Queiroz",
+    descricao: "Os participantes terão imersão na metodologia de modelagem de negócios a partir do Design Thinking facilitada por Laís Queiroz que é Designer pela UFPE, Pós Graduanda em gestão e análise estratégica de dados pela PUC MINAS, atua como analista de inovação no Porto Digital/Armazém da Criatividade. Laís Queiroz é Designer pela UFPE, Pós Graduanda em gestão e análise estratégica de dados pela PUC MINAS, atua como analista de inovação no Porto Digital/Armazém da Criatividade.",
     tipo:"Minicurso",
     local: "Prédio do CTACS - Sala 03",
     data:"07 de Maio",

@@ -27,7 +27,7 @@ function TelaTodosCardsStand() {
 
       
 
-        <h1 className="titulo titleApresent">Exposições e Espaços</h1>
+        <h1 className="titulo titleApresent">Exposições Tecnológicas e Inovadoras</h1>
 
         <div className="containerTelaTodosCards">
 

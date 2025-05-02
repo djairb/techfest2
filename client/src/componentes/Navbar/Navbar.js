@@ -35,9 +35,9 @@ function Navbar(){
 
              <Link to="/oficina-all">Minicursos/Palestras</Link>
 
-             <Link to="/campeonato-all">Campeonatos</Link>
-
              <Link to="/all-stands">Exposições</Link>
+
+             <Link to="/campeonato-all">Campeonatos</Link>
 
              <Link to="/palco-all">Apresentações</Link>
 
