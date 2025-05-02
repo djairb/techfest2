@@ -10,3 +10,5 @@ export const logosMaster = importAll(require.context("../img/apoio/master", fals
 
 export const logosOuro = importAll(require.context("../img/apoio/ouro", false, /\.(png|jpe?g|svg)$/));
 
+export const logosEvento = importAll(require.context("../img/apoio/evento", false, /\.(png|jpe?g|svg)$/));
+

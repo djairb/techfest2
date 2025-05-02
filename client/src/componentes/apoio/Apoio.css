@@ -13,17 +13,31 @@
     border-radius: 20px;
 
     filter: grayscale(0%); /* Imagens em preto e branco */
+    margin: 20px 0;
     
 
     
 }
 
-.container-apoio-imagens img{
-    width: 120px; 
+.container-apoio-imagens img {
+    width: 120px;
+    height: auto;
+    /* mantém a proporção original */
+    object-fit: contain;
+    /* garante que a imagem se ajuste ao espaço sem distorcer */
+    aspect-ratio: 3 / 2;
     transition: transform 0.3s ease, filter 0.3s ease;
-    
-    
-    
+
+
+
+}
+
+.logo-master img{
+    width: 160px;
+}
+
+.logo-evento img{
+    width: 100px;
 }
 
 .container-apoio-imagens img:hover{

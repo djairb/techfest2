@@ -1,6 +1,6 @@
 import "./Apoio.css";
 import { useEffect, useState } from 'react';
-import { imagesRight, logosMaster, logosOuro } from '../../data/img';
+import { imagesRight, logosMaster, logosOuro, logosEvento } from '../../data/img';
 
 function Apoio(props) {
     const [bgIndex, setBgIndex] = useState(Number(props.wallpaper));
@@ -34,7 +34,8 @@ function Apoio(props) {
         "https://www.man-es.com/pt/global-pt/brasil",
         "https://nubank.com.br/",
         "https://www.ticket.com.br/sobre/edenred/",
-        "https://www.vwfs.com.br/"
+        "https://www.vwfs.com.br/",
+        "https://www.daycoval.com.br/"
     ];
 
     
@@ -55,7 +56,7 @@ function Apoio(props) {
 
             <h1 className="titulo">Apoio Master</h1>
 
-            <div className="container-apoio-imagens">
+            <div className="container-apoio-imagens logo-master">
                 {logosMaster.map((image, index) => (
                     <a href={masterLink[index % logosMaster.length]} target="_blank" rel="noopener noreferrer" key={index}>
                         <img src={image} alt={`Imagem ${index}`} />
@@ -70,6 +71,18 @@ function Apoio(props) {
             <div className="container-apoio-imagens">
                 {logosOuro.map((image, index) => (
                     <a href={ouroLink[index % logosOuro.length]} target="_blank" rel="noopener noreferrer" key={index}>
+                        <img src={image} alt={`Imagem ${index}`} />
+                    </a>
+
+                ))}
+
+            </div>
+
+            <h1 className="titulo">Apoio Evento</h1>
+
+            <div className="container-apoio-imagens logo-evento">
+                {logosEvento.map((image, index) => (
+                    <a target="_blank" rel="noopener noreferrer" key={index}>
                         <img src={image} alt={`Imagem ${index}`} />
                     </a>
 
