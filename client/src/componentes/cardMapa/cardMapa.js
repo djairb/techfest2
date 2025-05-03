@@ -6,7 +6,7 @@ import imagemMapa from "../../img/mapa/mapa_hight.jpg";
 function CardMapa(props) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const [bgIndex, setBgIndex] = useState(Number(props.wallpaper));
-    const [scale, setScale] = useState(0.4); // Zoom inicial
+    const [scale, setScale] = useState(0.3); // Zoom inicial
     const [position, setPosition] = useState({ x: 0, y: 0 }); // Posição da imagem
     const [initialPositionX, setInitialPositionX] = useState(0); // Posição inicial X
     const [initialPositionY, setInitialPositionY] = useState(0); // Posição inicial Y
@@ -15,7 +15,7 @@ function CardMapa(props) {
     const touchStart = useRef({ x: 0, y: 0 });
 
     const minScale = 0.2;  // Limite mínimo do zoom
-    const maxScale = 1.2;    // Limite máximo do zoom
+    const maxScale = 0.6;    // Limite máximo do zoom
 
     useEffect(() => {
         const interval = setInterval(() => {
