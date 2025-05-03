@@ -20,7 +20,7 @@
 }
 
 .container-apoio-imagens img {
-    width: 120px;
+    width: 150px;
     height: auto;
     /* mantém a proporção original */
     object-fit: contain;
@@ -38,7 +38,7 @@
 }
 
 .logo-evento img{
-    width: 100px;
+    width: 120px;
 }
 
 .container-apoio-imagens img:hover{
