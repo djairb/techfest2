@@ -48,6 +48,7 @@ section {
   padding-bottom: 56.25%; /* Proporção 16:9 */
   height: 0;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .video-container iframe {
@@ -56,6 +57,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
+  
 }
 
 .cardStand {
@@ -298,6 +300,13 @@ section {
 
 .containerConteudoSolo img.campeonatoLogo.freeFireLogo{
   width: 500px;
+  
+
+
+}
+
+.containerConteudoSolo img.encerradasImg{
+  width: 350px;
   
 
 
@@ -743,6 +752,18 @@ section {
       
     
     
+    }
+
+    .containerConteudoSolo img.encerradasImg{
+      width: 80%;
+      
+    
+    
+    }
+
+    .video-container {
+      
+      margin-bottom: 0px;
     }
 
     

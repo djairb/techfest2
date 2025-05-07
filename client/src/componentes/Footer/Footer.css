@@ -57,7 +57,12 @@ footer {
     .pFooter {
 
 
-        width: 90%
+        width: 90%;
+        
+    }
+
+    footer{
+        height: auto;
     }
 
 

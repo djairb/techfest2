@@ -1,11 +1,16 @@
 import profVitoria from '../img/oficinas/vitoria.png'
 import profCleiton from '../img/oficinas/cleiton.png'
+import beleza from '../img/oficinas/beleza.png'
+
+import recpare from '../img/oficinas/recpare.png'
 
 import geracaoEncantada from '../img/palco_musica_cultura/geracao_encantada.png'
 
 import amanda from '../img/palco_musica_cultura/amanda.png'
 
 import hadassa from '../img/palco_musica_cultura/hadassa.png'
+
+import debora from '../img/palco_musica_cultura/debora.png'
 
 import aline from '../img/palco_musica_cultura/aline.png'
 
@@ -19,6 +24,9 @@ import mestreAnderson from '../img/palco_musica_cultura/mestreAnderson.png'
 
 import capibaribe from '../img/palco_musica_cultura/capibaribe.png'
 
+import cedili from '../img/palco_musica_cultura/cedili.png'
+
+import encerradas from '../img/encerradas.png'
 
 const importAll = (r) => r.keys().map(r);
 
@@ -330,7 +338,7 @@ export const palcoList = [
     id: 3,
     imgSrc: capaEvento[1],
     titulo: "Espetáculo Musical: Um diálogo para o futuro",
-    foto:"",
+    foto:cedili,
     responsavel: "Denise Coelho - Centro de Desenvolvimento Local Integrado (CDLI)",
     descricao: "O Centro de Desenvolvimento Integral em Lagoa de Itaenga (CEDILI), é uma Organização Não Governamental atuantes em comunidades do município de Lagoa de Itaenga. De forma intergeracional apresenta o espetáculo musical “Um diálogo para o Futuro”, desenvolvido com os participantes dos Projetos Minha Primeira Opção-Educação e o Projeto Meu lugar-Envelhecer bem. A iniciativa traz ao público as canções dos respectivos compositores, Dudu Falcão com ¨Além do “arco íris” e Luiz Gonzaga com “Asa Branca”. Canções que fazem parte do repertório brasileiro, valorizando a nossa regionalidade.",
     local: "Palco - Praça Maria Aurora",
@@ -379,8 +387,8 @@ export const palcoList = [
     id: 7,
     imgSrc: capaEvento[1],
     titulo: "Aulão de Dança",
-    foto:"",
-    responsavel: "Profª Debora e Profª Irlane",
+    foto:debora,
+    responsavel: "Débora Geordanny e Irlane Silva",
     descricao: "Uma atmosfera destinada ao público das diversas idades com o intuito de recepcioná-los com a uma energia e animação sem limites. Uma excelente oportunidade proporcionada por meio da dança com atividades de impulso a diversão e cuidado com a saúde. Neste momento os participantes terão oportunidade de vivenciar diversos estilos de dança em um ambiente descontraído de interação.",
     local: "Palco - Praça Maria Aurora",
     data:"07 de Maio",
@@ -462,6 +470,7 @@ export const oficinaList = [
     local: "Prédio do CTACS - Sala 02",
     data:"07 de Maio",
     horario:"às 14h00",
+    encerradas:"",
     link:"https://forms.gle/24dHt2p1XATZtvfh9"
     
 
@@ -477,6 +486,7 @@ export const oficinaList = [
     tipo:"Minicurso",
     data:"07 de Maio",
     horario:"às 08h30 e às 14h00",
+    encerradas:"",
     link:"https://forms.gle/FGta3yy21E1e4kR59"
      
 
@@ -492,6 +502,7 @@ export const oficinaList = [
     local: "Prédio do CTACS",
     data:"07 de Maio",
     horario:"às 09h00",
+    encerradas:"",
     link:"https://forms.gle/jMWqTeQVYotS2CRX8"
      
 
@@ -507,6 +518,7 @@ export const oficinaList = [
     local: "Prédio do CTACS - Sala 01",
     data:"07 de Maio",
     horario:"às 08h30 e às 14h00",
+    encerradas:"",
     link:"https://forms.gle/5XDFNf4SiGK2RJYQA"
      
 
@@ -515,13 +527,14 @@ export const oficinaList = [
     id: 5,
     imgSrc: capaEvento[4],
     titulo: "Empreendedoras Conectadas e Estratégias para o sucesso",
-    foto:"",
+    foto:beleza,
     responsavel: "Jaciara, Paula, Laiz",
     descricao: "O projeto Empreendedoras Conectadas trará uma série de oficinas práticas voltadas para mulheres que atuam ou desejam ingressar no setor da beleza. As atividades incluirão três áreas fundamentais: manicure, estética e design de sobrancelhas, conduzidas por profissionais experientes que compartilharão suas trajetórias, desafios e aprendizados no empreendedorismo e com práticas.",
     tipo:"Minicurso",
     local: "Prédio do CTACS - Sala 02",
     data:"07 de Maio",
     horario:"às 08h30",
+    encerradas:"",
     link: "https://forms.gle/EzFfVXuPwDsAvw6S7"
     
 
@@ -537,6 +550,7 @@ export const oficinaList = [
     local: "Prédio do CTACS - Area Externa",
     data:"07 de Maio",
     horario:"às 08h30 e às 14h00",
+    encerradas:"",
     link:"https://forms.gle/snBr3DTT3M6aSKet5"
      
 
@@ -554,6 +568,7 @@ export const oficinaList = [
     local: "Prédio do CTACS - Sala 03",
     data:"07 de Maio",
     horario:"às 14h00",
+    encerradas:"",
     link:"https://forms.gle/Z5FN1RRiwi4kTk4w6"
      
 
@@ -563,12 +578,28 @@ export const oficinaList = [
   {
     id: 8,
     imgSrc: capaEvento[5],
+    titulo: "Um futuro Presente da Tecnologia na Inclusão social com Recpare",
+    foto: recpare,
+    responsavel: "Pedro Izidio",
+    descricao: "Pedro Izidio, formado em Design, pós-graduado em design digital, atualmente trabalha como Accessibility Product Designer, e é diretor executivo da Recpare; primeiro ecossistema em promoção de educação em tecnologia acessível e inclusiva do Nordeste, sobre o pilar de acessibilidade digital. Também tem como objetivo trabalhar mais diversidade para o mercado de tecnologia. Realizando workshops e formações durante o ano e um evento anual para reunir toda a comunidade para uma troca massa.",
+    tipo:"Painel",
+    local: "Prédio do CTACS",
+    data:"07 de Maio",
+    encerradas:"",
+    horario:"-"
+     
+
+  },
+  {
+    id: 9,
+    imgSrc: capaEvento[5],
     titulo: "A função social das tecnologias: A experiência do Laboratório Multidisciplinar de Tecnologia Social/UFAPE",
     responsavel: "Professor Dr. Anderson de Alencar",
     descricao: "Nesta palestra, será apresentada a atuação do Laboratório Multidisciplinar de Tecnologia Social (LMTS) da Universidade Federal do Agreste de Pernambuco (UFAPE), destacando como a tecnologia pode ser pensada e aplicada a partir de uma perspectiva voltada para o bem comum e o desenvolvimento social. A proposta é discutir o papel das tecnologias sociais como ferramentas de transformação, inclusão e fortalecimento de comunidades, a partir de experiências concretas desenvolvidas pelo laboratório junto a populações em situação de vulnerabilidade. A atividade também convida à reflexão sobre a responsabilidade social da ciência e da tecnologia, e como práticas colaborativas e interdisciplinares podem gerar soluções inovadoras para desafios sociais reais.",
     tipo:"Painel",
     local: "Prédio do CTACS - Auditório",
     data:"07 de Maio",
+    encerradas:"",
     horario:"às 10h00"
      
 
@@ -606,6 +637,7 @@ export const campeonatoList = [
     data:"08 e 09 de Maio",
     horario:"às 08h00",
     stand: "14",
+    encerradas:encerradas,
     link:"https://forms.gle/rtpadhnXqeCf4hFx8"    
     // add o link do form aq, cada um tem um
 
@@ -618,11 +650,12 @@ export const campeonatoList = [
     logo: campeonatoLogos[1],
     tipo:"futebol",
     responsavel: "Prof. Geovane",
-    descricao: "Mostre suas habilidades no futebol virtual! Se você é de Lagoa de Itaenga ou região, venha disputar a segunda edição do campeonato de FIFA no TECHfest - Festival de Inovação e Tecnologia. Prepare-se para encarar os melhores jogadores e fazer história nos gramados digitais! Participe de uma competição emocionante, repleta de inovação e tecnologia, e ainda tenha a chance de ganhar prêmios incríveis. Não perca essa oportunidade de brilhar no universo dos eSports!",
+    descricao: "Mostre suas habilidades no futebol virtual! Se você é de Lagoa de Itaenga ou região, venha disputar a segunda edição do campeonato de Futebol Eletrônico no TECHfest - Festival de Inovação e Tecnologia. Prepare-se para encarar os melhores jogadores e fazer história nos gramados digitais! Participe de uma competição emocionante, repleta de inovação e tecnologia, e ainda tenha a chance de ganhar prêmios incríveis. Não perca essa oportunidade de brilhar no universo dos eSports!",
     local: "Espaço Conexão Disputas - Praça Maria Aurora",
     data:"08 e 09 de Maio",
     horario:"às 08h00",
     stand: "15",
+    encerradas:encerradas,
     link:"https://forms.gle/2xh6brbLbJroWjyYA"    
     // add o link do form aq, cada um tem um
 
@@ -639,6 +672,7 @@ export const campeonatoList = [
     data:"09 de Maio",
     horario:"às 08h00",
     stand: "12",
+    encerradas:encerradas,
     link:""    
     // add o link do form aq, cada um tem um
 

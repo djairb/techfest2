@@ -41,6 +41,19 @@ function TelaCampeonato() {
 
         <p>{objetoStand.local}, {objetoStand.data}, {objetoStand.horario}.</p>
 
+        {objetoStand.encerradas &&
+
+          <img
+
+            className="encerradasImg"
+
+            src={objetoStand.encerradas}
+
+          />
+
+
+        }
+
         {objetoStand.link &&
         
           <iframe

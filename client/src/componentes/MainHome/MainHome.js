@@ -46,7 +46,7 @@ function MainHome() {
 
     
 
-    const dataEvento = new Date(2025, 4, 7, 8, 0, 0); // Ano, Mês (0-11), Dia, Hora, Minuto, Segundo -- O mês de março é o número 2 no JavaScript, pois os meses são indexados a partir de 0.
+    const dataEvento = new Date(2025, 4, 10, 0, 0, 0); // Ano, Mês (0-11), Dia, Hora, Minuto, Segundo -- O mês de março é o número 2 no JavaScript, pois os meses são indexados a partir de 0.
 
     // Efeito para atualizar a contagem regressiva a cada segundo
     useEffect(() => {
@@ -118,7 +118,7 @@ function MainHome() {
                         <h2><a>Lagoa de Itaenga</a>, Pernambuco, Brasil.</h2>
 
                     </div>
-                    <h2>Faltam <a>{contagemFormatada}</a></h2>
+                    <h2>Não perde! Ainda restam: <a>{contagemFormatada}</a></h2>
 
                 </div>
 
