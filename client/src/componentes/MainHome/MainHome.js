@@ -118,7 +118,8 @@ function MainHome() {
                         <h2><a>Lagoa de Itaenga</a>, Pernambuco, Brasil.</h2>
 
                     </div>
-                    <h2>Não perde! Ainda restam: <a>{contagemFormatada}</a></h2>
+                    {/* <h2>Não perde! Ainda restam: <a>{contagemFormatada}</a></h2> */}
+                    <h2>Até o ano que vem! ;) </h2>
 
                 </div>
 
