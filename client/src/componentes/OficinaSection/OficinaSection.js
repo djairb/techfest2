@@ -22,7 +22,7 @@ import CardPalco from "../cardPalco/cardPalco";
 
 import { imagesRight } from '../../data/img';
 import { useEffect, useState } from 'react';
-import CardOficina from '../cardOficina/cardOficina';
+import CardOficina from '../CardOficina/CardOficina';
 
 
 register();

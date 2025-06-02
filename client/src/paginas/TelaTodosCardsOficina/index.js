@@ -10,7 +10,7 @@ import { oficinaList, palcoList } from "../../data/dados25";
 import Navbar from "../../componentes/Navbar/Navbar";
 import Footer from "../../componentes/Footer/Footer";
 
-import CardOficina from "../../componentes/cardOficina/cardOficina";
+import CardOficina from "../../componentes/CardOficina/CardOficina";
 
 function TelaTodosCardsOficina() {
 
